@@ -2,50 +2,23 @@ import React from "react";
 
 // Navbar component.  Defaults to About page.
 
-function Navbar({ currentPage, handlePageChange }) {
+function Navbar() {
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark justify-content-end">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <span className="brand">Bill Stephens</span>
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="/">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="resume">
-                Resume
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="contact">
-                Contact Me
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div className="navigation">
+      <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
+      <label htmlFor="navi-toggle" className="navigation__button">
+        <span className="navigation__icon">&nbsp;</span>
+      </label>
+      <div className="navigation__background">&nbsp;</div>
+      <nav className="navigation__nav">
+        <ul className="navigation__list">
+          <li className="navigation__item"><a href="/" className="navigation__link"><span>01</span>About</a></li>
+          <li className="navigation__item"><a href="/portfolio" className="navigation__link"><span>02</span>Portfolio</a></li>
+          <li className="navigation__item"><a href="/resume" className="navigation__link"><span>03</span>Resume</a></li>
+          <li className="navigation__item"><a href="/contact" className="navigation__link"><span>04</span>Contact</a></li>
+        </ul>
+      </nav> 
+    </div>
   );
 }
 
