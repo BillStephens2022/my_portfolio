@@ -17,6 +17,8 @@
       text-align: center;
       cursor: pointer;
 
+    }
+
     &__background {
       height: 6rem;
       width: 6rem;
@@ -148,5 +150,4 @@
         top: 0;
         transform: rotate(-135deg);
     }
-  }
 }

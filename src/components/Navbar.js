@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/style.css';
 
 // Navbar component.  Defaults to About page.
 
