@@ -119,6 +119,62 @@ html {
   top: 0;
   transform: rotate(-135deg); }
 
-body {
-  background-color: #aaa;
-  color: #54483A; }
+.about {
+  background: linear-gradient(45deg, #c69963 0 50%, #B28451 50% 100%);
+  height: 93vh;
+  width: 100vw;
+  color: #fff; }
+  .about__hero {
+    display: flex;
+    padding: 3rem; }
+  .about__headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem; }
+  .about__title {
+    font-size: 4rem; }
+  .about__photo {
+    max-width: 10rem;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center; }
+  .about__subtitle {
+    font-size: 2.5rem;
+    color: #aaa; }
+  .about__story {
+    font-size: 1.8rem;
+    color: #f9f7f6;
+    margin: 0 25vw; }
+
+.skills {
+  margin-top: 3rem;
+  text-align: center; }
+  .skills__header {
+    font-size: 2.5em; }
+  .skills__container {
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: minmax(30rem, 1fr);
+    grid-template-columns: [card-1-start] minmax(20rem, 1fr) [card-1-end card-2-start] minmax(20rem, 1fr) [card-2-end card-3-start] minmax(20rem, 1fr) [card-3-end];
+    grid-gap: 3rem; }
+  .skills__card {
+    margin-top: 3rem;
+    border: 2px solid #f9f7f6;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px #6D5D4B; }
+    .skills__card--header {
+      font-size: 2rem;
+      padding: 2rem; }
+    .skills__card--list {
+      font-size: 1.4rem;
+      list-style: none; }
+
+.footer {
+  height: 7vh;
+  background-color: #6D5D4B;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer__contact {
+    color: #fff; }

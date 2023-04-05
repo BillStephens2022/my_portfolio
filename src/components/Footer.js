@@ -1,7 +1,9 @@
+import '../css/style.css';
+
 function Footer() {
     return (
-        <div>
-            <h1>Footer</h1>
+        <div className="footer">
+            <h1 className="footer__contact">Contact me: stephensbill17@gmail.com</h1>
         </div>
     )
 }
