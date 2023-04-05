@@ -58,8 +58,9 @@
     padding: 3rem;
     display: grid;
     grid-template-rows: minmax(30rem, 1fr);
-    grid-template-columns: [card-1-start] minmax(20rem, 1fr) [card-1-end card-2-start] minmax(20rem, 1fr) [card-2-end card-3-start] minmax(20rem, 1fr) [card-3-end];
-    grid-gap: 3rem;
+    grid-template-columns: [card-1-start] minmax(20rem, 40rem) [card-1-end card-2-start] minmax(20rem, 40rem) [card-2-end card-3-start] minmax(20rem, 40rem) [card-3-end];
+    grid-gap: 5rem;
+    justify-content: center;
     }
 
     &__card {
