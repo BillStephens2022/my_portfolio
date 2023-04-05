@@ -31,7 +31,7 @@ html {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#c69963, #B28451);
+  background-image: radial-gradient(#6D5D4B, #000);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -120,38 +120,44 @@ html {
   transform: rotate(-135deg); }
 
 .about {
-  background: linear-gradient(45deg, #c69963 0 50%, #B28451 50% 100%);
+  background: #6D5D4B;
   height: 93vh;
   width: 100vw;
   color: #fff; }
   .about__hero {
     display: flex;
-    padding: 3rem; }
+    padding: 3rem;
+    background-color: #000; }
   .about__headers {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 3rem; }
-  .about__title {
-    font-size: 4rem; }
   .about__photo {
     max-width: 10rem;
     border-radius: 5px;
     align-self: center;
     justify-self: center; }
+  .about__title {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 4rem; }
   .about__subtitle {
     font-size: 2.5rem;
-    color: #aaa; }
+    font-family: sans-serif;
+    color: #fff; }
   .about__story {
     font-size: 1.8rem;
+    font-family: sans-serif;
+    line-height: 1.6;
     color: #f9f7f6;
-    margin: 0 25vw; }
+    margin: 3rem 25vw; }
 
 .skills {
   margin-top: 3rem;
   text-align: center; }
   .skills__header {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    color: #000; }
   .skills__container {
     padding: 3rem;
     display: grid;
@@ -162,17 +168,22 @@ html {
     margin-top: 3rem;
     border: 2px solid #f9f7f6;
     border-radius: 1rem;
-    box-shadow: 0 0 15px #6D5D4B; }
+    box-shadow: 0 0 15px #6D5D4B;
+    background-color: black; }
     .skills__card--header {
       font-size: 2rem;
       padding: 2rem; }
     .skills__card--list {
       font-size: 1.4rem;
       list-style: none; }
+    .skills__card:hover {
+      background-color: #aaa;
+      color: #000;
+      transform: translateY(-3px); }
 
 .footer {
   height: 7vh;
-  background-color: #6D5D4B;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center; }

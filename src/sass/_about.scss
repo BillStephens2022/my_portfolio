@@ -1,49 +1,59 @@
 .about {
-  background: linear-gradient(45deg, $color-primary 0 50%, $color-primary-dark 50% 100%);
+  background: $color-grey-dark-2;
   height: 93vh;
   width: 100vw;
   color: $color-white;
+
     &__hero {
-        display: flex;
-        padding: 3rem;
+      display: flex;
+      padding: 3rem;
+      background-color: $color-black;
     }
+
     &__headers {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding-left: 3rem;
-        
-    }
-    &__title {
-      font-size: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 3rem; 
     }
 
     &__photo {      
-      max-width: 10rem;
-      border-radius: 5px;
-      align-self: center;
-      justify-self: center;
-   
+        max-width: 10rem;
+        border-radius: 5px;
+        align-self: center;
+        justify-self: center;
+      }
+
+    &__title {
+      font-family: "Rubik Mono One", sans-serif;
+      font-size: 4rem;
     }
 
     &__subtitle {
       font-size: 2.5rem;
-      color: $color-grey-light-2;
+      font-family: sans-serif;
+      color: $color-white;
     }
 
     &__story {
       font-size: 1.8rem;
+      font-family: sans-serif;
+      line-height: 1.6;
       color: $color-grey-light-1;
-      margin: 0 25vw;
+      margin: 3rem 25vw;
     }
+
 }
 
 .skills {
     margin-top: 3rem;
     text-align: center;
+    
     &__header {
         font-size: 2.5em;
+        color: $color-black;
     }
+
     &__container {
     padding: 3rem;
     display: grid;
@@ -51,19 +61,30 @@
     grid-template-columns: [card-1-start] minmax(20rem, 1fr) [card-1-end card-2-start] minmax(20rem, 1fr) [card-2-end card-3-start] minmax(20rem, 1fr) [card-3-end];
     grid-gap: 3rem;
     }
+
     &__card {
       margin-top: 3rem;
       border: 2px solid $color-grey-light-1;
       border-radius: 1rem;
       box-shadow: 0 0 15px $color-grey-dark-2;
+      background-color: black;
+
       &--header {
         font-size: 2rem;
         padding: 2rem;
       }
+
       &--list {
         font-size: 1.4rem;
         list-style: none;
       }
+
+      &:hover {
+        background-color: $color-grey-light-2;
+        color: $color-black;
+        transform: translateY(-3px);
+      }
+
     }
     
 }
