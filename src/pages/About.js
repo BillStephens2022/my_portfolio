@@ -3,6 +3,13 @@ import "../css/style.css";
 function About() {
   return (
     <div className="about">
+      <div className="about__video">
+          <video className="about__video--content" autoPlay muted loop>
+            <source src="../../images/video3.mp4" type="video/mp4"/>
+            <source src="../../images/video.webm" type="video/webm"/>
+            Your browser is not supported!
+          </video>
+      </div>
       <div className="about__hero">
         <img
           className="about__photo"
