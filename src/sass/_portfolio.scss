@@ -1,0 +1,31 @@
+.portfolio {
+    text-align: center;
+    background-color: $color-grey-light-2;
+
+    &__hero {
+      background-color: $color-blue-light-3;
+      color: $color-white;
+      font-family: "Lato", non-serif;
+      font-weight: 900;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+
+      &-header {
+        padding: 1.5rem;
+      }
+
+      &-logo {
+        width: 10%;
+      }
+    }
+
+   
+}
+
+.projects {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

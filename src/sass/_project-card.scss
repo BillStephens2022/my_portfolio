@@ -1,0 +1,62 @@
+.projects__card {
+    width: 30rem;
+  
+
+    margin: 1.5rem;
+    border: 2px solid $color-blue-light-3;
+    color: $color-white;
+    background-color: $color-blue-light-3;
+    box-shadow: 3px 3px 10px $color-grey-dark-2;
+    transition: all .8s ease;
+
+    &--image-photo {
+        width: 100%;
+        object-fit: contain;
+        
+    }
+
+    &-body {
+      padding: 1.5rem;
+      background-color: $color-blue-light-3;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &--title {
+        font-size: 1.75rem;
+        padding: 1rem;
+        text-transform: uppercase;
+      }
+      &--text {
+        
+        padding: 1rem;
+        
+      }
+      &--footer {
+        color: $color-white;
+        justify-self: end;
+        &--link {
+
+          &:link {
+            color: $color-white;
+          }
+
+          &:visited {
+            color: $color-white;
+          }
+        }
+      }
+
+    }
+    
+   &:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 1rem 1rem 2rem $color-grey-dark-2;
+    
+   }
+
+}
+
+a {
+  text-decoration: none;
+}
