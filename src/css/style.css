@@ -289,18 +289,26 @@ html {
 
 .portfolio {
   text-align: center;
-  background-color: #aaa; }
+  background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be); }
   .portfolio__hero {
     background-color: lightsteelblue;
     color: #fff;
     font-family: "Lato", non-serif;
     font-weight: 900;
     font-size: 2rem;
-    margin-bottom: 3rem; }
+    text-shadow: 2px 2px midnightblue;
+    letter-spacing: 1rem;
+    margin-bottom: 3rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0); }
     .portfolio__hero-header {
       padding: 1.5rem; }
+      .portfolio__hero-header:hover {
+        transform: scale(1.5); }
     .portfolio__hero-logo {
-      width: 10%; }
+      width: 10%;
+      transition: 1s; }
+      .portfolio__hero-logo:hover {
+        transform: rotate(360deg); }
 
 .projects {
   width: 100vw;
@@ -312,14 +320,19 @@ html {
 .projects__card {
   width: 30rem;
   margin: 1.5rem;
-  border: 2px solid lightsteelblue;
+  padding: 1rem;
+  border: 2px solid #cde7ef;
+  border-radius: 1rem;
   color: #fff;
   background-color: lightsteelblue;
   box-shadow: 3px 3px 10px #6D5D4B;
+  font-family: "Lato", non-serif;
+  animation: slideUp 1s ease-in-out;
   transition: all .8s ease; }
   .projects__card--image-photo {
     width: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    border-radius: 1rem; }
   .projects__card-body {
     padding: 1.5rem;
     background-color: lightsteelblue;
@@ -330,7 +343,9 @@ html {
     .projects__card-body--title {
       font-size: 1.75rem;
       padding: 1rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: midnightblue;
+      text-shadow: 1px 1px white; }
     .projects__card-body--text {
       padding: 1rem; }
     .projects__card-body--footer {
@@ -342,7 +357,7 @@ html {
         color: #fff; }
   .projects__card:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 1rem 1rem 2rem #6D5D4B; }
+    box-shadow: 1rem 1rem 1rem #fff; }
 
 a {
   text-decoration: none; }

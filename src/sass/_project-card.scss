@@ -1,18 +1,20 @@
 .projects__card {
     width: 30rem;
-  
-
     margin: 1.5rem;
-    border: 2px solid $color-blue-light-3;
+    padding: 1rem;
+    border: 2px solid $color-blue-light-1;
+    border-radius: 1rem;
     color: $color-white;
     background-color: $color-blue-light-3;
     box-shadow: 3px 3px 10px $color-grey-dark-2;
+    font-family: "Lato", non-serif;
+    animation: slideUp 1s ease-in-out;
     transition: all .8s ease;
-
+    
     &--image-photo {
         width: 100%;
         object-fit: contain;
-        
+        border-radius: 1rem;
     }
 
     &-body {
@@ -22,10 +24,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      
       &--title {
         font-size: 1.75rem;
         padding: 1rem;
         text-transform: uppercase;
+        color: midnightblue;
+        text-shadow: 1px 1px white;
       }
       &--text {
         
@@ -51,7 +56,7 @@
     
    &:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 1rem 1rem 2rem $color-grey-dark-2;
+    box-shadow: 1rem 1rem 1rem $color-white;
     
    }
 
