@@ -7,7 +7,14 @@
 
     &__contact {
       color: $color-white;
+      margin-right: 3rem;
       
 
+    }
+
+    &__icon {
+      font-size: 2rem;
+      color: $color-white;
+      padding: 1rem;
     }
 }

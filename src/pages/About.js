@@ -31,7 +31,7 @@ function About() {
         <h2 className="skills__header">Skills</h2>
         <div className="skills__container">
           <div className="skills__card card-1">
-            <h4 className="skills__card--header">Front End</h4>
+            <h4 className="skills__card--header"><img id="react" src="../../images/react.png" alt="react logo" />Front End<img id="css3" src="../../images/css3.png" alt="css3 logo" /></h4>
             <ul className="skills__card--list">
               <li>JavaScript</li>
               <li>React.js</li>
@@ -47,7 +47,7 @@ function About() {
             </ul>
           </div>
           <div className="skills__card card-2">
-            <h4 className="skills__card--header">Back End</h4>
+            <h4 className="skills__card--header"><img id="node" src="../../images/node.png" alt="node logo" />Back End<img id="mongo" src="../../images/mongo.png" alt="mongo logo" /></h4>
             <ul className="skills__card--list">
               <li>Node.js</li>
               <li>Express.js</li>
@@ -63,7 +63,7 @@ function About() {
             </ul>
           </div>
           <div className="skills__card card-3">
-            <h4 className="skills__card--header">Python</h4>
+            <h4 className="skills__card--header">Python<img id="python" src="../../images/python.png" alt="python logo" /></h4>
             <ul className="skills__card--list">
                 <li>Flask</li>
                 <li>Pandas</li>

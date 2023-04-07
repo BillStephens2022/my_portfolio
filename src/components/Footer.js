@@ -2,9 +2,12 @@ import '../css/style.css';
 
 function Footer() {
     return (
-        <div className="footer">
-            <h1 className="footer__contact">Contact me: stephensbill17@gmail.com</h1>
-        </div>
+        <footer className="footer">
+            <h1 className="footer__contact">&copy; 2023 by Bill Stephens. &nbsp; All rights reserved.</h1>
+            <a href="https://github.com/BillStephens2022" className="footer__icon"><i className="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bill-stephens-04375923/" className="footer__icon"><i className="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/two4onebill?igshid=YmMyMTA2M2Y" className="footer__icon"><i className="fab fa-instagram"></i></a>
+        </footer>
     )
 }
 
