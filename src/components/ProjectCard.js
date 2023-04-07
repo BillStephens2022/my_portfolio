@@ -23,7 +23,7 @@ function ProjectCard({ project }) {
             className="projects__card-body--footer--link"
           >
             <i className="fas fa-link"></i>
-            Deployed App
+            App
           </a>
         ) : null}
 
@@ -32,7 +32,7 @@ function ProjectCard({ project }) {
           className="projects__card-body--footer--link"
         >
           <i className="fab fa-github"></i>
-          Github Repo
+          Repo
         </a>
       </div>
       </div>

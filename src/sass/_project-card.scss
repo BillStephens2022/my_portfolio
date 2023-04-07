@@ -1,4 +1,7 @@
 .projects__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     width: 30rem;
     margin: 1.5rem;
     padding: 1rem;
@@ -23,7 +26,9 @@
       font-size: 1.5rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+     
+    
+
       
       &--title {
         font-size: 1.75rem;
@@ -38,9 +43,18 @@
         
       }
       &--footer {
+        margin-top: 1rem;
         color: $color-white;
         justify-self: end;
+
         &--link {
+          margin: 1rem;
+          border: 2px $color-blue-light-1 solid;
+          padding: 0.8rem;
+          padding-right: 1rem;
+          border-radius: 5px;
+          transition: .2s;
+          background-image: radial-gradient($color-blue-light-3, $color-blue-med);
 
           &:link {
             color: $color-white;
@@ -48,6 +62,10 @@
 
           &:visited {
             color: $color-white;
+          }
+
+          &:hover {
+            transform: translateY(10px);
           }
         }
       }
@@ -64,4 +82,8 @@
 
 a {
   text-decoration: none;
+}
+
+i {
+ margin: 0.5rem;
 }

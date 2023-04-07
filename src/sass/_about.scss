@@ -19,7 +19,8 @@
         width: 100%;
         object-fit: cover;
       }
-  }
+    }
+
     &__hero {
       background-color: $color-blue-light-3;
 
@@ -35,11 +36,18 @@
     }
 
     &__photo {      
-        max-width: 10rem;
-        border-radius: 5px;
-        align-self: center;
-        justify-self: center;
+      max-width: 10rem;
+      border-radius: 5px;
+      align-self: center;
+      justify-self: center;
+      transition: .3s all;
+
+      &:hover {
+        transform: scale(1.1);
       }
+    }
+
+    
 
     &__title {
       font-family: 'Lato', sans-serif;
