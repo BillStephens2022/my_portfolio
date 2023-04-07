@@ -14,7 +14,7 @@ function About() {
         <img
           className="about__photo"
           src="../../images/IMG_8597.jpeg"
-          alt="Bill's photo"
+          alt="Bill"
         />
         <div className="about__headers">
           <h1 className="about__title">Bill Stephens</h1>

@@ -21,7 +21,7 @@
       }
   }
     &__hero {
-      background-color: $color-blue-med;
+      background-color: $color-blue-light-3;
 
       display: flex;
       padding: 3rem;
@@ -81,14 +81,14 @@
     
     &__header {
         font-size: 2.5em;
-        color: $color-black;
+        color: $color-grey-dark-1;
     }
 
     &__container {
     padding: 3rem;
     display: grid;
     grid-template-rows: minmax(30rem, 1fr);
-    grid-template-columns: [card-1-start] minmax(20rem, 40rem) [card-1-end card-2-start] minmax(20rem, 40rem) [card-2-end card-3-start] minmax(20rem, 40rem) [card-3-end];
+    grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
     grid-gap: 5rem;
     justify-content: center;
     }
@@ -98,12 +98,13 @@
       border: 2px solid $color-grey-light-1;
       border-radius: 1rem;
       box-shadow: 0 0 15px $color-grey-dark-2;
-      background-color: $color-blue-light;
+      background-color: $color-blue-light-1;
 
       &--header {
         font-size: 2rem;
         padding: 2rem;
-        background-color: black;
+        background-color: lightsteelblue;
+        color: $color-white;
         border-radius: 1rem 1rem 0 0;
       }
 
@@ -111,12 +112,16 @@
         font-size: 1.4rem;
         list-style: none;
         padding: 1rem;
+        color: black;
+        &:hover {
+          color: $color-white;
+        }
       }
 
       &:hover {
         background-color: $color-blue-med;
-        
         transform: translateY(-3px);
+        color: $color-white;
       }
 
     }

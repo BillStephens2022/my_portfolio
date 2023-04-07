@@ -1,6 +1,6 @@
 .footer {
     height: 7vh;
-    background-color: $color-blue-med;
+    background-color: $color-blue-light-3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,5 +8,6 @@
     &__contact {
       color: $color-white;
       
+
     }
 }

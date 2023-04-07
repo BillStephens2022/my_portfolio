@@ -31,7 +31,7 @@ html {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#5dbcd2, #0077be);
+  background-image: radial-gradient(#cde7ef, lightsteelblue);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -137,7 +137,7 @@ html {
       width: 100%;
       object-fit: cover; }
   .about__hero {
-    background-color: #0077be;
+    background-color: lightsteelblue;
     display: flex;
     padding: 3rem; }
   .about__headers {
@@ -178,12 +178,12 @@ html {
   text-align: center; }
   .skills__header {
     font-size: 2.5em;
-    color: #000; }
+    color: #54483A; }
   .skills__container {
     padding: 3rem;
     display: grid;
     grid-template-rows: minmax(30rem, 1fr);
-    grid-template-columns: [card-1-start] minmax(20rem, 40rem) [card-1-end card-2-start] minmax(20rem, 40rem) [card-2-end card-3-start] minmax(20rem, 40rem) [card-3-end];
+    grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
     grid-gap: 5rem;
     justify-content: center; }
   .skills__card {
@@ -191,23 +191,28 @@ html {
     border: 2px solid #f9f7f6;
     border-radius: 1rem;
     box-shadow: 0 0 15px #6D5D4B;
-    background-color: #5dbcd2; }
+    background-color: #cde7ef; }
     .skills__card--header {
       font-size: 2rem;
       padding: 2rem;
-      background-color: black;
+      background-color: lightsteelblue;
+      color: #fff;
       border-radius: 1rem 1rem 0 0; }
     .skills__card--list {
       font-size: 1.4rem;
       list-style: none;
-      padding: 1rem; }
+      padding: 1rem;
+      color: black; }
+      .skills__card--list:hover {
+        color: #fff; }
     .skills__card:hover {
       background-color: #0077be;
-      transform: translateY(-3px); }
+      transform: translateY(-3px);
+      color: #fff; }
 
 .footer {
   height: 7vh;
-  background-color: #0077be;
+  background-color: lightsteelblue;
   display: flex;
   align-items: center;
   justify-content: center; }
