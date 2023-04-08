@@ -309,6 +309,17 @@ html {
       transition: 1s; }
       .portfolio__hero-logo:hover {
         transform: rotate(360deg); }
+  .portfolio__buttons {
+    margin: 16rem; }
+    .portfolio__buttons--btn {
+      width: 10rem;
+      margin: 3rem;
+      padding: .5rem;
+      background-color: #cde7ef;
+      color: midnightblue;
+      border: none;
+      border-radius: .5rem;
+      box-shadow: 3px 3px 1rem #000; }
 
 .projects {
   width: 100vw;

@@ -12,7 +12,12 @@ function Portfolio() {
         <h1 className="portfolio__hero-header">My Project Portfolio</h1>
         <img className="portfolio__hero-logo" src="../../images/webdev.png" alt="web dev logo"/>
       </div>
-      
+      <div classname="portfolio__buttons">
+        <button className="portfolio__buttons--btn">All</button>
+        <button className="portfolio__buttons--btn">Front End</button>
+        <button className="portfolio__buttons--btn">Back End</button>
+        <button className="portfolio__buttons--btn">Python</button>
+      </div>
       <div className="projects">
         {projects.map((project) => (
           <ProjectCard project={project} key={project.id}/>
