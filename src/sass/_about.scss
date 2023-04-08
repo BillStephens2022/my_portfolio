@@ -89,7 +89,7 @@
     
     &__header {
         font-size: 2.5em;
-        color: $color-grey-dark-1;
+        color: $color-blue-dark;
     }
 
     &__container {
@@ -103,10 +103,10 @@
 
     &__card {
       margin-top: 3rem;
-      border: 2px solid $color-grey-light-1;
-      border-radius: 1rem;
-      box-shadow: 0 0 15px $color-grey-dark-2;
+      //border: 2px solid $color-grey-light-1;
+      //border-radius: 1rem;
       background-color: $color-blue-light-1;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
       transition: all .3s ease;
       
       
@@ -116,15 +116,14 @@
         padding: 2rem;
         background-color: lightsteelblue;
         color: $color-white;
-        border-radius: 1rem 1rem 0 0;
-        // clip-path: polygon(0 100%, 100% 51%, 0 0);
+        //border-radius: 1rem 1rem 0 0;
       }
 
       &--list {
         font-size: 1.4rem;
         list-style: none;
         padding: 1rem;
-        color: black;
+        color: $color-blue-med;
         &:hover {
           color: $color-white;
         }
