@@ -16,11 +16,13 @@ function ProjectCard({ project }) {
       <div className="projects__card-body">
         <h5 className="projects__card-body--title">{project.title}</h5>
         <p className="projects__card-body--text">{project.desc}</p>
-        <div className="projects__card-body--footer">
+        
+      </div>
+      <div className="projects__card-footer">
         {project.deployedUrl !== "N/A" ? (
           <a
             href={project.deployedUrl}
-            className="projects__card-body--footer--link"
+            className="projects__card-footer--link"
           >
             <i className="fas fa-link"></i>
             App
@@ -29,14 +31,12 @@ function ProjectCard({ project }) {
 
         <a
           href={project.gitHubRepoUrl}
-          className="projects__card-body--footer--link"
+          className="projects__card-footer--link"
         >
           <i className="fab fa-github"></i>
           Repo
         </a>
       </div>
-      </div>
-      
     </div>
   );
 }

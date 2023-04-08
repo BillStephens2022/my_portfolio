@@ -319,7 +319,10 @@ html {
       color: midnightblue;
       border: none;
       border-radius: .5rem;
-      box-shadow: 3px 3px 1rem #54483A; }
+      box-shadow: 1px 1px 1px #fff; }
+      .portfolio__buttons--btn:hover {
+        transform: translateY(2px) scale(1.1);
+        box-shadow: 2px 2px 1px #fff; }
 
 .projects {
   width: 100vw;
@@ -331,7 +334,6 @@ html {
 .projects__card {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   width: 30rem;
   margin: 1.5rem;
   padding: 1rem;
@@ -343,6 +345,9 @@ html {
   font-family: "Lato", non-serif;
   animation: slideUp 1s ease-in-out;
   transition: all .8s ease; }
+  .projects__card:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0.2rem 0.2rem 0.5rem #fff; }
   .projects__card--image-photo {
     width: 100%;
     object-fit: contain;
@@ -352,7 +357,8 @@ html {
     background-color: lightsteelblue;
     font-size: 1.5rem;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-grow: 1; }
     .projects__card-body--title {
       font-size: 1.75rem;
       padding: 1rem;
@@ -361,33 +367,32 @@ html {
       text-shadow: 1px 1px white; }
     .projects__card-body--text {
       padding: 1rem; }
-    .projects__card-body--footer {
-      margin-top: 1rem;
-      color: #fff;
-      justify-self: end; }
-      .projects__card-body--footer--link {
-        margin: 1rem;
-        border: 2px #cde7ef solid;
-        padding: 0.8rem;
-        padding-right: 1rem;
-        border-radius: 5px;
-        transition: .2s;
-        background-image: radial-gradient(lightsteelblue, #0077be); }
-        .projects__card-body--footer--link:link {
-          color: #fff; }
-        .projects__card-body--footer--link:visited {
-          color: #fff; }
-        .projects__card-body--footer--link:hover {
-          transform: translateY(10px); }
-  .projects__card:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 1rem 1rem 1rem #fff; }
+  .projects__card-footer {
+    margin-top: auto;
+    color: #fff;
+    padding-bottom: 2rem; }
+    .projects__card-footer--link {
+      display: inline-block;
+      width: 5rem;
+      margin: 1rem;
+      border: 2px #cde7ef solid;
+      padding: 1rem;
+      padding-right: 1rem;
+      border-radius: 5px;
+      transition: .2s;
+      background-image: radial-gradient(lightsteelblue, #0077be); }
+      .projects__card-footer--link:link {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .projects__card-footer--link:visited {
+        color: #fff; }
+      .projects__card-footer--link:hover {
+        transform: translateY(2px);
+        box-shadow: 2px 2px 10px #fff; }
 
-a {
-  text-decoration: none; }
-
-i {
-  margin: 0.5rem; }
+.fas, .fab {
+  margin-right: 3px; }
 
 .footer {
   height: 7vh;

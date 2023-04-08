@@ -1,7 +1,6 @@
 .projects__card {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
     width: 30rem;
     margin: 1.5rem;
     padding: 1rem;
@@ -13,23 +12,26 @@
     font-family: "Lato", non-serif;
     animation: slideUp 1s ease-in-out;
     transition: all .8s ease;
-    
-    &--image-photo {
-        width: 100%;
-        object-fit: contain;
-        border-radius: 1rem;
+  
+    &:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: .2rem .2rem .5rem $color-white;
     }
-
+  
+    &--image-photo {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 1rem;
+    }
+  
     &-body {
       padding: 1.5rem;
       background-color: $color-blue-light-3;
       font-size: 1.5rem;
       display: flex;
       flex-direction: column;
-     
-    
-
-      
+      flex-grow: 1;
+  
       &--title {
         font-size: 1.75rem;
         padding: 1rem;
@@ -37,53 +39,47 @@
         color: midnightblue;
         text-shadow: 1px 1px white;
       }
+  
       &--text {
-        
         padding: 1rem;
-        
       }
-      &--footer {
-        margin-top: 1rem;
-        color: $color-white;
-        justify-self: end;
-
-        &--link {
-          margin: 1rem;
-          border: 2px $color-blue-light-1 solid;
-          padding: 0.8rem;
-          padding-right: 1rem;
-          border-radius: 5px;
-          transition: .2s;
-          background-image: radial-gradient($color-blue-light-3, $color-blue-med);
-
-          &:link {
-            color: $color-white;
-          }
-
-          &:visited {
-            color: $color-white;
-          }
-
-          &:hover {
-            transform: translateY(10px);
-          }
+    }
+  
+    &-footer {
+      margin-top: auto;
+      color: $color-white;
+      padding-bottom: 2rem;
+  
+      &--link {
+        display: inline-block;
+        width: 5rem;
+        margin: 1rem;
+        border: 2px $color-blue-light-1 solid;
+        padding: 1rem;
+        padding-right: 1rem;
+        border-radius: 5px;
+        transition: .2s;
+        background-image: radial-gradient($color-blue-light-3, $color-blue-med);
+  
+        &:link {
+          color: $color-white;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+  
+        &:visited {
+          color: $color-white;
+        }
+  
+        &:hover {
+          transform: translateY(2px);
+          box-shadow: 2px 2px 10px $color-white;
         }
       }
-
     }
-    
-   &:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 1rem 1rem 1rem $color-white;
-    
-   }
+  }
 
+.fas, .fab {
+  margin-right: 3px;
 }
-
-a {
-  text-decoration: none;
-}
-
-i {
- margin: 0.5rem;
-}
+  

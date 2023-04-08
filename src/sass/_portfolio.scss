@@ -37,14 +37,18 @@
     margin: 16rem;
 
     &--btn {
-        width: 10rem;
-        margin: 3rem;
-        padding: .5rem;
-        background-color: $color-blue-light-1;
-        color: $color-blue-dark;
-        border: none;
-        border-radius: .5rem;
-        box-shadow: 3px 3px 1rem $color-grey-dark-1;
+      width: 10rem;
+      margin: 3rem;
+      padding: .5rem;
+      background-color: $color-blue-light-1;
+      color: $color-blue-dark;
+      border: none;
+      border-radius: .5rem;
+      box-shadow: 1px 1px 1px $color-white;
+      &:hover {
+        transform: translateY(2px) scale(1.1);
+        box-shadow: 2px 2px 1px $color-white;
+      }
     }    
   }
 }
