@@ -13,7 +13,7 @@ function About() {
       <div className="about__hero">
         <img
           className="about__photo"
-          src="../../images/IMG_8597.jpeg"
+          src="../../images/bill.jpeg"
           alt="Bill"
         />
         <div className="about__headers">

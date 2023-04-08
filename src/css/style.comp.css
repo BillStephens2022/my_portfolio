@@ -31,7 +31,7 @@ html {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#c69963, #B28451);
+  background-image: radial-gradient(#cde7ef, lightsteelblue);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -120,11 +120,24 @@ html {
   transform: rotate(-135deg); }
 
 .about {
-  background: linear-gradient(45deg, #c69963 0 50%, #B28451 50% 100%);
   height: 93vh;
   width: 100vw;
   color: #fff; }
+  .about__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+    overflow: hidden; }
+    .about__video--content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
   .about__hero {
+    background-color: lightsteelblue;
     display: flex;
     padding: 3rem; }
   .about__headers {
@@ -132,45 +145,524 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 3rem; }
-  .about__title {
-    font-size: 4rem; }
   .about__photo {
     max-width: 10rem;
     border-radius: 5px;
     align-self: center;
-    justify-self: center; }
+    justify-self: center;
+    transition: .3s all; }
+    .about__photo:hover {
+      transform: scale(1.1); }
+  .about__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #fff; }
+    .about__title:hover {
+      transform: skewY(-5deg) scale(1.1); }
   .about__subtitle {
     font-size: 2.5rem;
-    color: #aaa; }
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.62rem;
+    color: #54483A; }
   .about__story {
     font-size: 1.8rem;
-    color: #f9f7f6;
-    margin: 0 25vw; }
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #0077be;
+    margin: 3rem 25vw; }
+    .about__story:hover {
+      transform: scale(1.25); }
 
 .skills {
   margin-top: 3rem;
   text-align: center; }
   .skills__header {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    color: midnightblue; }
   .skills__container {
     padding: 3rem;
     display: grid;
     grid-template-rows: minmax(30rem, 1fr);
-    grid-template-columns: [card-1-start] minmax(20rem, 1fr) [card-1-end card-2-start] minmax(20rem, 1fr) [card-2-end card-3-start] minmax(20rem, 1fr) [card-3-end];
-    grid-gap: 3rem; }
+    grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
+    grid-gap: 5rem;
+    justify-content: center; }
   .skills__card {
     margin-top: 3rem;
-    border: 2px solid #f9f7f6;
-    border-radius: 1rem;
-    box-shadow: 0 0 15px #6D5D4B; }
+    background-color: #cde7ef;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
+    transition: all .3s ease; }
     .skills__card--header {
       font-size: 2rem;
-      padding: 2rem; }
+      padding: 2rem;
+      background-color: lightsteelblue;
+      color: #fff; }
     .skills__card--list {
       font-size: 1.4rem;
-      list-style: none; }
+      list-style: none;
+      padding: 1rem;
+      color: #0077be; }
+      .skills__card--list:hover {
+        color: #fff; }
+    .skills__card:hover {
+      background-color: #0077be;
+      transform: translateY(-3px);
+      color: #fff; }
+
+.card-1 {
+  animation: slideRight 1s ease-in;
+  position: relative; }
+
+.card-2 {
+  animation: slideUp 1s ease-in;
+  position: relative; }
+
+.card-3 {
+  animation: slideLeft 1s ease-in;
+  position: relative; }
+
+#react {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-left: 1rem; }
+
+#css3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-right: 1rem; }
+
+#node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-left: 1rem; }
+
+#mongo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-right: 1rem; }
+
+#python {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-left: 1rem; }
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-300%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(300%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300%); }
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0%); }
+  100% {
+    transform: translateY(-300%); } }
+
+.portfolio {
+  text-align: center;
+  background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be); }
+  .portfolio__hero {
+    background-color: lightsteelblue;
+    color: #fff;
+    font-family: "Lato", non-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 2px 2px midnightblue;
+    letter-spacing: 1rem;
+    margin-bottom: 3rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0); }
+    .portfolio__hero-header {
+      padding: 1.5rem; }
+      .portfolio__hero-header:hover {
+        transform: scale(1.5); }
+    .portfolio__hero-logo {
+      width: 10%;
+      transition: 1s; }
+      .portfolio__hero-logo:hover {
+        transform: rotate(360deg); }
+  .portfolio__buttons {
+    margin: 16rem; }
+    .portfolio__buttons--btn {
+      width: 10rem;
+      margin: 3rem;
+      padding: .5rem;
+      background-color: #cde7ef;
+      color: midnightblue;
+      border: none;
+      border-radius: .5rem;
+      box-shadow: 1px 1px 1px #fff; }
+      .portfolio__buttons--btn:hover {
+        transform: translateY(2px) scale(1.1);
+        box-shadow: 2px 2px 1px #fff; }
+
+.projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.body-div {
+  background-color: #fff; }
+
+p {
+  text-indent: 1%; }
+
+.header-name {
+  font-style: Montserrat;
+  font-weight: 900;
+  color: #f0f0f0;
+  font-size: 30px; }
+
+.header-occupation {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: #f0f0f0;
+  font-size: 20px; }
+
+.section-headers {
+  font-style: Montserrat;
+  font-weight: 900;
+  color: #618685;
+  font-size: 22px;
+  padding-top: 10px; }
+
+.skills-subheading {
+  font-style: Montserrat;
+  font-weight: bold;
+  color: #618685;
+  font-size: 17px;
+  padding-top: 5px; }
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: #deeaee; }
+
+.bill-pic {
+  text-align: center;
+  max-width: 97%;
+  max-height: 97%;
+  border-radius: 5%;
+  box-shadow: 2px 2px 7px #36486b;
+  margin: auto; }
+
+.summary {
+  background: #36486b;
+  text-align: left;
+  padding: 20px; }
+
+.header-summary {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: #deeaee;
+  font-size: 18px;
+  line-height: 2rem; }
+
+.header-hr {
+  background-color: #fff;
+  border: none;
+  height: 1px; }
+
+.contact-info-technical {
+  background-color: #d5e1df; }
+
+.contact-info {
+  line-height: 1px; }
+
+.technical-skills {
+  background-color: #d5e1df;
+  color: #618685; }
+
+.fa {
+  color: #618685; }
+
+.icon {
+  font-style: Montserrat;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-top: 15px; }
+
+.contact-details, .phone, .location, .linkedin, .portfolio {
+  font-style: Montserrat;
+  font-weight: 100;
+  padding-left: 10px; }
+
+.projects h3 {
+  font-size: 1em;
+  color: #36486b; }
+
+.portfolio-link {
+  font-size: 0.70em; }
+
+.links {
+  font-size: 0.75em; }
+
+.link-left {
+  margin-left: 15px; }
+
+.project-list {
+  font-weight: 100;
+  color: #36486b;
+  font-size: 15px; }
+
+.work-experience {
+  background-color: #fff; }
+
+.job-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400; }
+
+.job-note {
+  margin-left: 15px; }
+
+.role {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: #618685;
+  font-size: 0.75em; }
+
+.company {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: black;
+  font-size: 1em; }
+
+.MSLogo {
+  width: 22.5%;
+  padding-right: 15px; }
+
+.CSLogo {
+  width: 20%;
+  padding-right: 15px;
+  padding-bottom: 15px; }
+
+.job-div {
+  justify-content: space-between; }
+
+.time-range {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: black;
+  font-size: 15px; }
+
+.job-summary {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  margin-left: 10px; }
+
+.accomplishments {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  margin-left: 2px; }
+
+.work-bullets {
+  font-style: Montserrat;
+  font-weight: 100;
+  color: black;
+  font-size: 15px; }
+
+.education {
+  line-height: 10px; }
+
+.degree {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: black;
+  font-size: 15px; }
+
+.college {
+  font-style: Montserrat;
+  font-weight: 400;
+  color: black;
+  font-size: 15px; }
+
+meter::-webkit-meter-optimum-value {
+  background: #618685;
+  /* Required to get rid of the default background property */
+  background-color: #618685;
+  box-shadow: 0 5px 5px -5px #333 inset; }
+
+.resume-div {
+  margin-top: 25px; }
+
+.download-button {
+  margin-top: 75px;
+  margin-bottom: auto; }
+
+.row {
+  margin-right: 0 !important; }
+
+@media screen and (max-width: 1400px) {
+  .email {
+    font-size: 1em; } }
+
+@media screen and (max-width: 1300px) {
+  .contact-info-technical {
+    padding: 0 !important; }
+  .email {
+    font-size: 0.85em; } }
+
+@media screen and (max-width: 1100px) {
+  .contact-info-technical {
+    padding: 0 !important; }
+  .email {
+    font-size: 0.75em; } }
+
+@media screen and (max-width: 900px) {
+  .resume-div {
+    margin-left: 15px; }
+  .bill-pic {
+    width: 150px; }
+  .container {
+    min-width: 99vw; }
+  .email {
+    font-size: 0.9em; }
+  .education {
+    line-height: 10px; }
+  .degrees {
+    margin: auto; } }
+
+@media screen and (max-width: 800px) {
+  .email {
+    font-size: .85em; } }
+
+@media screen and (max-width: 600px) {
+  .download-button {
+    font-size: 1em !important; }
+  .resume-div {
+    margin-left: 15px; }
+  .projects {
+    padding-left: 25px; }
+  .MSLogo {
+    width: 50%; }
+  .CSLogo {
+    width: 50%; } }
+
+@media screen and (max-width: 400px) {
+  .download-button {
+    font-size: 0.75em !important; }
+  .resume-div {
+    margin-left: 15px; }
+  .projects {
+    padding-left: 15px; }
+  .education {
+    line-height: 15px; }
+  .text-wrap {
+    line-height: 25px;
+    margin-bottom: 10px; } }
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  border: 2px solid #cde7ef;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: lightsteelblue;
+  box-shadow: 3px 3px 10px #6D5D4B;
+  font-family: "Lato", non-serif;
+  animation: slideUp 1s ease-in-out;
+  transition: all .8s ease; }
+  .projects__card:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0.2rem 0.2rem 0.5rem #fff; }
+  .projects__card--image-photo {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem; }
+  .projects__card-body {
+    padding: 1.5rem;
+    background-color: lightsteelblue;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; }
+    .projects__card-body--title {
+      font-size: 1.75rem;
+      padding: 1rem;
+      text-transform: uppercase;
+      color: midnightblue;
+      text-shadow: 1px 1px white; }
+    .projects__card-body--text {
+      padding: 1rem; }
+  .projects__card-footer {
+    margin-top: auto;
+    color: #fff;
+    padding-bottom: 2rem; }
+    .projects__card-footer--link {
+      display: inline-block;
+      width: 5rem;
+      margin: 1rem;
+      border: 2px #cde7ef solid;
+      padding: 1rem;
+      padding-right: 1rem;
+      border-radius: 5px;
+      transition: .2s;
+      background-image: radial-gradient(lightsteelblue, #0077be); }
+      .projects__card-footer--link:link {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .projects__card-footer--link:visited {
+        color: #fff; }
+      .projects__card-footer--link:hover {
+        transform: translateY(2px);
+        box-shadow: 2px 2px 10px #fff; }
+
+.fas, .fab {
+  margin-right: 3px; }
 
 .footer {
-  background-color: #6D5D4B; }
+  height: 7vh;
+  background-color: lightsteelblue;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .footer__contact {
-    color: #fff; }
+    color: #fff;
+    margin-right: 3rem; }
+  .footer__icon {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem; }
