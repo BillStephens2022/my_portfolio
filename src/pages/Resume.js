@@ -1,5 +1,4 @@
 import React from "react";
-import '../sass/pages/resume.css';
 
 // Resume page displaying Resume and a button to download as a pdf file
 

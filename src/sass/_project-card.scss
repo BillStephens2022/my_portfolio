@@ -4,13 +4,13 @@
     width: 30rem;
     margin: 1.5rem;
     padding: 1rem;
-    border: 2px solid $color-blue-light-1;
-    border-radius: 1rem;
+    // border: 2px solid $color-blue-light-1;
+    // border-radius: 1rem;
     color: $color-white;
     background-color: $color-blue-light-3;
     box-shadow: 3px 3px 10px $color-grey-dark-2;
     font-family: "Lato", non-serif;
-    animation: slideUp 1s ease-in-out;
+    // animation: slideUp 1s ease-in-out;
     transition: all .8s ease;
   
     &:hover {
@@ -21,7 +21,7 @@
     &--image-photo {
       width: 100%;
       object-fit: contain;
-      border-radius: 1rem;
+      // border-radius: 1rem;
     }
   
     &-body {
@@ -36,12 +36,13 @@
         font-size: 1.75rem;
         padding: 1rem;
         text-transform: uppercase;
-        color: midnightblue;
+        color: $color-blue-dark;
         text-shadow: 1px 1px white;
       }
   
       &--text {
         padding: 1rem;
+        color: $color-white;
       }
     }
   
@@ -49,15 +50,17 @@
       margin-top: auto;
       color: $color-white;
       padding-bottom: 2rem;
-  
+      display: flex;
+      justify-content: space-evenly;
       &--link {
-        display: inline-block;
-        width: 5rem;
+        
+        width: 7rem;
         margin: 1rem;
-        border: 2px $color-blue-light-1 solid;
-        padding: 1rem;
-        padding-right: 1rem;
-        border-radius: 5px;
+        //border: 2px $color-blue-light-1 solid;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        
+        //border-radius: 5px;
         transition: .2s;
         background-image: radial-gradient($color-blue-light-3, $color-blue-med);
   
