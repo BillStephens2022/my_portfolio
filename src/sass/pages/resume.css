@@ -1,342 +1,353 @@
+#root,
+#root::before,
+#root::after {
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
 .body-div {
-    background-color: #fff;
+  background-color: #fff;
+}
+
+p {
+  text-indent: 1%;
+}
+
+.header-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #f0f0f0;
+  font-size: 30px;
+}
+
+.header-occupation {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #f0f0f0;
+  font-size: 20px;
+}
+
+.section-headers {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #618685;
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+.skills-subheading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #618685;
+  font-size: 17px;
+  padding-top: 5px;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: #deeaee;
+}
+
+.bill-pic {
+  text-align: center;
+  max-width: 97%;
+  max-height: 97%;
+  border-radius: 5%;
+  box-shadow: 2px 2px 7px #36486b;
+  margin: auto;
+}
+
+.summary {
+  background: #36486b;
+  text-align: left;
+  padding: 20px;
+}
+
+.header-summary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #deeaee;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.header-hr {
+  background-color: #fff;
+  border: none;
+  height: 1px;
+}
+
+.contact-info-technical {
+  background-color: #d5e1df;
+}
+
+.contact-info {
+  line-height: 1px;
+}
+
+.technical-skills {
+  background-color: #d5e1df;
+  color: #618685;
+}
+
+.fa {
+  color: #618685;
+}
+
+.icon {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.contact-details,
+.phone,
+.location,
+.linkedin,
+.project-portfolio {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+.section-projects h3 {
+  font-size: 1em;
+  color: #36486b;
+}
+
+.project-portfolio-link {
+  font-size: 0.7em;
+}
+
+.links {
+  font-size: 0.75em;
+}
+
+.link-left {
+  margin-left: 15px;
+}
+
+.project-list {
+  font-weight: 100;
+  color: #36486b;
+  font-size: 15px;
+}
+
+.work-experience {
+  background-color: #fff;
+}
+
+.job-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.job-note {
+  margin-left: 15px;
+}
+
+.role {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #618685;
+  font-size: 0.75em;
+}
+
+.company {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1em;
+}
+
+.MSLogo {
+  width: 22.5%;
+  padding-right: 15px;
+}
+
+.CSLogo {
+  width: 20%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.job-div {
+  justify-content: space-between;
+}
+
+.time-range {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+}
+
+.job-summary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.accomplishments {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.work-bullets {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: black;
+  font-size: 15px;
+}
+
+.education {
+  line-height: 10px;
+}
+
+.degree {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+}
+
+.college {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #618685; /* Required to get rid of the default background property */
+  background-color: #618685;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+.resume-div {
+  margin-top: 25px;
+}
+
+.download-button {
+  margin-top: 75px;
+  margin-bottom: auto;
+}
+
+.row {
+  margin-right: 0 !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .email {
+    font-size: 1em;
   }
-    
-  p {
-    text-indent: 1%;
-  }
-  
-  .header-name {
-    font-style: Montserrat;
-    font-weight: 900;
-    color: #f0f0f0;
-    font-size: 30px;
-  }
-  
-  .header-occupation {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: #f0f0f0;
-    font-size: 20px;
-  }
-  
-  .section-headers {
-    font-style: Montserrat;
-    font-weight: 900;
-    color: #618685;
-    font-size: 22px;
-    padding-top: 10px;
-  }
-  
-  .skills-subheading {
-    font-style: Montserrat;
-    font-weight: bold;
-    color: #618685;
-    font-size: 17px;
-    padding-top: 5px;
-  }
-  
-  .photo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    background-color: #deeaee;
-  }
-  
-  .bill-pic {
-    text-align: center;
-    max-width: 97%;
-    max-height: 97%;
-    border-radius: 5%;
-    box-shadow: 2px 2px 7px #36486b;
-    margin: auto;
-  }
-  
-  .summary {
-    background: #36486b;
-    text-align: left;
-    padding: 20px;
-  }
-  
-  .header-summary {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: #deeaee;
-    font-size: 18px;
-    line-height: 2rem;
-  }
-  
-  .header-hr {
-    background-color: #fff;
-    border: none;
-    height: 1px;
-  }
-  
+}
+
+@media screen and (max-width: 1300px) {
   .contact-info-technical {
-    background-color: #d5e1df;
+    padding: 0 !important;
   }
-  
-  .contact-info {
-    line-height: 1px;
+
+  .email {
+    font-size: 0.85em;
   }
-  
-  .technical-skills {
-    background-color: #d5e1df;
-    color: #618685;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-info-technical {
+    padding: 0 !important;
   }
-  
-  .fa {
-    color: #618685;
-  }
-  
-  .icon {
-    font-style: Montserrat;
-    font-weight: 100;
-    padding-left: 10px;
-    padding-top: 15px;
-  }
-  
-  .contact-details, .phone, .location, .linkedin, .portfolio {
-    font-style: Montserrat;
-    font-weight: 100;
-    padding-left: 10px;
-  }
-  
-  .projects h3 {
-    font-size: 1em;
-    color: #36486b;
-  }
-  
-  .portfolio-link {
-    font-size: 0.70em;
-  }
-  
-  .links {
+
+  .email {
     font-size: 0.75em;
   }
-  
-  .link-left {
+}
+
+@media screen and (max-width: 900px) {
+  .resume-div {
     margin-left: 15px;
   }
-  
-  .project-list {
-    font-weight: 100;
-    color: #36486b;
-    font-size: 15px;
+
+  .bill-pic {
+    width: 150px;
   }
-  
-  .work-experience {
-    background-color: #fff;
+
+  .container {
+    min-width: 99vw;
   }
-  
-  .job-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 400;
+
+  .email {
+    font-size: 0.9em;
   }
-  
-  .job-note {
-    margin-left: 15px;
-  }
-  
-  .role {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: #618685;
-    font-size: 0.75em;
-  }
-  
-  .company {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: black;
-    font-size: 1em;
-  }
-  
-  .MSLogo{
-    width: 22.5%;
-    padding-right: 15px;
-  }
-  
-  .CSLogo {
-    width: 20%;
-    padding-right: 15px;
-    padding-bottom: 15px;
-  }
-  
-  .job-div {
-    justify-content: space-between;
-  }
-  
-  .time-range {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: black;
-    font-size: 15px;
-  }
-  
-  .job-summary {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: black;
-    font-size: 15px;
-    margin-left: 10px;
-  }
-  
-  .accomplishments {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: black;
-    font-size: 15px;
-    margin-left: 2px;
-  }
-  
-  .work-bullets {
-    font-style: Montserrat;
-    font-weight: 100;
-    color: black;
-    font-size: 15px;
-  }
-  
+
   .education {
     line-height: 10px;
   }
-  
-  .degree {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: black;
-    font-size: 15px;
+
+  .degrees {
+    margin: auto;
   }
-  
-  .college {
-    font-style: Montserrat;
-    font-weight: 400;
-    color: black;
-    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .email {
+    font-size: 0.85em;
   }
-  
-  meter::-webkit-meter-optimum-value {
-    background: #618685; /* Required to get rid of the default background property */
-    background-color: #618685;
-    box-shadow: 0 5px 5px -5px #333 inset;
-  }
-  
-  .resume-div {
-    margin-top: 25px
-  }
-  
+}
+
+@media screen and (max-width: 600px) {
   .download-button {
-    margin-top: 75px;
-    margin-bottom: auto;
-  }
-  
-  .row {
-    margin-right: 0 !important;
-  }
-  
-  @media screen and (max-width: 1400px) {
-    .email {
-      font-size: 1em;
-    }
-  }
-  
-  @media screen and (max-width: 1300px) {
-    .contact-info-technical {
-      padding: 0 !important;
-    }  
-  
-    .email {
-      font-size: 0.85em;
-    }
-  }
-  
-  @media screen and (max-width: 1100px) {
-    .contact-info-technical {
-      padding: 0 !important;
-    }  
-  
-    .email {
-      font-size: 0.75em;
-    }
-  }
-  
-  
-  @media screen and (max-width: 900px) {
-    .resume-div {
-      margin-left: 15px;
-    }
-  
-    .bill-pic {
-      width: 150px;
-    }
-  
-    .container {
-      min-width: 99vw;
-    }
-  
-    .email {
-      font-size: 0.9em;
-    }
-  
-    .education {
-      line-height: 10px;
-    }
-  
-    .degrees {
-      margin: auto;
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .email {
-      font-size: .85em;
-    }
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .download-button {
-      font-size: 1em !important;
-    }
-  
-    .resume-div {
-      margin-left: 15px;
-    }
-  
-    .projects {
-      padding-left: 25px;
-    }
-  
-    .MSLogo {
-      width: 50%;
-    }
-    .CSLogo {
-      width: 50%;
-    }
+    font-size: 1em !important;
   }
 
-  @media screen and (max-width: 400px) {
-    .download-button {
-      font-size: 0.75em !important;
-    }
-    .resume-div {
-      margin-left: 15px;
-    }
-    .projects {
-      padding-left: 15px;
-    }
-  
-    .education {
-      line-height: 15px;
-    }
-  
-    .text-wrap {
-      line-height: 25px;
-      margin-bottom: 10px;
-    }
+  .resume-div {
+    margin-left: 15px;
   }
-  
+
+  .section-projects {
+    padding-left: 25px;
+  }
+
+  .MSLogo {
+    width: 50%;
+  }
+  .CSLogo {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .download-button {
+    font-size: 0.75em !important;
+  }
+  .resume-div {
+    margin-left: 15px;
+  }
+  .section-projects {
+    padding-left: 15px;
+  }
+
+  .education {
+    line-height: 15px;
+  }
+
+  .text-wrap {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
