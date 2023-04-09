@@ -171,7 +171,7 @@ html {
     font-size: 1.8rem;
     font-family: sans-serif;
     line-height: 1.6;
-    color: #0077be;
+    color: #54483A;
     margin: 3rem 25vw; }
     .about__story:hover {
       transform: scale(1.25); }
@@ -181,7 +181,9 @@ html {
   text-align: center; }
   .skills__header {
     font-size: 2.5em;
-    color: midnightblue; }
+    color: #6D5D4B;
+    letter-spacing: 1rem;
+    text-transform: uppercase; }
   .skills__container {
     padding: 3rem;
     display: grid;
@@ -198,12 +200,14 @@ html {
       font-size: 2rem;
       padding: 2rem;
       background-color: lightsteelblue;
-      color: #fff; }
+      color: #fff;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase; }
     .skills__card--list {
       font-size: 1.4rem;
       list-style: none;
       padding: 1rem;
-      color: #0077be; }
+      color: #6D5D4B; }
       .skills__card--list:hover {
         color: #fff; }
     .skills__card:hover {
