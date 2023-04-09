@@ -74,7 +74,7 @@ html {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #c69963;
+  color: lightsteelblue;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -618,7 +618,6 @@ meter::-webkit-meter-optimum-value {
   flex-direction: column;
   width: 30rem;
   margin: 1.5rem;
-  padding: 1rem;
   color: #fff;
   background-color: lightsteelblue;
   box-shadow: 3px 3px 10px #6D5D4B;
