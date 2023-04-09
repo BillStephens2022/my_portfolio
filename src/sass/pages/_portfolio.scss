@@ -2,7 +2,6 @@
     text-align: center;
     background-image: linear-gradient(.5turn, $color-blue-med, 10%, $color-blue-med);
 
-
     &__hero {
       background-color: $color-blue-light-3;
       color: $color-white;
@@ -59,4 +58,5 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    animation: slideUp 1s;
 }

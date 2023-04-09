@@ -72,6 +72,7 @@
       line-height: 1.6;
       color: $color-grey-dark-1;
       margin: 3rem 25vw;
+      letter-spacing: .2rem;
 
       &:hover {
         transform: scale(1.25);
@@ -106,7 +107,7 @@
       margin-top: 3rem;
       //border: 2px solid $color-grey-light-1;
       //border-radius: 1rem;
-      background-color: $color-blue-light-1;
+      background-color: lightsteelblue;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
       transition: all .3s ease;
       
@@ -115,8 +116,8 @@
       &--header {
         font-size: 2rem;
         padding: 2rem;
-        background-color: lightsteelblue;
-        color: $color-white;
+        background-color: white;
+        color: $color-blue-dark;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         //border-radius: 1rem 1rem 0 0;
@@ -126,7 +127,7 @@
         font-size: 1.4rem;
         list-style: none;
         padding: 1rem;
-        color: $color-grey-dark-2;
+        color: $color-white;
         &:hover {
           color: $color-white;
         }

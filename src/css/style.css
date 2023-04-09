@@ -172,7 +172,8 @@ html {
     font-family: sans-serif;
     line-height: 1.6;
     color: #54483A;
-    margin: 3rem 25vw; }
+    margin: 3rem 25vw;
+    letter-spacing: .2rem; }
     .about__story:hover {
       transform: scale(1.25); }
 
@@ -193,21 +194,21 @@ html {
     justify-content: center; }
   .skills__card {
     margin-top: 3rem;
-    background-color: #cde7ef;
+    background-color: lightsteelblue;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
     transition: all .3s ease; }
     .skills__card--header {
       font-size: 2rem;
       padding: 2rem;
-      background-color: lightsteelblue;
-      color: #fff;
+      background-color: white;
+      color: midnightblue;
       letter-spacing: 0.3rem;
       text-transform: uppercase; }
     .skills__card--list {
       font-size: 1.4rem;
       list-style: none;
       padding: 1rem;
-      color: #6D5D4B; }
+      color: #fff; }
       .skills__card--list:hover {
         color: #fff; }
     .skills__card:hover {
@@ -333,7 +334,8 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  animation: slideUp 1s; }
 
 #root,
 #root::before,
