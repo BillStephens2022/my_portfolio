@@ -191,7 +191,8 @@ html {
   text-align: center;
   background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be);
   color: #fff;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  min-height: 93vh; }
   .contact__hero {
     height: 20vh;
     background-color: lightsteelblue;
@@ -212,13 +213,17 @@ html {
         transform: scale(1.5); }
     .contact__hero-pic {
       border-radius: 10%;
-      width: 3%;
-      border: 2px lightsteelblue solid; }
+      width: 4%;
+      border-radius: 50%;
+      border: 2px lightsteelblue solid;
+      transition: .5s all; }
       .contact__hero-pic:hover {
         transform: scale(1.1); }
   .contact__subheader {
     padding-top: 2rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    animation: blinker 1.5s step-start infinite; }
   .contact__container {
     background: #fff;
     margin: 3rem auto;
@@ -290,23 +295,28 @@ html {
       border: 2px chartreuse solid;
       transform: translateY(-2px); }
 
+@keyframes blinker {
+  50% {
+    color: chartreuse; } }
+
 .portfolio {
   text-align: center;
-  background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be); }
+  background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be);
+  min-height: 93vh; }
   .portfolio__hero {
     background-color: lightsteelblue;
-    color: #fff;
-    font-family: "Lato", non-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    text-shadow: 2px 2px midnightblue;
-    letter-spacing: 1rem;
     margin-bottom: 3rem;
     clip-path: polygon(50% 100%, 0 0, 100% 0); }
     .portfolio__hero-header {
-      padding: 1.5rem; }
+      padding: 1.5rem;
+      color: #fff;
+      font-family: "Lato", non-serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px midnightblue;
+      letter-spacing: 1rem; }
       .portfolio__hero-header:hover {
-        transform: scale(1.5); }
+        transform: scale(1.1); }
     .portfolio__hero-logo {
       width: 10%;
       transition: 1s; }
@@ -328,6 +338,7 @@ html {
 
 .projects {
   width: 100vw;
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

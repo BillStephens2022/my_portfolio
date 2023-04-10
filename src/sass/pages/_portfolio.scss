@@ -1,23 +1,25 @@
 .portfolio {
     text-align: center;
     background-image: linear-gradient(.5turn, $color-blue-med, 10%, $color-blue-med);
+    min-height: 93vh;
 
     &__hero {
       background-color: $color-blue-light-3;
-      color: $color-white;
-      font-family: "Lato", non-serif;
-      font-weight: 900;
-      font-size: 2rem;
-      text-shadow: 2px 2px midnightblue;
-      letter-spacing: 1rem;
+      
       margin-bottom: 3rem;
       clip-path: polygon(50% 100%, 0 0, 100% 0);
 
       &-header {
         padding: 1.5rem;
+        color: $color-white;
+        font-family: "Lato", non-serif;
+        font-weight: 900;
+        font-size: 3.5rem;
+        text-shadow: 2px 2px midnightblue;
+        letter-spacing: 1rem;
 
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.1);
         }
       }
 
@@ -54,6 +56,7 @@
 
 .projects {
     width: 100vw;
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

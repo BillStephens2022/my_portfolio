@@ -3,6 +3,7 @@
   background-image: linear-gradient(.5turn, $color-blue-med, 10%, $color-blue-med);
   color: $color-white;
   padding-bottom: 3rem;
+  min-height: 93vh;
 
     &__hero {
       height: 20vh;
@@ -29,9 +30,11 @@
 
       &-pic {
         border-radius: 10%;
-        width: 3%;
+        width: 4%;
+        border-radius: 50%;
         border: 2px $color-blue-light-3 solid;
-      
+        transition: .5s all;
+
         &:hover {
             transform: scale(1.1);
         }
@@ -41,6 +44,8 @@
     &__subheader {
         padding-top: 2rem;
         font-size: 2rem;
+        letter-spacing: .5rem;
+        animation: blinker 1.5s step-start infinite;
     }
 
     &__container {
@@ -96,42 +101,52 @@
 }
 
 .success {
-    height: 93vh;
-    background-color: $color-blue-light-3;
-    color: $color-white;
+  height: 93vh;
+  background-color: $color-blue-light-3;
+  color: $color-white;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  &__header {
+    margin-top: 5rem;
+    font-size: 6rem;
+    color: chartreuse;
+  }
+
+  &__message {
     font-size: 3rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+  }
 
-    &__header {
-        margin-top: 5rem;
-        font-size: 6rem;
-        color: chartreuse;
+  &__button {
+    font-size: 2rem;
+    border: $color-white 2px solid;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, $color-blue-light-3, $color-blue-light-2, white);
+    width: 150px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: $color-white;
+    align-self: center;
+    cursor: pointer;
+
+    &:hover {
+      color: chartreuse;
+      border: 2px chartreuse solid;
+      transform: translateY(-2px);
     }
+  }
+}
 
-    &__message {
-        font-size: 3rem;
-    }
+@keyframes blinker {
+  50% {
+    color: chartreuse;
+  }
+}
 
-    &__button {
-        font-size: 2rem;
-        border: $color-white 2px solid;
-        margin-top: 2rem;
-        border-radius: 5px;
-        background-image: linear-gradient(to right bottom, $color-blue-light-3, $color-blue-light-2, white);
-        width: 150px;
-        padding: 0.5rem;
-        text-decoration: none;
-        color: $color-white;
-        align-self: center;
-        cursor: pointer;
-
-        &:hover {
-            color: chartreuse;
-            border: 2px chartreuse solid;
-            transform: translateY(-2px);
-        }
-    }
+@media screen {
+    
 }

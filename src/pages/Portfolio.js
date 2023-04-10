@@ -15,7 +15,7 @@ function Portfolio() {
     return (
         <div className="portfolio">
         <div className="portfolio__hero">
-            <h1 className="portfolio__hero-header">My Project Portfolio</h1>
+            <h1 className="portfolio__hero-header">Project Portfolio</h1>
             <img className="portfolio__hero-logo" src="../../images/webdev.png" alt="web dev logo"/>
         </div>
         <div classname="portfolio__buttons">
