@@ -1,8 +1,13 @@
-@import "base";
-@import "pages/about";
+@import "abstracts/mixins.scss";
+
+@import "base/base.scss";
+
+@import "components/navbar";
+@import "components/project-card.scss";
+@import "components/footer.scss";
+
+@import "pages/about.scss";
 @import "pages/contact.scss";
 @import "pages/portfolio.scss";
 @import "pages/resume.scss";
-@import "components/navbar";
-@import "components/project-card.scss";
-@import "components/footer";
+

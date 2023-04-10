@@ -17,6 +17,8 @@
       text-align: center;
       cursor: pointer;
 
+      
+
     }
 
     &__background {
@@ -29,7 +31,7 @@
       background-image: radial-gradient($color-blue-light-1, $color-blue-light-3);
       z-index: 1000;
       transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-
+      
     }
 
     &__nav {

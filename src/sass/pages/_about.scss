@@ -1,5 +1,5 @@
 .about {
-  height: 93vh;
+  min-height: 93vh;
   width: 100vw;
   color: $color-white;
 
@@ -24,6 +24,10 @@
       background-color: $color-blue-light-3;
       display: flex;
       padding: 3rem;
+      @include respond(phone) {
+        display: block;
+        text-align: center;
+      }
     }
 
     &__headers {
@@ -50,20 +54,28 @@
     &__title {
       font-family: 'Lato', sans-serif;
       font-weight: 900;
-      letter-spacing: 1.2rem;
+      //letter-spacing: 1.2rem;
       text-transform: uppercase;
       font-size: 4rem;
       color: $color-white;
       &:hover {
         transform: skewY(-5deg) scale(1.1);
       }
+      @include respond(phone) {
+        font-size: 3rem;
+        padding-top: 1rem;
+    
+      }
     }
 
     &__subtitle {
       font-size: 2.5rem;
       font-family: 'Lato', sans-serif;
-      letter-spacing: 0.62rem;
+      //letter-spacing: 0.62rem;
       color: $color-grey-dark-1;
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
 
     &__story {
@@ -81,6 +93,10 @@
 
       &:hover {
         transform: scale(1.25);
+      }
+
+      @include respond(phone) {
+        margin: 2rem;
       }
     }
 
@@ -107,6 +123,11 @@
       grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
       grid-gap: 5rem;
       justify-content: center;
+
+      @include respond(phone) {
+        display: block;
+        flex-wrap: wrap;
+      }
     }
 
 
