@@ -208,20 +208,19 @@ html {
       transition: 1s; }
       .portfolio__hero-logo:hover {
         transform: rotate(360deg); }
-  .portfolio__buttons {
-    margin: 16rem; }
-    .portfolio__buttons--btn {
-      width: 10rem;
-      margin: 3rem;
-      padding: .5rem;
-      background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
-      color: #fff;
-      border: none;
-      border-radius: .5rem;
-      box-shadow: 1px 1px 1px #fff; }
-      .portfolio__buttons--btn:hover {
-        transform: translateY(2px) scale(1.1);
-        box-shadow: 2px 2px 1px #fff; }
+  .portfolio__buttons--btn {
+    width: 10rem;
+    margin: 1rem;
+    padding: .5rem;
+    background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
+    font-size: 1.25rem;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1px #fff; }
+    .portfolio__buttons--btn:hover {
+      transform: translateY(2px) scale(1.1);
+      box-shadow: 2px 2px 1px #fff; }
 
 .projects {
   width: 100vw;

@@ -23,6 +23,7 @@ function Portfolio() {
             <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Full Stack')}>Full Stack</button>
             <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Front End')}>Front End</button>
             <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Back End')}>Back End</button>
+            <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Python')}>Python</button>
         </div>
         <div className="projects">
         {projects
