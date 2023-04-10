@@ -251,10 +251,11 @@ html {
       border-radius: 10px; }
     .contact__form-button {
       margin-top: 2rem;
-      color: #0077be;
       padding: 0.5rem;
-      background-color: #fff;
-      border-radius: 5px; }
+      background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
+      color: #fff;
+      border-radius: 5px;
+      border: 2px white solid; }
 
 .success {
   height: 93vh;
@@ -365,12 +366,21 @@ p {
   font-size: 22px;
   padding-top: 10px; }
 
+.main-sections {
+  padding-left: 10px;
+  padding-right: 15px; }
+
 .skills-subheading {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   color: #618685;
-  font-size: 17px;
-  padding-top: 5px; }
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 5px; }
+
+.skills-list {
+  font-size: 16px;
+  padding-left: 30px; }
 
 .photo {
   display: flex;
@@ -514,7 +524,8 @@ p {
   font-size: 15px; }
 
 .education {
-  line-height: 10px; }
+  line-height: 10px;
+  padding-bottom: 15px; }
 
 .degree {
   font-family: "Montserrat", sans-serif;

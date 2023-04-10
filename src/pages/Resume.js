@@ -86,9 +86,9 @@ function Resume() {
               <a href="https://github.com/BillStephens2022"> Github</a>
             </p>
             <div className="technical-skills">
-              <p className="section-headers">TECHNICAL SKILLS</p>
+              <p className="skills-subheading">TECHNICAL SKILLS</p>
               <hr />
-              <ul>
+              <ul className="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScipt</li>
@@ -98,13 +98,15 @@ function Resume() {
                 <li>SQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
-                <li>Apollo Server/graphQL</li>
+                <li>graphQL</li>
+                <li>Apollo Server</li>
                 <li>Python</li>
               </ul>
             </div>
           </div>
-          <div className="col-sm-8 col-md-9 col-lg-10 section-headers section-projects">
-            <h2 className="section-headers">
+          <div className="col-sm-8 col-md-9 col-lg-10">
+            <div className="main-sections section-headers section-projects">
+            <h2 className="section-headers section-projects">
               PROJECTS (
               <a
                 className="project-portfolio-link"
@@ -214,7 +216,8 @@ function Resume() {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-8 col-md-9 col-lg-10 section-headers work-experience">
+            
+            <div className="main-sections section-headers work-experience">
               <h2 className="section-headers">WORK EXPERIENCE</h2>
               <hr />
               <div className="MorganStanley">
@@ -313,7 +316,7 @@ function Resume() {
                   1996-2007
                 </h6>
               </div>
-              <div className="education">
+              <div className="education main-sections">
                 <h2 className="section-headers">EDUCATION</h2>
                 <hr />
 
@@ -347,6 +350,7 @@ function Resume() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

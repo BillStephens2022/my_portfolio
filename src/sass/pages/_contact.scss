@@ -86,11 +86,11 @@
 
         &-button {
            margin-top: 2rem;
-           color: $color-blue-med;
            padding: 0.5rem;
-           background-color: $color-white;
-
+           background-image: linear-gradient(to right bottom, $color-blue-light-3, $color-blue-light-2, white);
+           color: $color-white;
            border-radius: 5px;
+           border: 2px white solid;
         }
     }
 
