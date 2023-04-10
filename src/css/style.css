@@ -76,7 +76,8 @@ html {
   .skills__header {
     font-size: 2.5em;
     font-weight: 900;
-    color: #fff;
+    color: #0077be;
+    text-shadow: 1px 1px #ffbf00;
     letter-spacing: 1rem;
     text-transform: uppercase; }
   .skills__container {
@@ -211,7 +212,7 @@ html {
         transform: scale(1.5); }
     .contact__hero-pic {
       border-radius: 10%;
-      width: 5%;
+      width: 3%;
       border: 2px lightsteelblue solid; }
       .contact__hero-pic:hover {
         transform: scale(1.1); }
@@ -338,11 +339,38 @@ html {
 #root::after {
   box-sizing: border-box !important; }
 
-body {
-  background-color: lightsteelblue; }
+.resume {
+  background-color: #0077be; }
 
 .body-div {
-  background-color: #fff; }
+  margin: 2%;
+  margin-bottom: 0;
+  background-color: #0077be;
+  border-bottom: #0077be 20px solid; }
+
+.container {
+  padding-bottom: 3rem;
+  background-color: #0077be; }
+
+.hero {
+  height: 20vh;
+  background-color: lightsteelblue;
+  color: #fff;
+  font-family: "Lato", non-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 2px 2px midnightblue;
+  letter-spacing: 1rem;
+  text-align: center;
+  clip-path: polygon(50% 100%, 0 0, 100% 0); }
+
+.hero-header {
+  padding-top: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase; }
+  .hero-header:hover {
+    transform: scale(1.5); }
 
 p {
   text-indent: 1%; }
@@ -368,7 +396,8 @@ p {
 
 .main-sections {
   padding-left: 10px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  background-color: #fff; }
 
 .skills-subheading {
   font-family: "Montserrat", sans-serif;
@@ -387,7 +416,8 @@ p {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  background-color: #deeaee; }
+  background-color: #deeaee;
+  padding: .25%; }
 
 .bill-pic {
   text-align: center;
@@ -508,7 +538,7 @@ p {
   font-weight: 400;
   color: black;
   font-size: 15px;
-  margin-left: 10px; }
+  margin-left: 15px; }
 
 .accomplishments {
   font-family: "Montserrat", sans-serif;
@@ -549,11 +579,18 @@ meter::-webkit-meter-optimum-value {
   margin-top: 25px; }
 
 .download-button {
-  margin-top: 75px;
-  margin-bottom: auto; }
+  margin-top: 1.5%;
+  background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
+  border: 2px white solid;
+  transition: .2s all; }
+  .download-button:hover {
+    color: white;
+    border: white 2px solid;
+    transform: translateY(-2px); }
 
 .row {
-  margin-right: 0 !important; }
+  margin-right: 0 !important;
+  background-color: #fff; }
 
 @media screen and (max-width: 1400px) {
   .email {

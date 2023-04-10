@@ -4,13 +4,45 @@
   box-sizing: border-box !important;
 }
 
-body {
-  background-color: lightsteelblue;
+.resume {
+  background-color: $color-blue-med;
 }
 
 .body-div {
-  background-color: #fff;
+  margin: 2%;
+  margin-bottom: 0;
+  background-color: $color-blue-med;
+  border-bottom: $color-blue-med 20px solid;
 }
+
+.container {
+  padding-bottom: 3rem;
+  background-color: $color-blue-med;
+}
+
+.hero {
+  height: 20vh;
+  background-color: $color-blue-light-3;
+  color: $color-white;
+  font-family: "Lato", non-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 2px 2px midnightblue;
+  letter-spacing: 1rem;
+  text-align: center;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.hero-header {
+  padding-top: 3rem;
+  font-size: 3rem;
+  color: $color-white;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+} 
 
 p {
   text-indent: 1%;
@@ -41,6 +73,7 @@ p {
 .main-sections {
   padding-left: 10px;
   padding-right: 15px;
+  background-color: $color-white;
 }
 
 .skills-subheading {
@@ -63,6 +96,7 @@ p {
   align-items: center;
   text-align: center;
   background-color: #deeaee;
+  padding: .25%;
 }
 
 .bill-pic {
@@ -208,7 +242,7 @@ p {
   font-weight: 400;
   color: black;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .accomplishments {
@@ -256,12 +290,21 @@ meter::-webkit-meter-optimum-value {
 }
 
 .download-button {
-  margin-top: 75px;
-  margin-bottom: auto;
+  margin-top: 1.5%;
+  background-image: linear-gradient(to right bottom, $color-blue-light-3, $color-blue-light-2, white);
+  border: 2px white solid;
+  transition: .2s all;
+
+  &:hover {
+    color: white;
+    border: white 2px solid;
+    transform: translateY(-2px);
+  }
 }
 
 .row {
   margin-right: 0 !important;
+  background-color: $color-white;
 }
 
 @media screen and (max-width: 1400px) {
