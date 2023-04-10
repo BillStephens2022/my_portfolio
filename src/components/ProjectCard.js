@@ -1,5 +1,3 @@
-import React from "react";
-
 // Project Card component that will render a card displaying a screenshot of the app,
 // a title, a brief description, and buttons that will take the user to the
 // associated Github repo and to the deployed app (only if the app is actually deployed)

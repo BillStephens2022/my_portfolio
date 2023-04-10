@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
-import "../css/style.css";
 
 // Portfolio Page displaying ProjectCard components
 

@@ -1,5 +1,3 @@
-import "../css/style.css";
-
 function About() {
   return (
     <div className="about">

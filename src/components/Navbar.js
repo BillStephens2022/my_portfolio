@@ -1,5 +1,3 @@
-import '../css/style.css';
-
 // Navbar component.  Defaults to About page.
 
 function Navbar() {

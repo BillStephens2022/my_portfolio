@@ -1,5 +1,3 @@
-import React from "react";
-
 // Resume page displaying Resume and a button to download as a pdf file
 
 function Resume() {
