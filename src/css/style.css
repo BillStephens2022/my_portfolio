@@ -117,6 +117,12 @@ html {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+  @media only screen and (max-width: 75em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 4rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -324,9 +330,14 @@ html {
     text-align: center; }
     .about__story:hover {
       transform: scale(1.25); }
+    @media only screen and (max-width: 56.25em) {
+      .about__story {
+        margin: 9rem;
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .about__story {
-        margin: 2rem; } }
+        margin: 2rem;
+        font-size: 2rem; } }
 
 .skills {
   margin-top: 3rem;
@@ -364,6 +375,10 @@ html {
       color: midnightblue;
       letter-spacing: 0.3rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .skills__card--header {
+          height: 7rem;
+          border: 1px whitesmoke solid; } }
     .skills__card--list {
       font-size: 1.4rem;
       list-style: none;
@@ -371,6 +386,9 @@ html {
       color: #fff; }
       .skills__card--list:hover {
         color: #fff; }
+      @media only screen and (max-width: 56.25em) {
+        .skills__card--list {
+          font-size: 2rem; } }
       @media only screen and (max-width: 37.5em) {
         .skills__card--list {
           font-size: 2rem; } }
@@ -479,6 +497,12 @@ html {
       text-transform: uppercase; }
       .contact__hero-header:hover {
         transform: scale(1.5); }
+      @media only screen and (max-width: 56.25em) {
+        .contact__hero-header {
+          font-size: 4rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact__hero-header {
+          padding-top: 1rem; } }
     .contact__hero-pic {
       border-radius: 10%;
       width: 4%;
@@ -487,6 +511,9 @@ html {
       transition: .5s all; }
       .contact__hero-pic:hover {
         transform: scale(1.1); }
+      @media only screen and (max-width: 75em) {
+        .contact__hero-pic {
+          width: 5%; } }
       @media only screen and (max-width: 56.25em) {
         .contact__hero-pic {
           width: 10%; } }
@@ -503,6 +530,12 @@ html {
     border-radius: 10px;
     display: flex;
     flex-direction: row; }
+    @media only screen and (max-width: 56.25em) {
+      .contact__container {
+        width: 80vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__container {
+        width: 95vw; } }
   .contact__form {
     display: flex;
     flex-direction: column;

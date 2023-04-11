@@ -95,8 +95,14 @@
         transform: scale(1.25);
       }
 
+      @include respond(tab-port) {
+        margin: 9rem;
+        font-size: 2.5rem;
+      }
+
       @include respond(phone) {
         margin: 2rem;
+        font-size: 2rem;
       }
     }
 
@@ -151,6 +157,11 @@
         letter-spacing: 0.3rem;
         text-transform: uppercase;
         //border-radius: 1rem 1rem 0 0;
+
+        @include respond(phone) {
+          height: 7rem;
+          border: 1px whitesmoke solid;
+        }
       }
 
       &--list {
@@ -160,6 +171,10 @@
         color: $color-white;
         &:hover {
           color: $color-white;
+        }
+
+        @include respond(tab-port) {
+          font-size: 2rem;
         }
 
         @include respond(phone) {

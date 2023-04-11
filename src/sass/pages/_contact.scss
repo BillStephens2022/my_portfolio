@@ -26,6 +26,14 @@
         &:hover {
             transform: scale(1.5);
         }
+
+        @include respond(tab-port) {
+            font-size: 4rem;
+        }
+
+        @include respond(phone) {
+            padding-top: 1rem;
+        }
       }
 
       &-pic {
@@ -37,6 +45,10 @@
 
         &:hover {
             transform: scale(1.1);
+        }
+
+        @include respond(tab-land) {
+            width: 5%;
         }
 
         @include respond(tab-port) {
@@ -61,6 +73,13 @@
         display: flex;
         flex-direction: row;
 
+        @include respond(tab-port) {
+            width: 80vw;
+        }
+
+        @include respond(phone) {
+            width: 95vw;
+        }
     }
 
     &__form {
