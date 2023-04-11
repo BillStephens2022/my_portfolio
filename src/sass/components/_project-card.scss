@@ -63,7 +63,21 @@
         //border-radius: 5px;
         transition: .2s;
         background-image: radial-gradient($color-blue-light-3, $color-blue-med);
-  
+
+        @include respond(tab-land) {
+          font-size: 1.7rem;
+          width: 10rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+          width: 12rem;
+        }
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+          width: 8rem;
+        }
         &:link {
           color: $color-white;
           text-decoration: none;

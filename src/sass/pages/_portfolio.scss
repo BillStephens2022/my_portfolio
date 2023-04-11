@@ -61,7 +61,7 @@
       margin: 1rem;
       padding: .5rem;
       background-image: linear-gradient(to right bottom, $color-blue-light-3, $color-blue-light-2, white);
-      font-size: 1.25rem;
+      font-size: 2rem;
       color: $color-white;
       border: none;
       border-radius: .5rem;
@@ -69,6 +69,16 @@
       &:hover {
         transform: translateY(2px) scale(1.1);
         box-shadow: 2px 2px 1px $color-white;
+      }
+
+      @include respond(tab-port) {
+        width: 14rem;
+        font-size: 2.5rem;
+      }
+
+      @include respond(phone) {
+        width: 10rem;
+        font-size: 1.75rem;
       }
     }    
   }

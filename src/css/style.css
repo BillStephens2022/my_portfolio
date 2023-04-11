@@ -216,6 +216,18 @@ html {
       padding-bottom: .5rem;
       transition: .2s;
       background-image: radial-gradient(lightsteelblue, #0077be); }
+      @media only screen and (max-width: 75em) {
+        .projects__card-footer--link {
+          font-size: 1.7rem;
+          width: 10rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .projects__card-footer--link {
+          font-size: 1.8rem;
+          width: 12rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .projects__card-footer--link {
+          font-size: 1.5rem;
+          width: 8rem; } }
       .projects__card-footer--link:link {
         color: #fff;
         text-decoration: none;
@@ -261,7 +273,7 @@ html {
         padding: 1rem; } }
 
 .about {
-  min-height: 93vh;
+  min-height: 95vh;
   width: 100vw;
   color: #fff;
   overflow: hidden; }
@@ -689,7 +701,7 @@ html {
     margin: 1rem;
     padding: .5rem;
     background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -697,6 +709,14 @@ html {
     .portfolio__buttons--btn:hover {
       transform: translateY(2px) scale(1.1);
       box-shadow: 2px 2px 1px #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__buttons--btn {
+        width: 14rem;
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__buttons--btn {
+        width: 10rem;
+        font-size: 1.75rem; } }
 
 .projects {
   width: 100vw;
