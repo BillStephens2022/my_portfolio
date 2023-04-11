@@ -16,9 +16,9 @@ function Portfolio() {
         <div className="portfolio">
         <div className="portfolio__hero">
             <h1 className="portfolio__hero-header">Project <span className="portfolio__hero-headerspan">Portfolio</span></h1>
-            <img className="portfolio__hero-logo" src="../../images/webdev.png" alt="web dev logo"/>
+            <img className="portfolio__hero-logo" src={`${process.env.PUBLIC_URL}/images/webdev.png`} alt="web dev logo"/>
         </div>
-        <div classname="portfolio__buttons">
+        <div className="portfolio__buttons">
             <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('All')}>All</button>
             <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Full Stack')}>Full Stack</button>
             <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Front End')}>Front End</button>

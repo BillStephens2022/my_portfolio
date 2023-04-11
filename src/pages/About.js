@@ -3,13 +3,13 @@ function About() {
     <div className="about">
       <div className="about__video">
         <video className="about__video--content" autoPlay muted loop>
-          <source src="../../images/video3.mp4" type="video/mp4" />
-          <source src="../../images/video.webm" type="video/webm" />
+          <source src={`${process.env.PUBLIC_URL}/images/video3.mp4`} type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/images/video.webm`} type="video/webm" />
           Your browser is not supported!
         </video>
       </div>
       <div className="about__hero">
-        <img className="about__photo" src="../../images/bill.jpeg" alt="Bill" />
+        <img className="about__photo" src={`${process.env.PUBLIC_URL}/images/bill.jpeg`} alt="Bill" />
         <div className="about__headers">
           <h1 className="about__title">Bill Stephens</h1>
           <h2 className="about__subtitle">Full Stack Web Developer</h2>
@@ -26,9 +26,9 @@ function About() {
         <div className="skills__container">
           <div className="skills__card card-1">
             <h4 className="skills__card--header">
-              <img id="react" src="../../images/react.png" alt="react logo" />
+              <img id="react" src={`${process.env.PUBLIC_URL}/images/react.png`} alt="react logo" />
               Front End
-              <img id="css3" src="../../images/css3.png" alt="css3 logo" />
+              <img id="css3" src={`${process.env.PUBLIC_URL}/images/css3.png`} alt="css3 logo" />
             </h4>
             <ul className="skills__card--list">
               <li>JavaScript</li>
@@ -47,9 +47,9 @@ function About() {
 
           <div className="skills__card card-2">
             <h4 className="skills__card--header">
-              <img id="node" src="../../images/node.png" alt="node logo" />
+              <img id="node" src={`${process.env.PUBLIC_URL}/images/node.png`} alt="node logo" />
               Back End
-              <img id="mongo" src="../../images/mongo.png" alt="mongo logo" />
+              <img id="mongo" src={`${process.env.PUBLIC_URL}/images/mongo.png`} alt="mongo logo" />
             </h4>
             <ul className="skills__card--list">
               <li>Node.js</li>
@@ -70,7 +70,7 @@ function About() {
               Python
               <img
                 id="python"
-                src="../../images/python.png"
+                src={`${process.env.PUBLIC_URL}/images/python.png`}
                 alt="python logo"
               />
             </h4>
