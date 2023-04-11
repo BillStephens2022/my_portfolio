@@ -1,7 +1,7 @@
 {
   "name": "my_portfolio",
   "version": "0.1.0",
-  "homepage": "https://billstephens2022.github.io/my_portfolio/public",
+  "homepage": "https://billstephens2022.github.io/my_portfolio",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.4.1",
