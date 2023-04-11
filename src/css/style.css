@@ -31,6 +31,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -230,10 +233,21 @@ html {
     color: #fff;
     margin-right: 3rem;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__contact {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact {
+        padding-left: 1rem;
+        font-size: 1.25rem;
+        margin-right: 0; } }
   .footer__icon {
     font-size: 2rem;
     color: #fff;
     padding: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__icon {
+        padding: 0.75rem; } }
 
 .about {
   min-height: 93vh;
