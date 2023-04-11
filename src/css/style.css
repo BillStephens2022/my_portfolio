@@ -559,6 +559,9 @@ html {
     background-color: lightsteelblue;
     margin-bottom: 3rem;
     clip-path: polygon(50% 100%, 0 0, 100% 0); }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__hero {
+        height: 22vh; } }
     .portfolio__hero-header {
       padding: 1.5rem;
       color: #fff;
@@ -569,11 +572,22 @@ html {
       letter-spacing: 1rem; }
       .portfolio__hero-header:hover {
         transform: scale(1.1); }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__hero-header {
+          font-size: 3rem;
+          padding-bottom: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__hero-headerspan {
+        display: block;
+        padding-top: .5rem; } }
     .portfolio__hero-logo {
       width: 10%;
       transition: 1s; }
       .portfolio__hero-logo:hover {
         transform: rotate(360deg); }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__hero-logo {
+          width: 15%; } }
   .portfolio__buttons--btn {
     width: 10rem;
     margin: 1rem;
