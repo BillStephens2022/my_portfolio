@@ -25,7 +25,7 @@
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
     "devserver": "live-server",
     "predeploy": "npm run build",
-    "deploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start npm-run-all --parallel devserver watch:sass",
     "build": "react-scripts build",
     "test": "react-scripts test",
