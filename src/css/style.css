@@ -733,7 +733,10 @@ p {
   font-weight: 400;
   color: #deeaee;
   font-size: 18px;
-  line-height: 2rem; }
+  line-height: 1.5; }
+  @media only screen and (max-width: 37.5em) {
+    .header-summary {
+      font-size: 1.8rem; } }
 
 .header-hr {
   background-color: #fff;
@@ -744,7 +747,12 @@ p {
   background-color: #d5e1df; }
 
 .contact-info {
-  line-height: 1px; }
+  line-height: 1;
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact-info {
+      font-size: 1.5rem;
+      line-height: 1; } }
 
 .technical-skills {
   background-color: #d5e1df;
@@ -757,7 +765,8 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   padding-left: 10px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  font-size: 2rem; }
 
 .contact-details,
 .phone,
@@ -785,6 +794,9 @@ p {
   font-weight: 100;
   color: #36486b;
   font-size: 15px; }
+
+h5 {
+  font-size: 1.8rem; }
 
 .work-experience {
   background-color: #fff; }
@@ -888,21 +900,13 @@ meter::-webkit-meter-optimum-value {
   margin-right: 0 !important;
   background-color: #fff; }
 
-@media screen and (max-width: 1400px) {
-  .email {
-    font-size: 1em; } }
-
 @media screen and (max-width: 1300px) {
   .contact-info-technical {
-    padding: 0 !important; }
-  .email {
-    font-size: 0.85em; } }
+    padding: 0 !important; } }
 
 @media screen and (max-width: 1100px) {
   .contact-info-technical {
-    padding: 0 !important; }
-  .email {
-    font-size: 0.75em; } }
+    padding: 0 !important; } }
 
 @media screen and (max-width: 900px) {
   .resume-div {
@@ -911,16 +915,10 @@ meter::-webkit-meter-optimum-value {
     width: 150px; }
   .container {
     min-width: 99vw; }
-  .email {
-    font-size: 0.9em; }
   .education {
     line-height: 10px; }
   .degrees {
     margin: auto; } }
-
-@media screen and (max-width: 800px) {
-  .email {
-    font-size: 0.85em; } }
 
 @media screen and (max-width: 600px) {
   .download-button {

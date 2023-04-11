@@ -119,7 +119,11 @@ p {
   font-weight: 400;
   color: #deeaee;
   font-size: 18px;
-  line-height: 2rem;
+  line-height: 1.5;
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
 }
 
 .header-hr {
@@ -130,10 +134,17 @@ p {
 
 .contact-info-technical {
   background-color: #d5e1df;
+
+  
 }
 
 .contact-info {
-  line-height: 1px;
+  line-height: 1;
+  font-size: 1.5rem;
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
 }
 
 .technical-skills {
@@ -150,6 +161,7 @@ p {
   font-weight: 100;
   padding-left: 10px;
   padding-top: 15px;
+  font-size: 2rem;
 }
 
 .contact-details,
@@ -183,6 +195,10 @@ p {
   font-weight: 100;
   color: #36486b;
   font-size: 15px;
+}
+
+h5 {
+  font-size: 1.8rem;
 }
 
 .work-experience {
@@ -307,29 +323,16 @@ meter::-webkit-meter-optimum-value {
   background-color: $color-white;
 }
 
-@media screen and (max-width: 1400px) {
-  .email {
-    font-size: 1em;
-  }
-}
 
 @media screen and (max-width: 1300px) {
   .contact-info-technical {
     padding: 0 !important;
-  }
-
-  .email {
-    font-size: 0.85em;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .contact-info-technical {
     padding: 0 !important;
-  }
-
-  .email {
-    font-size: 0.75em;
   }
 }
 
@@ -346,10 +349,6 @@ meter::-webkit-meter-optimum-value {
     min-width: 99vw;
   }
 
-  .email {
-    font-size: 0.9em;
-  }
-
   .education {
     line-height: 10px;
   }
@@ -359,11 +358,6 @@ meter::-webkit-meter-optimum-value {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .email {
-    font-size: 0.85em;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .download-button {
