@@ -263,7 +263,14 @@ html {
 .about {
   min-height: 93vh;
   width: 100vw;
-  color: #fff; }
+  color: #fff;
+  overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(to bottom, #0077be 0%, midnightblue 100%);
+      color: #ffbf00; } }
   .about__video {
     position: absolute;
     top: 0;
@@ -276,7 +283,11 @@ html {
     .about__video--content {
       height: 100%;
       width: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      z-index: -1; }
+      @media only screen and (max-width: 37.5em) {
+        .about__video--content {
+          display: none; } }
   .about__hero {
     background-color: lightsteelblue;
     display: flex;
@@ -284,12 +295,17 @@ html {
     @media only screen and (max-width: 37.5em) {
       .about__hero {
         display: block;
-        text-align: center; } }
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); } }
   .about__headers {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__headers {
+        padding-left: 0;
+        align-items: center; } }
   .about__photo {
     max-width: 10rem;
     border-radius: 5px;
@@ -301,6 +317,7 @@ html {
   .about__title {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    letter-spacing: 1.2rem;
     text-transform: uppercase;
     font-size: 4rem;
     color: #fff; }
@@ -309,14 +326,18 @@ html {
     @media only screen and (max-width: 37.5em) {
       .about__title {
         font-size: 3rem;
-        padding-top: 1rem; } }
+        padding-top: 1.5rem;
+        letter-spacing: 1.2rem; } }
   .about__subtitle {
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
+    letter-spacing: 0.62rem;
     color: #54483A; }
     @media only screen and (max-width: 37.5em) {
       .about__subtitle {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        letter-spacing: .57rem;
+        margin-left: -5px; } }
   .about__story {
     font-size: 1.8rem;
     font-family: 'Lato', sans-serif;
@@ -337,7 +358,9 @@ html {
     @media only screen and (max-width: 37.5em) {
       .about__story {
         margin: 2rem;
-        font-size: 2rem; } }
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: #fff; } }
 
 .skills {
   margin-top: 3rem;
@@ -349,6 +372,11 @@ html {
     text-shadow: 1px 1px #ffbf00;
     letter-spacing: 1rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__header {
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        margin-bottom: 0; } }
   .skills__container {
     padding: 3rem;
     display: grid;

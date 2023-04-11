@@ -2,6 +2,14 @@
   min-height: 93vh;
   width: 100vw;
   color: $color-white;
+  overflow: hidden;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, $color-blue-med 0%, $color-blue-dark 100%);
+    color: $color-yellow;
+  }
 
     &__video {
       position: absolute;
@@ -17,8 +25,14 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        z-index: -1;
+
+        @include respond(phone) {
+          display: none;
+        }
       }
     }
+   
 
     &__hero {
       background-color: $color-blue-light-3;
@@ -27,6 +41,8 @@
       @include respond(phone) {
         display: block;
         text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+        
       }
     }
 
@@ -34,7 +50,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      padding-left: 3rem; 
+      padding-left: 3rem;
+
+      @include respond(phone) {
+        padding-left: 0;
+        align-items: center;
+      }
     }
 
     &__photo {      
@@ -54,7 +75,7 @@
     &__title {
       font-family: 'Lato', sans-serif;
       font-weight: 900;
-      //letter-spacing: 1.2rem;
+      letter-spacing: 1.2rem;
       text-transform: uppercase;
       font-size: 4rem;
       color: $color-white;
@@ -63,18 +84,22 @@
       }
       @include respond(phone) {
         font-size: 3rem;
-        padding-top: 1rem;
-    
+        padding-top: 1.5rem;
+        letter-spacing: 1.2rem;
+        
       }
     }
 
     &__subtitle {
       font-size: 2.5rem;
       font-family: 'Lato', sans-serif;
-      //letter-spacing: 0.62rem;
+      letter-spacing: 0.62rem;
       color: $color-grey-dark-1;
       @include respond(phone) {
         font-size: 2rem;
+        letter-spacing: .57rem;
+        margin-left: -5px;
+        
       }
     }
 
@@ -102,7 +127,9 @@
 
       @include respond(phone) {
         margin: 2rem;
+        margin-top: 3rem;
         font-size: 2rem;
+        color: $color-white;
       }
     }
 
@@ -112,6 +139,8 @@
 .skills {
     margin-top: 3rem;
     text-align: center;
+
+    
     
     &__header {
       font-size: 2.5em;
@@ -120,6 +149,12 @@
       text-shadow: 1px 1px $color-yellow;
       letter-spacing: 1rem;
       text-transform: uppercase;
+
+      @include respond(phone) {
+        color: $color-white;
+        text-shadow: 2px 2px $color-black;
+        margin-bottom: 0;
+      }
     }
 
     &__container {
