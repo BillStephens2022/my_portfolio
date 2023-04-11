@@ -33,6 +33,7 @@
 
         @include respond(phone) {
             padding-top: 1rem;
+            font-size: 3rem;
         }
       }
 
@@ -48,11 +49,15 @@
         }
 
         @include respond(tab-land) {
-            width: 5%;
+           width: 5%;
         }
 
         @include respond(tab-port) {
             width: 10%;
+        }
+
+        @include respond(phone) {
+            width: 12.5%;
         }
       }
     }
@@ -170,3 +175,25 @@
   }
 }
 
+@media screen and (max-height: 450px) {
+    .contact__hero {
+      height: 30vh;
+    }
+
+    .contact__hero-header {
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+
+    .contact__hero-pic {
+        display: none;
+    }
+
+    .contact__container {
+        min-height: 500px;
+    }
+
+    .contact__form {
+        min-height: 500px;
+    }
+  }

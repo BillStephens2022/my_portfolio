@@ -530,7 +530,8 @@ html {
           font-size: 4rem; } }
       @media only screen and (max-width: 37.5em) {
         .contact__hero-header {
-          padding-top: 1rem; } }
+          padding-top: 1rem;
+          font-size: 3rem; } }
     .contact__hero-pic {
       border-radius: 10%;
       width: 4%;
@@ -545,6 +546,9 @@ html {
       @media only screen and (max-width: 56.25em) {
         .contact__hero-pic {
           width: 10%; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact__hero-pic {
+          width: 12.5%; } }
   .contact__subheader {
     padding-top: 2rem;
     font-size: 2rem;
@@ -630,6 +634,19 @@ html {
 @keyframes blinker {
   50% {
     color: chartreuse; } }
+
+@media screen and (max-height: 450px) {
+  .contact__hero {
+    height: 30vh; }
+  .contact__hero-header {
+    font-size: 3rem;
+    margin-bottom: 0; }
+  .contact__hero-pic {
+    display: none; }
+  .contact__container {
+    min-height: 500px; }
+  .contact__form {
+    min-height: 500px; } }
 
 .portfolio {
   text-align: center;
@@ -727,7 +744,15 @@ html {
   color: #fff;
   text-transform: uppercase; }
   .hero-header:hover {
-    transform: scale(1.5); }
+    transform: scale(1.2); }
+  @media only screen and (max-width: 56.25em) {
+    .hero-header {
+      padding-top: 3rem;
+      font-size: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero-header {
+      padding-top: 1.5rem;
+      font-size: 3rem; } }
 
 p {
   text-indent: 1%; }
@@ -814,6 +839,14 @@ p {
     .contact-info {
       font-size: 1.5rem;
       line-height: 1; } }
+
+@media only screen and (max-width: 75em) {
+  .email {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .email {
+    font-size: 1.5rem; } }
 
 .technical-skills {
   background-color: #d5e1df;
@@ -951,11 +984,20 @@ meter::-webkit-meter-optimum-value {
   margin-top: 1.5%;
   background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
   border: 2px white solid;
-  transition: .2s all; }
+  transition: .2s all;
+  font-size: 1.75rem; }
   .download-button:hover {
     color: white;
     border: white 2px solid;
     transform: translateY(-2px); }
+  @media only screen and (max-width: 56.25em) {
+    .download-button {
+      font-size: 2.25rem;
+      margin-top: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .download-button {
+      font-size: 1.3rem;
+      margin-top: 2rem; } }
 
 .row {
   margin-right: 0 !important;
@@ -981,9 +1023,17 @@ meter::-webkit-meter-optimum-value {
   .degrees {
     margin: auto; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 450px) {
+  .hero {
+    height: 30vh; }
+  .hero-header {
+    font-size: 3rem;
+    margin-bottom: 0; }
   .download-button {
-    font-size: 1em !important; }
+    margin-top: 1rem;
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 600px) {
   .resume-div {
     margin-left: 15px; }
   .section-projects {
@@ -994,8 +1044,6 @@ meter::-webkit-meter-optimum-value {
     width: 50%; } }
 
 @media screen and (max-width: 400px) {
-  .download-button {
-    font-size: 0.75em !important; }
   .resume-div {
     margin-left: 15px; }
   .section-projects {

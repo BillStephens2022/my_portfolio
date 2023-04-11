@@ -40,7 +40,17 @@
   text-transform: uppercase;
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+  }
+
+  @include respond(tab-port) {
+    padding-top: 3rem;
+    font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    padding-top: 1.5rem;
+    font-size: 3rem;
   }
 } 
 
@@ -141,9 +151,19 @@ p {
 .contact-info {
   line-height: 1;
   font-size: 1.5rem;
+
   @include respond(tab-port) {
     font-size: 1.5rem;
     line-height: 1;
+  }
+}
+
+.email {
+  @include respond(tab-land) {
+    font-size: 1.2rem;
+  }
+  @include respond(tab-port) {
+    font-size: 1.5rem;
   }
 }
 
@@ -310,11 +330,22 @@ meter::-webkit-meter-optimum-value {
   background-image: linear-gradient(to right bottom, $color-blue-light-3, $color-blue-light-2, white);
   border: 2px white solid;
   transition: .2s all;
+  font-size: 1.75rem;
 
   &:hover {
     color: white;
     border: white 2px solid;
     transform: translateY(-2px);
+  }
+
+  @include respond(tab-port) {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -358,12 +389,25 @@ meter::-webkit-meter-optimum-value {
   }
 }
 
-
-@media screen and (max-width: 600px) {
-  .download-button {
-    font-size: 1em !important;
+@media screen and (max-height: 450px) {
+  .hero {
+    height: 30vh;
+  }
+  .hero-header {
+    font-size: 3rem;
+    margin-bottom: 0;
   }
 
+  .download-button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+ 
   .resume-div {
     margin-left: 15px;
   }
@@ -381,9 +425,7 @@ meter::-webkit-meter-optimum-value {
 }
 
 @media screen and (max-width: 400px) {
-  .download-button {
-    font-size: 0.75em !important;
-  }
+ 
   .resume-div {
     margin-left: 15px;
   }
