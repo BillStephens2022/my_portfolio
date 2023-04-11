@@ -11,12 +11,12 @@
       font-size: 1.5rem;
 
       @include respond(tab-port) { 
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       @include respond(phone) {
         padding-left: 1rem;
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         margin-right: 0;
       }
     }
@@ -26,8 +26,14 @@
       color: $color-white;
       padding: 1rem;
 
+      @include respond(tab-port) { 
+        font-size: 3rem;
+        padding: 3rem;
+      }
+
       @include respond(phone) {
-        padding: 0.75rem;
+        font-size: 2rem;
+        padding: 1rem;
       }
     }
 }

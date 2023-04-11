@@ -235,19 +235,24 @@ html {
     font-size: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__contact {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .footer__contact {
         padding-left: 1rem;
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         margin-right: 0; } }
   .footer__icon {
     font-size: 2rem;
     color: #fff;
     padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__icon {
+        font-size: 3rem;
+        padding: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .footer__icon {
-        padding: 0.75rem; } }
+        font-size: 2rem;
+        padding: 1rem; } }
 
 .about {
   min-height: 93vh;
