@@ -133,11 +133,13 @@
 
     &__card {
       margin-top: 3rem;
-      //border: 2px solid $color-grey-light-1;
-      //border-radius: 1rem;
-      background-color: lightsteelblue;
+      background-color: $color-blue-light-3;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
       transition: all .3s ease;
+
+      @include respond(phone) {
+        height: 43rem;
+      }
       
       
 
@@ -158,6 +160,10 @@
         color: $color-white;
         &:hover {
           color: $color-white;
+        }
+
+        @include respond(phone) {
+          font-size: 2rem;
         }
       }
 

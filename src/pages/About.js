@@ -61,6 +61,7 @@ function About() {
               <li>Apollo Server</li>
               <li>Passport.js</li>
               <li>JSON Web Token</li>
+              <li>Chart.js</li>
             </ul>
           </div>
 
@@ -78,8 +79,11 @@ function About() {
               <li>Pandas</li>
               <li>Numpy</li>
               <li>Tkinter</li>
+              <li>Selenium</li>
               <li>Beautiful Soup</li>
               <li>3rd Party APIs</li>
+              <li>smtblib</li>
+              <li>Turtle</li>
             </ul>
           </div>
         </div>
