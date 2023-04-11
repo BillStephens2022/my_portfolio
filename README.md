@@ -1,5 +1,5 @@
 # Portfolio Projects
-This is a work in process
+
 
 ## Description
 This will be a new and improved version of my personal page built using React.js which showcases my portfolio of work.
