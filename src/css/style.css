@@ -273,7 +273,7 @@ html {
         padding: 1rem; } }
 
 .about {
-  min-height: 95vh;
+  min-height: 93vh;
   width: 100vw;
   color: #fff;
   overflow: hidden; }
@@ -363,9 +363,13 @@ html {
     text-align: center; }
     .about__story:hover {
       transform: scale(1.25); }
+    @media only screen and (max-width: 75em) {
+      .about__story {
+        margin: 2rem 5rem 2rem 5rem; } }
     @media only screen and (max-width: 56.25em) {
       .about__story {
         margin: 9rem;
+        margin-top: 3rem;
         font-size: 2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .about__story {
@@ -405,6 +409,9 @@ html {
     background-color: lightsteelblue;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
     transition: all .3s ease; }
+    @media only screen and (max-width: 75em) {
+      .skills__card {
+        margin-top: 1rem; } }
     @media only screen and (max-width: 37.5em) {
       .skills__card {
         height: 43rem; } }
