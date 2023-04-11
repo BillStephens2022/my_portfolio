@@ -31,6 +31,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -50,6 +53,14 @@ html {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -61,6 +72,14 @@ html {
   background-image: radial-gradient(#cde7ef, lightsteelblue);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -98,6 +117,12 @@ html {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+  @media only screen and (max-width: 75em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 4rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -214,15 +239,38 @@ html {
     color: #fff;
     margin-right: 3rem;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__contact {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact {
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        margin-right: 0; } }
   .footer__icon {
     font-size: 2rem;
     color: #fff;
     padding: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__icon {
+        font-size: 3rem;
+        padding: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__icon {
+        font-size: 2rem;
+        padding: 1rem; } }
 
 .about {
-  height: 93vh;
+  min-height: 93vh;
   width: 100vw;
-  color: #fff; }
+  color: #fff;
+  overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(to bottom, #0077be 0%, midnightblue 100%);
+      color: #ffbf00; } }
   .about__video {
     position: absolute;
     top: 0;
@@ -235,16 +283,29 @@ html {
     .about__video--content {
       height: 100%;
       width: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      z-index: -1; }
+      @media only screen and (max-width: 37.5em) {
+        .about__video--content {
+          display: none; } }
   .about__hero {
     background-color: lightsteelblue;
     display: flex;
     padding: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__hero {
+        display: block;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); } }
   .about__headers {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__headers {
+        padding-left: 0;
+        align-items: center; } }
   .about__photo {
     max-width: 10rem;
     border-radius: 5px;
@@ -262,11 +323,21 @@ html {
     color: #fff; }
     .about__title:hover {
       transform: skewY(-5deg) scale(1.1); }
+    @media only screen and (max-width: 37.5em) {
+      .about__title {
+        font-size: 3rem;
+        padding-top: 1.5rem;
+        letter-spacing: 1.2rem; } }
   .about__subtitle {
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.62rem;
     color: #54483A; }
+    @media only screen and (max-width: 37.5em) {
+      .about__subtitle {
+        font-size: 2rem;
+        letter-spacing: .57rem;
+        margin-left: -5px; } }
   .about__story {
     font-size: 1.8rem;
     font-family: 'Lato', sans-serif;
@@ -280,6 +351,16 @@ html {
     text-align: center; }
     .about__story:hover {
       transform: scale(1.25); }
+    @media only screen and (max-width: 56.25em) {
+      .about__story {
+        margin: 9rem;
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__story {
+        margin: 2rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: #fff; } }
 
 .skills {
   margin-top: 3rem;
@@ -291,6 +372,11 @@ html {
     text-shadow: 1px 1px #ffbf00;
     letter-spacing: 1rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__header {
+        color: #fff;
+        text-shadow: 2px 2px #000;
+        margin-bottom: 0; } }
   .skills__container {
     padding: 3rem;
     display: grid;
@@ -298,11 +384,18 @@ html {
     grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
     grid-gap: 5rem;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__container {
+        display: block;
+        flex-wrap: wrap; } }
   .skills__card {
     margin-top: 3rem;
     background-color: lightsteelblue;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
     transition: all .3s ease; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__card {
+        height: 43rem; } }
     .skills__card--header {
       font-size: 2rem;
       padding: 2rem;
@@ -310,6 +403,10 @@ html {
       color: midnightblue;
       letter-spacing: 0.3rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .skills__card--header {
+          height: 7rem;
+          border: 1px whitesmoke solid; } }
     .skills__card--list {
       font-size: 1.4rem;
       list-style: none;
@@ -317,6 +414,12 @@ html {
       color: #fff; }
       .skills__card--list:hover {
         color: #fff; }
+      @media only screen and (max-width: 56.25em) {
+        .skills__card--list {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .skills__card--list {
+          font-size: 2rem; } }
     .skills__card:hover {
       background-color: #0077be;
       transform: translateY(-3px);
@@ -422,6 +525,13 @@ html {
       text-transform: uppercase; }
       .contact__hero-header:hover {
         transform: scale(1.5); }
+      @media only screen and (max-width: 56.25em) {
+        .contact__hero-header {
+          font-size: 4rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact__hero-header {
+          padding-top: 1rem;
+          font-size: 3rem; } }
     .contact__hero-pic {
       border-radius: 10%;
       width: 4%;
@@ -430,9 +540,15 @@ html {
       transition: .5s all; }
       .contact__hero-pic:hover {
         transform: scale(1.1); }
+      @media only screen and (max-width: 75em) {
+        .contact__hero-pic {
+          width: 5%; } }
       @media only screen and (max-width: 56.25em) {
         .contact__hero-pic {
-          width: 25%; } }
+          width: 10%; } }
+      @media only screen and (max-width: 37.5em) {
+        .contact__hero-pic {
+          width: 12.5%; } }
   .contact__subheader {
     padding-top: 2rem;
     font-size: 2rem;
@@ -446,6 +562,12 @@ html {
     border-radius: 10px;
     display: flex;
     flex-direction: row; }
+    @media only screen and (max-width: 56.25em) {
+      .contact__container {
+        width: 80vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__container {
+        width: 95vw; } }
   .contact__form {
     display: flex;
     flex-direction: column;
@@ -513,6 +635,19 @@ html {
   50% {
     color: chartreuse; } }
 
+@media screen and (max-height: 450px) {
+  .contact__hero {
+    height: 30vh; }
+  .contact__hero-header {
+    font-size: 3rem;
+    margin-bottom: 0; }
+  .contact__hero-pic {
+    display: none; }
+  .contact__container {
+    min-height: 500px; }
+  .contact__form {
+    min-height: 500px; } }
+
 .portfolio {
   text-align: center;
   background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be);
@@ -521,6 +656,9 @@ html {
     background-color: lightsteelblue;
     margin-bottom: 3rem;
     clip-path: polygon(50% 100%, 0 0, 100% 0); }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__hero {
+        height: 22vh; } }
     .portfolio__hero-header {
       padding: 1.5rem;
       color: #fff;
@@ -531,11 +669,22 @@ html {
       letter-spacing: 1rem; }
       .portfolio__hero-header:hover {
         transform: scale(1.1); }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__hero-header {
+          font-size: 3rem;
+          padding-bottom: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__hero-headerspan {
+        display: block;
+        padding-top: .5rem; } }
     .portfolio__hero-logo {
       width: 10%;
       transition: 1s; }
       .portfolio__hero-logo:hover {
         transform: rotate(360deg); }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__hero-logo {
+          width: 15%; } }
   .portfolio__buttons--btn {
     width: 10rem;
     margin: 1rem;
@@ -595,7 +744,15 @@ html {
   color: #fff;
   text-transform: uppercase; }
   .hero-header:hover {
-    transform: scale(1.5); }
+    transform: scale(1.2); }
+  @media only screen and (max-width: 56.25em) {
+    .hero-header {
+      padding-top: 3rem;
+      font-size: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero-header {
+      padding-top: 1.5rem;
+      font-size: 3rem; } }
 
 p {
   text-indent: 1%; }
@@ -662,7 +819,10 @@ p {
   font-weight: 400;
   color: #deeaee;
   font-size: 18px;
-  line-height: 2rem; }
+  line-height: 1.5; }
+  @media only screen and (max-width: 37.5em) {
+    .header-summary {
+      font-size: 1.8rem; } }
 
 .header-hr {
   background-color: #fff;
@@ -673,7 +833,20 @@ p {
   background-color: #d5e1df; }
 
 .contact-info {
-  line-height: 1px; }
+  line-height: 1;
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact-info {
+      font-size: 1.5rem;
+      line-height: 1; } }
+
+@media only screen and (max-width: 75em) {
+  .email {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .email {
+    font-size: 1.5rem; } }
 
 .technical-skills {
   background-color: #d5e1df;
@@ -686,7 +859,8 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   padding-left: 10px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  font-size: 2rem; }
 
 .contact-details,
 .phone,
@@ -714,6 +888,9 @@ p {
   font-weight: 100;
   color: #36486b;
   font-size: 15px; }
+
+h5 {
+  font-size: 1.8rem; }
 
 .work-experience {
   background-color: #fff; }
@@ -807,31 +984,32 @@ meter::-webkit-meter-optimum-value {
   margin-top: 1.5%;
   background-image: linear-gradient(to right bottom, lightsteelblue, #5dbcd2, white);
   border: 2px white solid;
-  transition: .2s all; }
+  transition: .2s all;
+  font-size: 1.75rem; }
   .download-button:hover {
     color: white;
     border: white 2px solid;
     transform: translateY(-2px); }
+  @media only screen and (max-width: 56.25em) {
+    .download-button {
+      font-size: 2.25rem;
+      margin-top: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .download-button {
+      font-size: 1.3rem;
+      margin-top: 2rem; } }
 
 .row {
   margin-right: 0 !important;
   background-color: #fff; }
 
-@media screen and (max-width: 1400px) {
-  .email {
-    font-size: 1em; } }
-
 @media screen and (max-width: 1300px) {
   .contact-info-technical {
-    padding: 0 !important; }
-  .email {
-    font-size: 0.85em; } }
+    padding: 0 !important; } }
 
 @media screen and (max-width: 1100px) {
   .contact-info-technical {
-    padding: 0 !important; }
-  .email {
-    font-size: 0.75em; } }
+    padding: 0 !important; } }
 
 @media screen and (max-width: 900px) {
   .resume-div {
@@ -840,20 +1018,22 @@ meter::-webkit-meter-optimum-value {
     width: 150px; }
   .container {
     min-width: 99vw; }
-  .email {
-    font-size: 0.9em; }
   .education {
     line-height: 10px; }
   .degrees {
     margin: auto; } }
 
-@media screen and (max-width: 800px) {
-  .email {
-    font-size: 0.85em; } }
+@media screen and (max-height: 450px) {
+  .hero {
+    height: 30vh; }
+  .hero-header {
+    font-size: 3rem;
+    margin-bottom: 0; }
+  .download-button {
+    margin-top: 1rem;
+    font-size: 1.2rem; } }
 
 @media screen and (max-width: 600px) {
-  .download-button {
-    font-size: 1em !important; }
   .resume-div {
     margin-left: 15px; }
   .section-projects {
@@ -864,8 +1044,6 @@ meter::-webkit-meter-optimum-value {
     width: 50%; } }
 
 @media screen and (max-width: 400px) {
-  .download-button {
-    font-size: 0.75em !important; }
   .resume-div {
     margin-left: 15px; }
   .section-projects {
