@@ -6,7 +6,7 @@
   min-height: 93vh;
 
     &__hero {
-      height: 20vh;
+      height: 23vh;
       background-color: $color-blue-light-3;
       color: $color-white;
       font-family: "Lato", non-serif;
@@ -41,7 +41,6 @@
         border-radius: 10%;
         width: 4%;
         border-radius: 50%;
-        border: 2px $color-blue-light-3 solid;
         transition: .5s all;
 
         &:hover {
