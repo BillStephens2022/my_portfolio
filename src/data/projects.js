@@ -243,7 +243,7 @@ export const projects = [
       image3: "",
       image4: "",
       image5: "",
-      deployedUrl: "N/A",
+      deployedUrl: "https://billstephens2022.github.io/Emojipedia/",
       gitHubRepoUrl: "https://github.com/BillStephens2022/Emojipedia",
     },
     {
