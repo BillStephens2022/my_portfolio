@@ -16,8 +16,8 @@ function About() {
         </div>
       </div>
       <h6 className="about__story">
-        Full Stack Web Developer with a 25 year background in Finance/Accounting
-        in the Investment Banking industry. I am looking to leverage by finance
+        Full Stack Web Developer with a 25 year background in Finance / Accounting
+        in the Investment Banking industry. I am looking to leverage my finance
         background with my newly acquired programming skills. Let's build
         something together!
       </h6>

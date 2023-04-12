@@ -1,18 +1,29 @@
 .about {
-  min-height: 93vh;
+  max-height: 93vh;
   width: 100vw;
   color: $color-white;
   overflow: hidden;
 
+  @include respond(tab-land) {
+    min-height: 95vh;
+    max-height: 100vh;
+  }
+
+  @include respond(tab-port) {
+    min-height: 95vh;
+    max-height: 500vh;
+  }
+
   @include respond(phone) {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, $color-blue-med 0%, $color-blue-dark 100%);
-    color: $color-yellow;
+    max-height: 400vh;
+    // background-image: linear-gradient(to bottom, $color-blue-med 0%, $color-blue-dark 100%);
+    // color: $color-yellow;
   }
 
     &__video {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       height: 100%;
@@ -27,9 +38,9 @@
         object-fit: cover;
         z-index: -1;
 
-        @include respond(phone) {
-          display: none;
-        }
+        // @include respond(phone) {
+        //   display: none;
+        // }
       }
     }
    
@@ -39,10 +50,15 @@
       display: flex;
       padding: 3rem;
 
+      @include respond(tab-port) {
+        padding: 2rem;
+      }
+
       @include respond(phone) {
         display: block;
         text-align: center;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+        padding-bottom: 5rem;
       }
     }
 
@@ -82,6 +98,11 @@
       &:hover {
         transform: skewY(-5deg) scale(1.1);
       }
+
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+
       @include respond(phone) {
         font-size: 3rem;
         padding-top: 1.5rem;
@@ -95,6 +116,11 @@
       font-family: 'Lato', sans-serif;
       letter-spacing: 0.62rem;
       color: $color-grey-dark-1;
+
+      @include respond(tab-port) {
+        font-size: 2.25rem;
+      }
+
       @include respond(phone) {
         font-size: 2rem;
         letter-spacing: .57rem;
@@ -109,7 +135,7 @@
       font-weight: 400;
       line-height: 1.6;
       color: $color-grey-dark-2;
-      margin: 3rem 25vw;
+      margin: 2rem 25vw;
       letter-spacing: .2rem;
       padding: 1rem;
       border-radius: 1rem;
@@ -121,21 +147,21 @@
       }
 
       @include respond(tab-land) {
-        margin: 2rem 5rem 2rem 5rem;
-        
+        margin: 2rem 15rem 2rem 15rem;
+        font-size: 2rem;
       }
 
       @include respond(tab-port) {
         margin: 9rem;
         margin-top: 3rem;
+        margin-bottom: 1.5rem;
         font-size: 2.5rem;
       }
 
       @include respond(phone) {
         margin: 2rem;
         margin-top: 3rem;
-        font-size: 2rem;
-        color: $color-white;
+        font-size: 1.75rem;
       }
     }
 
@@ -143,11 +169,9 @@
 }
 
 .skills {
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
 
-    
-    
     &__header {
       font-size: 2.5em;
       font-weight: 900;
@@ -155,41 +179,66 @@
       text-shadow: 1px 1px $color-yellow;
       letter-spacing: 1rem;
       text-transform: uppercase;
+      margin-bottom: 0;
+
+      @include respond(tab-land) {
+        margin-bottom: 2rem;
+      }
 
       @include respond(phone) {
-        color: $color-white;
-        text-shadow: 2px 2px $color-black;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
       }
+
+      
     }
 
     &__container {
-      padding: 3rem;
       display: grid;
-      grid-template-rows: minmax(30rem, 1fr);
+      grid-template-rows: minmax(30rem, 1fr) minmax(30rem, 1fr);
       grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
       grid-gap: 5rem;
       justify-content: center;
 
+      @include respond(tab-land) {
+        display: flex;
+        margin-bottom: 3rem;
+      }
+
+      @include respond(tab-port) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+      }
+
       @include respond(phone) {
         display: block;
         flex-wrap: wrap;
+        
       }
     }
 
 
     &__card {
-      margin-top: 3rem;
+      margin-top: 2rem;
       background-color: $color-blue-light-3;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
       transition: all .3s ease;
 
       @include respond(tab-land) {
         margin-top: 1rem;
+        min-width: 33rem;
+      }
+
+      @include respond(tab-port) {
+        margin-top: 0;
+        min-width: 40rem;
       }
 
       @include respond(phone) {
-        height: 43rem;
+        height: 40rem;
+        max-width: 20rem;
+        margin: auto;
+        margin-bottom: 5rem;
       }
       
       
@@ -218,12 +267,16 @@
           color: $color-white;
         }
 
+        @include respond(tab-land) {
+          font-size: 1.8rem;
+        }
+
         @include respond(tab-port) {
-          font-size: 2rem;
+          font-size: 2.25rem;
         }
 
         @include respond(phone) {
-          font-size: 2rem;
+          font-size: 1.75rem;
         }
       }
 
@@ -249,6 +302,10 @@
   .card-3 {
     animation: slideLeft 1s ease-in;
     position: relative;
+
+    @include respond(tab-port) {
+      align-self: center;
+    }
   }
 
   #react {
@@ -329,5 +386,11 @@
     }
     100% {
     transform: translateY(-300%);
+    }
+  }
+
+  @media screen and (max-height: 780px) {
+    .skills__card--list {
+      
     }
   }
