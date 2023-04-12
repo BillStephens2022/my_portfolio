@@ -596,7 +596,7 @@ html {
   background-image: linear-gradient(0.5turn, #0077be, 10%, #0077be);
   color: #fff;
   padding-bottom: 3rem;
-  min-height: 93vh; }
+  min-height: 96vh; }
   .contact__hero {
     height: 23vh;
     background-color: lightsteelblue;
@@ -631,18 +631,27 @@ html {
         transform: scale(1.1); }
       @media only screen and (max-width: 75em) {
         .contact__hero-pic {
-          width: 5%; } }
+          width: 6%; } }
       @media only screen and (max-width: 56.25em) {
         .contact__hero-pic {
-          width: 10%; } }
+          width: 13%; } }
       @media only screen and (max-width: 37.5em) {
         .contact__hero-pic {
-          width: 12.5%; } }
+          width: 15%; } }
   .contact__subheader {
     padding-top: 2rem;
     font-size: 2rem;
     letter-spacing: .5rem;
     animation: blinker 1.5s step-start infinite; }
+    @media only screen and (max-width: 75em) {
+      .contact__subheader {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .contact__subheader {
+        font-size: 3.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__subheader {
+        font-size: 2.75rem; } }
   .contact__container {
     background: #fff;
     margin: 3rem auto;
