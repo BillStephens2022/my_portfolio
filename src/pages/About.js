@@ -1,19 +1,8 @@
-import { useEffect } from 'react';
-
 function About() {
-  useEffect(() => {
-    const video = document.querySelector('.about__video--content');
-    video.play();
-
-    return () => {
-      video.pause();
-    };
-  }, []);
-  
   return (
     <div className="about">
       <div className="about__video">
-        <video className="about__video--content" autoPlay muted loop>
+        <video className="about__video--content" autoPlay muted loop disablePictureInPicture>
           <source src={`${process.env.PUBLIC_URL}/images/video3.mp4`} type="video/mp4" />
           <source src={`${process.env.PUBLIC_URL}/images/video.webm`} type="video/webm" />
           Your browser is not supported!
