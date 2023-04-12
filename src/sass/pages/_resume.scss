@@ -164,6 +164,8 @@ p {
 }
 
 .email {
+  font-size: 1.3rem;
+  
   @include respond(tab-land) {
     font-size: 1.2rem;
   }
