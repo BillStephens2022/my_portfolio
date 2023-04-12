@@ -1,4 +1,15 @@
+import { useEffect } from 'react';
+
 function About() {
+  useEffect(() => {
+    const video = document.querySelector('.about__video--content');
+    video.play();
+
+    return () => {
+      video.pause();
+    };
+  }, []);
+  
   return (
     <div className="about">
       <div className="about__video">
