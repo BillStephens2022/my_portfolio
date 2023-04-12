@@ -12,7 +12,20 @@
     font-family: "Lato", non-serif;
     // animation: slideUp 1s ease-in-out;
     transition: all .8s ease;
-  
+    
+
+    @include respond(tab-land) {
+      width: 40rem;
+    }
+
+    @include respond(tab-port) {
+      width: 42rem;
+    }
+
+    @include respond(phone) {
+      width: 40rem;
+    }
+
     &:hover {
       transform: translateY(-3px) scale(1.05);
       box-shadow: .2rem .2rem .5rem $color-white;
@@ -38,11 +51,27 @@
         text-transform: uppercase;
         color: $color-blue-dark;
         text-shadow: 1px 1px white;
+
+        @include respond(tab-land) {
+          font-size: 3rem;
+        }
+
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
       }
   
       &--text {
         padding: 1rem;
         color: $color-white;
+
+        @include respond(tab-land) {
+          font-size: 2.25rem;
+        }
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
       }
     }
   
@@ -65,19 +94,22 @@
         background-image: radial-gradient($color-blue-light-3, $color-blue-med);
 
         @include respond(tab-land) {
-          font-size: 1.7rem;
+          font-size: 1.6rem;
+          padding: .6rem;
           width: 10rem;
         }
 
         @include respond(tab-port) {
-          font-size: 1.8rem;
-          width: 12rem;
+          font-size: 2.25rem;
+          padding: .75rem;
+          width: 14rem;
         }
 
         @include respond(phone) {
-          font-size: 1.5rem;
-          width: 8rem;
+          font-size: 1.75rem;
+          width: 9rem;
         }
+
         &:link {
           color: $color-white;
           text-decoration: none;
@@ -97,6 +129,6 @@
   }
 
 .fas, .fab {
-  margin-right: 3px;
+  margin-right: 8px;
 }
   
