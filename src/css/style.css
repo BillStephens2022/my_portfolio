@@ -823,10 +823,14 @@ html {
   background-color: #0077be; }
 
 .body-div {
-  margin: 2%;
+  margin: 10%;
   margin-bottom: 0;
   background-color: #0077be;
   border-bottom: #0077be 20px solid; }
+  @media only screen and (max-width: 75em) {
+    .body-div {
+      margin-left: 2%;
+      margin-right: 2%; } }
 
 .container {
   padding-bottom: 3rem;
@@ -995,8 +999,12 @@ p {
   color: #36486b;
   font-size: 15px; }
 
+.project-list li {
+  line-height: 1.5; }
+
 h5 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  line-height: 1.5; }
 
 .work-experience {
   background-color: #fff; }
@@ -1051,9 +1059,10 @@ h5 {
 .accomplishments {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: black;
+  color: #618685;
   font-size: 15px;
-  margin-left: 2px; }
+  margin-left: 2px;
+  margin-top: 10px; }
 
 .work-bullets {
   font-family: "Montserrat", sans-serif;
