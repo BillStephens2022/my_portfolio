@@ -3,7 +3,7 @@
 function Resume() {
   const getResume = () => {
     console.log("button clicked!");
-    fetch("BillStephens-Resume.pdf").then((res) => {
+    fetch(`${process.env.PUBLIC_URL}/images/BillStephens-Resume.pdf`).then((res) => {
       res.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
