@@ -81,7 +81,7 @@ function Resume() {
               <i className="fa fa-solid fa-diagram-project"></i>
             </p>
             <p className="project-portfolio contact-info contact-details">
-              <a href="https://billstephens2022.github.io/ProjectPortfolio/">
+              <a href="https://billstephens2022.github.io/my_portfolio/">
                 Portfolio/Projects
               </a>
             </p>
@@ -116,7 +116,7 @@ function Resume() {
                 PROJECTS (
                 <a
                   className="project-portfolio-link"
-                  href="https://billstephens2022.github.io/ProjectPortfolio/"
+                  href="https://billstephens2022.github.io/my_portfolio/"
                 >
                   Portfolio page
                 </a>
