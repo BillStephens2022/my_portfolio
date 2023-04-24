@@ -76,14 +76,15 @@ function About() {
             </h4>
             <ul className="skills__card--list">
               <li>Flask</li>
+              <li>Jinja</li>
               <li>Pandas</li>
               <li>Numpy</li>
-              <li>Jinja</li>
+              <li>matplotlib</li>
+              <li>Seaborn</li>
               <li>Tkinter</li>
               <li>Selenium</li>
               <li>Beautiful Soup</li>
-              <li>3rd Party APIs</li>
-              <li>smtblib</li>
+              <li>3rd Party APIs</li>            
               <li>Turtle</li>
             </ul>
           </div>
