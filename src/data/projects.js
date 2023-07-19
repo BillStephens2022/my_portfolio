@@ -2,7 +2,7 @@ export const projects = [
     {
       id: 1,
       title: "BarKEEP",
-      desc: "Site for cocktail enthusiasts built with MERN stack",
+      desc: "Site for cocktail enthusiasts built with MERN stack. Search API for cocktail recipes, add to favorites, post about cocktails, and more!",
       category: "Full Stack",
       image1: `barkeep1.png`,
       image2: `barkeep2.png`,
