@@ -125,6 +125,36 @@ function Resume() {
               <hr />
               <div className="project-1">
                 <h3>
+                  BarKEEP
+                  <span className="links link-left">
+                    <a href="https://barkeep-842cb6903459.herokuapp.com/">
+                      Deployed App
+                    </a>
+                  </span>
+                  <span className="links">
+                    {" "}
+                    |{" "}
+                    <a href="https://github.com/BillStephens2022/BarKEEP">
+                      Github Repo
+                    </a>
+                  </span>
+                </h3>
+                <h5>
+                  Full Stack MERN app for cocktail enthusiasts.  Search for cocktail 
+                  recipes via a 3rd party API, save your favorite cocktails to your 
+                  profile page, post cocktail photos, post tips/techniques, like & 
+                  comment on others’ posts.
+                </h5>
+                <ul className="project-list">
+                  <li>
+                    Designed and implemented the entire project, including front end (React.js), 
+                    back end (MongoDB, Mongoose, Apollo Server/GraphQL), and integration of 
+                    Cloudinary for image storage.
+                  </li>
+                </ul>
+              </div>
+              <div className="project-2">
+                <h3>
                   Expense Tracker
                   <span className="links link-left">
                     <a href="https://expense-tracker-mern.herokuapp.com">
@@ -155,7 +185,7 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project-2">
+              <div className="project-3">
                 <h3>
                   Community Chat
                   <span className="links link-left">
@@ -188,42 +218,6 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project-3">
-                <h3>
-                  Vacation Planner
-                  <span className="links link-left">
-                    <a href="https://jsedlak146.github.io/group8-vacationplanner">
-                      Deployed App
-                    </a>
-                  </span>
-                  <span className="links">
-                    {" "}
-                    |{" "}
-                    <a href="https://github.com/jsedlak146/group8-vacationplanner">
-                      Github Repo
-                    </a>
-                  </span>
-                </h3>
-                <h5>
-                  Vacation Planner allows users to search a city and date and
-                  find available AirBnB rentals, local events, and local
-                  breweries.
-                </h5>
-                <ul className="project-list">
-                  <li>
-                    Team collaboration - My contributions include working with
-                    the Ticketmaster and Open Brewery APIs, and to render cards
-                    on the front end displaying the search results. Also
-                    assisted with tracking latest searches in local storage on
-                    the browser and added some CSS animations.
-                  </li>
-                  <li>
-                    Technologies used: HTML, CSS, Materialize CSS, JavaScript,
-                    3rd party APIs.
-                  </li>
-                </ul>
-              </div>
-
               <div className="main-sections section-headers work-experience">
                 <h2 className="section-headers">WORK EXPERIENCE</h2>
                 <hr />
