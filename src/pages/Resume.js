@@ -98,6 +98,7 @@ function Resume() {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScipt</li>
+                <li>TypeScipt</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>React.js</li>
