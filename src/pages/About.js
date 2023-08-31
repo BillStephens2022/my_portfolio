@@ -31,7 +31,7 @@ function About() {
               <img id="css3" src={`${process.env.PUBLIC_URL}/images/css3.png`} alt="css3 logo" />
             </h4>
             <ul className="skills__card--list">
-              <li>JavaScript</li>
+              <li>JavaScript/TypeScript</li>
               <li>React.js</li>
               <li>Redux</li>
               <li>3rd Party APIs</li>
