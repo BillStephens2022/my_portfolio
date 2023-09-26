@@ -32,16 +32,17 @@ function About() {
             </h4>
             <ul className="skills__card--list">
               <li>JavaScript/TypeScript</li>
-              <li>React.js</li>
+              <li>React/Angular</li>
               <li>Redux</li>
               <li>3rd Party APIs</li>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Sass/Scss</li>
-              <li>Bootstrap</li>
-              <li>Materialize</li>
-              <li>Bulma</li>
-              <li>Tailwind</li>
+              <li>Multiple CSS Frameworks-</li>
+              <li>(Bootstrap, Materialize,</li>
+              <li>Semantic, Bulma, Tailwind)</li>
+              <li>Tensorflow.js</li>
+              <li>Chart.js</li>
             </ul>
           </div>
 
@@ -60,8 +61,7 @@ function About() {
               <li>GraphQL</li>
               <li>Apollo Server</li>
               <li>Passport.js</li>
-              <li>JSON Web Token</li>
-              <li>Chart.js</li>
+              <li>JSON Web Token</li>             
             </ul>
           </div>
 
@@ -81,6 +81,7 @@ function About() {
               <li>Numpy</li>
               <li>matplotlib</li>
               <li>Seaborn</li>
+              <li>Tensorflow</li>
               <li>Tkinter</li>
               <li>Selenium</li>
               <li>Beautiful Soup</li>
