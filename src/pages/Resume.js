@@ -102,6 +102,7 @@ function Resume() {
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>React.js</li>
+                <li>Next.js</li>
                 <li>Angular.js</li>
                 <li>SQL</li>
                 <li>MongoDB</li>

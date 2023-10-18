@@ -32,7 +32,8 @@ function About() {
             </h4>
             <ul className="skills__card--list">
               <li>JavaScript/TypeScript</li>
-              <li>React/Angular</li>
+              <li>React.js/Angular.js</li>
+              <li>Next.js</li>
               <li>Redux</li>
               <li>3rd Party APIs</li>
               <li>HTML5</li>
