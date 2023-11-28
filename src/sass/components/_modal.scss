@@ -1,0 +1,59 @@
+.modal {
+    display: none;
+    /* Hide modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50vw;
+    max-width: 80%;
+
+    @include respond(tab-port) {
+        width: 80vh;
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    @include respond(phone) {
+        width: 95vh;
+        max-width: 95%;
+        padding: 10px;
+    }
+}
+
+.close {
+    position: absolute;
+    top: -0.5rem;
+    right: 0.5rem;
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: bold;
+
+    @include respond(tab-port) {
+        top: -0.5rem;
+        right: 0.25rem;
+        font-size: 2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
+}
+
+.close:hover,
+.close:focus {
+    color: $color-white;
+    text-decoration: none;
+    cursor: pointer;
+}
