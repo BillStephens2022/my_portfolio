@@ -36,6 +36,16 @@
       object-fit: contain;
       // border-radius: 1rem;
     }
+
+    &--image-container-forward {
+      border: none;
+      color: $color-white;
+      background-color: $color-blue-dark;
+    }
+
+    &--image-container-back {
+      border: none;
+    }
   
     &-body {
       padding: 1.5rem;
