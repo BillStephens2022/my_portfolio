@@ -128,6 +128,34 @@ function Resume() {
               <hr />
               <div className="project-1">
                 <h3>
+                  Drinking from the Garden Hose
+                  <span className="links link-left">
+                    <a href="https://gardenhose.vercel.app/">
+                      Deployed App
+                    </a>
+                  </span>
+                  <span className="links">
+                    {" "}
+                    |{" "}
+                    <a href="https://github.com/BillStephens2022/dftgh">
+                      Github Repo
+                    </a>
+                  </span>
+                </h3>
+                <h5>
+                  Full Stack Next.js application for a Podcast.  Admin users can control content and push new episodes 
+                  from their RSS feed to the Episodes page along with a photo.  Site visitors can comment on specific episodes, vote in polls, and provide general feedback.
+                </h5>
+                <ul className="project-list">
+                  <li>
+                    Designed and implemented the entire project, including front end (Next.js/React.js), 
+                    back end (MongoDB, Mongoose), next-auth for user authentication, and integration of 
+                    Cloudinary for image storage.
+                  </li>
+                </ul>
+              </div>
+              <div className="project-2">
+                <h3>
                   BarKEEP
                   <span className="links link-left">
                     <a href="https://barkeep-842cb6903459.herokuapp.com/">
@@ -156,7 +184,7 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project-2">
+              <div className="project-3">
                 <h3>
                   Expense Tracker
                   <span className="links link-left">
@@ -188,7 +216,7 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project-3">
+              {/* <div className="project-3">
                 <h3>
                   Community Chat
                   <span className="links link-left">
@@ -220,7 +248,7 @@ function Resume() {
                     Node.js, Express, mySQL, Sequelize, Cloudinary, Socket.io.
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div className="main-sections section-headers work-experience">
                 <h2 className="section-headers">WORK EXPERIENCE</h2>
                 <hr />
