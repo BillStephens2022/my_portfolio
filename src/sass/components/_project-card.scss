@@ -12,7 +12,6 @@
     font-family: "Lato", non-serif;
     // animation: slideUp 1s ease-in-out;
     transition: all .8s ease;
-    
 
     @include respond(tab-land) {
       width: 40rem;
@@ -37,14 +36,34 @@
       // border-radius: 1rem;
     }
 
-    &--image-container-forward {
-      border: none;
-      color: $color-white;
-      background-color: $color-blue-dark;
+    &--image-buttons {
+      background-color: transparent;
+      margin: auto;
+      padding-bottom: 0.25rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid white;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    &--image-container-forward,
     &--image-container-back {
       border: none;
+      color: $color-white;
+      background-color: transparent;
+      font-size: 2rem;
+      margin: 0 0.25rem;
+    }
+
+    &--image-container-p {
+     display: inline-block;
+     color: $color-white;
+     margin: 0;
+     width: 15rem;
+     font-weight: 900;
     }
   
     &-body {
@@ -141,4 +160,6 @@
 .fas, .fab {
   margin-right: 8px;
 }
+
+
   

@@ -23,7 +23,8 @@ export const projects = [
         "dftgh2.png",
         "dftgh3.png",
         "dftgh4.png",
-        "dftgh5.png"
+        "dftgh5.png",
+        "dftgh6.png"
       ],
       deployedUrl: "https://gardenhose.vercel.app",
       gitHubRepoUrl: "https://github.com/BillStephens2022/dftgh",
@@ -113,11 +114,11 @@ export const projects = [
       desc: "Sample restaurant website using React including image card carousels",
       category: "Front End",
       images: [
-        "restuarant1.png",
-        "restuarant2.png",
-        "restuarant3.png",
-        "restuarant4.png",
-        "restuarant5.png"
+        "restaurant1.png",
+        "restaurant2.png",
+        "restaurant3.png",
+        "restaurant4.png",
+        "restaurant5.png"
       ],
       deployedUrl: "https://billstephens2022.github.io/LagunaCafe/",
       gitHubRepoUrl: "https://github.com/BillStephens2022/LagunaCafe",

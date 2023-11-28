@@ -1,0 +1,38 @@
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.9);;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50vw;
+    max-width: 80%;
+  }
+
+  .close {
+    position: absolute;
+    top: -0.75rem;
+    right: 0;
+    color: $color-black;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: $color-white;
+    text-decoration: none;
+    cursor: pointer;
+}

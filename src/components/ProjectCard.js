@@ -4,7 +4,7 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 // Project Card component that will render a card displaying a screenshot of the app,
 // a title, a brief description, and buttons that will take the user to the
 // associated Github repo and to the deployed app (only if the app is actually deployed)
-function ProjectCard({ project }) {
+function ProjectCard({ project, onImageClick }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextImage = () => {
@@ -26,10 +26,12 @@ function ProjectCard({ project }) {
           src={`${process.env.PUBLIC_URL}/images/${project.images[currentImageIndex]}`}
           className="projects__card--image-photo"
           alt="project pic"
-        />
+          onClick={() => onImageClick(`${process.env.PUBLIC_URL}/images/${project.images[currentImageIndex]}`)}
+        />      
           {project.images.length > 1 && (
           <div className="projects__card--image-buttons">
             <button className="projects__card--image-container-forward" onClick={handlePrevImage}><GoChevronLeft /></button>
+            <p className="projects__card--image-container-p">see more photos</p>
             <button className="projects__card--image-container-back" onClick={handleNextImage}><GoChevronRight /></button>
           </div>
         )}
