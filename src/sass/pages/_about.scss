@@ -1,6 +1,6 @@
 .about {
-  min-height: 100vh;
-  max-height: 105vh;
+  min-height: 103vh;
+  max-height: 108vh;
   width: 100vw;
   color: $color-white;
   overflow: hidden;
@@ -168,6 +168,7 @@
         color: $color-white;
         box-shadow: 2px 2px 5px black;
         transition: 0.2s ease;
+        text-wrap: nowrap;
 
         &:nth-child(2) {
           margin-right: 5px;
@@ -183,6 +184,10 @@
           font-size: 1.9rem;
 
         }
+        @include respond(phone) {
+          font-size: 1.35rem;
+        }
+  
       }
     }
 

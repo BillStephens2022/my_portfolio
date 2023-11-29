@@ -418,8 +418,8 @@ html {
         padding: 1rem; } }
 
 .about {
-  min-height: 100vh;
-  max-height: 105vh;
+  min-height: 103vh;
+  max-height: 108vh;
   width: 100vw;
   color: #fff;
   overflow: hidden; }
@@ -548,7 +548,8 @@ html {
       background-color: lightsteelblue;
       color: #fff;
       box-shadow: 2px 2px 5px black;
-      transition: 0.2s ease; }
+      transition: 0.2s ease;
+      text-wrap: nowrap; }
       .about__story-link:nth-child(2) {
         margin-right: 5px; }
       .about__story-link:hover {
@@ -559,6 +560,9 @@ html {
       @media only screen and (max-width: 56.25em) {
         .about__story-link {
           font-size: 1.9rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .about__story-link {
+          font-size: 1.35rem; } }
 
 .skills {
   margin-top: 1rem;
