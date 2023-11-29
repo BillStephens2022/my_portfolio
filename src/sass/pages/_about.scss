@@ -1,4 +1,5 @@
 .about {
+  min-height: 100vh;
   max-height: 105vh;
   width: 100vw;
   color: $color-white;
@@ -35,10 +36,6 @@
         width: 100%;
         object-fit: cover;
         z-index: -1;
-
-        // @include respond(phone) {
-        //   display: none;
-        // }
       }
     }
    
@@ -84,8 +81,6 @@
       }
     }
 
-    
-
     &__title {
       font-family: 'Lato', sans-serif;
       font-weight: 900;
@@ -93,6 +88,7 @@
       text-transform: uppercase;
       font-size: 4rem;
       color: $color-white;
+      transition: 0.2s ease;
       &:hover {
         transform: skewY(-5deg) scale(1.1);
       }
@@ -128,16 +124,18 @@
     }
 
     &__story {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       font-family: 'Lato', sans-serif;
       font-weight: 400;
-      line-height: 1.6;
+      line-height: 2;
       color: $color-grey-dark-2;
-      margin: 2rem 25vw;
+      width: 65%;
+      margin: 1rem auto;
       letter-spacing: .2rem;
       padding: 1rem;
       border-radius: 1rem;
       text-align: center;
+      transition: 0.2s ease;
      
 
       &:hover {
@@ -145,30 +143,32 @@
       }
 
       @include respond(tab-land) {
-        margin: 2rem 15rem 2rem 15rem;
+        margin: 2rem auto;
         font-size: 2rem;
       }
 
       @include respond(tab-port) {
-        margin: 9rem;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-        font-size: 2.5rem;
+        margin: 2rem auto;
+        font-size: 2rem;
+        width: 85%;
       }
 
       @include respond(phone) {
-        margin: 2rem;
-        margin-top: 3rem;
+        margin: 1rem auto;
         font-size: 1.75rem;
+        width: 95%;
       }
 
       &-link {
         text-decoration: none;
-        padding: 0.25rem 1rem;
+        font-size: 1.45rem;
+        padding: 0.1rem 1rem .2rem 1rem;
         border-radius: 15px;
         background-color: $color-blue-light-3;
         color: $color-white;
         box-shadow: 2px 2px 5px black;
+        transition: 0.2s ease;
+
         &:nth-child(2) {
           margin-right: 5px;
         }
@@ -176,7 +176,12 @@
           cursor: pointer;
           background-color: $color-white;
           color: $color-blue-light-3;
+          transform: scale(1.05);
           
+        }
+        @include respond(tab-port) {
+          font-size: 1.9rem;
+
         }
       }
     }
@@ -214,6 +219,7 @@
       grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
       grid-gap: 5rem;
       justify-content: center;
+     
 
       @include respond(tab-land) {
         display: flex;
@@ -239,6 +245,7 @@
       background-color: $color-blue-light-3;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
       transition: all .3s ease;
+   
 
       @include respond(tab-land) {
         margin-top: 1rem;
@@ -247,11 +254,11 @@
 
       @include respond(tab-port) {
         margin-top: 0;
-        min-width: 40rem;
+        min-width: 44rem;   
       }
 
       @include respond(phone) {
-        height: 40rem;
+        height: 44rem;
         max-width: 20rem;
         margin: auto;
         margin-bottom: 5rem;

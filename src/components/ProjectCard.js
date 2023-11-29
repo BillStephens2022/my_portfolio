@@ -21,13 +21,16 @@ function ProjectCard({ project, onImageClick }) {
 
   return (
     <div className="projects__card">
-      <div className="projects__card--image-container">
-        <img
-          src={`${process.env.PUBLIC_URL}/images/${project.images[currentImageIndex]}`}
-          className="projects__card--image-photo"
-          alt="project pic"
-          onClick={() => onImageClick(`${process.env.PUBLIC_URL}/images/${project.images[currentImageIndex]}`)}
-        />
+      <div
+        className="projects__card--image-container"
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/${project.images[currentImageIndex]})`
+        }}
+        onClick={() =>
+          onImageClick(`${process.env.PUBLIC_URL}/images/${project.images[currentImageIndex]}`)
+        }
+      >
+        </div>
         {project.images.length > 1 && (
           <div className="projects__card--image-buttons">
             <div className="projects__card--image-buttons_div" onClick={handlePrevImage}>
@@ -41,7 +44,7 @@ function ProjectCard({ project, onImageClick }) {
             </div>
           </div>
         )}
-      </div>
+      
       <div className="projects__card-body">
         <h5 className="projects__card-body--title">{project.title}</h5>
         <p className="projects__card-body--text">{project.desc}</p>
