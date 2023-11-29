@@ -228,8 +228,9 @@ html {
   flex-direction: column;
   width: 30rem;
   margin: 1.5rem;
-  color: #fff;
-  background-color: lightsteelblue;
+  padding: 1rem;
+  color: midnightblue;
+  background-image: linear-gradient(45deg, #fff, 75%, midnightblue);
   box-shadow: 3px 3px 10px #6D5D4B;
   font-family: "Lato", non-serif;
   transition: all .8s ease; }
@@ -245,13 +246,18 @@ html {
   .projects__card:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0.2rem 0.2rem 0.5rem #fff; }
-  .projects__card--image-photo {
+  .projects__card--image-container {
     width: 100%;
-    object-fit: contain; }
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer; }
   .projects__card--image-buttons {
-    background-color: transparent;
+    background-color: whitesmoke;
+    border: 1px solid lightsteelblue;
     margin: auto;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -260,12 +266,12 @@ html {
       margin-top: -0.55rem; }
   .projects__card--image-container-forward, .projects__card--image-container-back {
     border: none;
-    color: #fff;
+    color: #0077be;
     background-color: transparent;
     font-size: 2rem; }
   .projects__card--image-container-p {
     display: inline-flex;
-    color: #fff;
+    color: #0077be;
     font-size: 1.1rem;
     font-weight: 900;
     margin: auto;
@@ -275,7 +281,6 @@ html {
     visibility: hidden; }
   .projects__card-body {
     padding: 1.5rem;
-    background-color: lightsteelblue;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -294,7 +299,7 @@ html {
           font-size: 2.5rem; } }
     .projects__card-body--text {
       padding: 1rem;
-      color: #fff; }
+      color: midnightblue; }
       @media only screen and (max-width: 75em) {
         .projects__card-body--text {
           font-size: 2.25rem; } }
