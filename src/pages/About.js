@@ -16,10 +16,11 @@ function About() {
         </div>
       </div>
       <p className="about__story">
-        Hi, I'm Bill.  I'm a Full Stack Web Developer, and former finance professional.  I recently completed a coding bootcamp with 
-        Rutgers University, and I stay sharp by coding every day and continuously learning new programming languages and web development frameworks. 
-        Explore my <a className="about__story-link" href="/my_portfolio/portfolio">PORTFOLIO</a> page and my <a className="about__story-link" href="/my_portfolio/resume">RESUME</a>. 
-        I am eager to collobarate and to build something impactful, so <a className="about__story-link" href="/my_portfolio/contact">CONTACT ME</a> if you are interested in teaming up!</p>
+        Hi, I'm Bill.  I'm a Full Stack Web Developer and former finance professional.  I recently completed a full stack web development bootcamp with 
+        Rutgers University, and I stay sharp by coding every day. I'm continuously learning new programming languages and web development frameworks. </p>
+        <p className="about__story">
+        Explore my <a className="about__story-link" href="/my_portfolio/portfolio">PORTFOLIO</a> page and my <a className="about__story-link" href="/my_portfolio/resume">RESUME</a> - 
+        I am eager to collobarate and to build something, so <a className="about__story-link" href="/my_portfolio/contact">CONTACT ME</a> if you are interested in teaming up!</p>
       <div className="skills">
         <h2 className="skills__header">Skills</h2>
         <div className="skills__container">
