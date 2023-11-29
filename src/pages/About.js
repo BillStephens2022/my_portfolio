@@ -15,12 +15,11 @@ function About() {
           <h2 className="about__subtitle">Full Stack Web Developer</h2>
         </div>
       </div>
-      <h6 className="about__story">
-        Full Stack Web Developer with an extensive background in Finance / Accounting
-        in the Investment Banking industry. I am looking to leverage my finance
-        background with my newly acquired programming skills. Let's build
-        something together!
-      </h6>
+      <p className="about__story">
+        Hi, I'm Bill.  I'm a Full Stack Web Developer, and former finance professional.  I recently completed a coding bootcamp with 
+        Rutgers University, and I stay sharp by coding every day and continuously learning new programming languages and web development frameworks. 
+        Explore my <a className="about__story-link" href="/my_portfolio/portfolio">PORTFOLIO</a> page and my <a className="about__story-link" href="/my_portfolio/resume">RESUME</a>. 
+        I am eager to collobarate and to build something impactful, so <a className="about__story-link" href="/my_portfolio/contact">CONTACT ME</a> if you are interested in teaming up!</p>
       <div className="skills">
         <h2 className="skills__header">Skills</h2>
         <div className="skills__container">

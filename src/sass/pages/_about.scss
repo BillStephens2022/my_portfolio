@@ -1,5 +1,5 @@
 .about {
-  max-height: 93vh;
+  max-height: 105vh;
   width: 100vw;
   color: $color-white;
   overflow: hidden;
@@ -141,7 +141,7 @@
      
 
       &:hover {
-        transform: scale(1.25);
+        transform: scale(1.05);
       }
 
       @include respond(tab-land) {
@@ -160,6 +160,24 @@
         margin: 2rem;
         margin-top: 3rem;
         font-size: 1.75rem;
+      }
+
+      &-link {
+        text-decoration: none;
+        padding: 0.25rem 1rem;
+        border-radius: 15px;
+        background-color: $color-blue-light-3;
+        color: $color-white;
+        box-shadow: 2px 2px 5px black;
+        &:nth-child(2) {
+          margin-right: 5px;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: $color-white;
+          color: $color-blue-light-3;
+          
+        }
       }
     }
 
