@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <div className="about">
@@ -19,8 +22,8 @@ function About() {
         Hi, I'm Bill.  I'm a Full Stack Web Developer and former finance professional.  I recently completed a full stack web development bootcamp with 
         Rutgers University, and I stay sharp by coding every day. I'm continuously learning new programming languages and web development frameworks. </p>
         <p className="about__story">
-        Explore my <a className="about__story-link" href="/my_portfolio/portfolio">PORTFOLIO</a> page and my <a className="about__story-link" href="/my_portfolio/resume">RESUME</a> - 
-        I am eager to collobarate and to build something, so <a className="about__story-link" href="/my_portfolio/contact">CONTACT ME</a> if you are interested in teaming up!</p>
+        Explore my <Link className="about__story-link" to="/portfolio">PORTFOLIO</Link> page and my <Link className="about__story-link" to="/resume">RESUME</Link> - 
+        I am eager to collobarate and to build something, so <Link className="about__story-link" to="/contact">CONTACT ME</Link> if you are interested in teaming up!</p>
       <div className="skills">
         <h2 className="skills__header">Skills</h2>
         <div className="skills__container">
