@@ -616,7 +616,8 @@ html {
     @media only screen and (max-width: 37.5em) {
       .skills__card {
         height: 44rem;
-        max-width: 20rem;
+        min-width: 20rem;
+        max-width: 85%;
         margin: auto;
         margin-bottom: 5rem; } }
     .skills__card--header {

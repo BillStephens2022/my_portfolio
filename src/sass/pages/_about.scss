@@ -264,7 +264,8 @@
 
       @include respond(phone) {
         height: 44rem;
-        max-width: 20rem;
+        min-width: 20rem;
+        max-width: 85%;
         margin: auto;
         margin-bottom: 5rem;
       }
