@@ -1,17 +1,17 @@
 .about {
-  min-height: 103vh;
-  max-height: 108vh;
+  min-height: 112vh;
+  max-height: 119vh;
   width: 100vw;
   color: $color-white;
   overflow: hidden;
 
   @include respond(tab-land) {
-    min-height: 95vh;
-    max-height: 100vh;
+    // min-height: 95vh;
+    // max-height: 100vh;
   }
 
   @include respond(tab-port) {
-    min-height: 95vh;
+    min-height: 100vh;
     max-height: 500vh;
   }
 
@@ -259,7 +259,7 @@
 
       @include respond(tab-port) {
         margin-top: 0;
-        min-width: 44rem;   
+        min-width: 42rem;   
       }
 
       @include respond(phone) {

@@ -418,18 +418,14 @@ html {
         padding: 1rem; } }
 
 .about {
-  min-height: 103vh;
-  max-height: 108vh;
+  min-height: 112vh;
+  max-height: 119vh;
   width: 100vw;
   color: #fff;
   overflow: hidden; }
-  @media only screen and (max-width: 75em) {
-    .about {
-      min-height: 95vh;
-      max-height: 100vh; } }
   @media only screen and (max-width: 56.25em) {
     .about {
-      min-height: 95vh;
+      min-height: 100vh;
       max-height: 500vh; } }
   @media only screen and (max-width: 37.5em) {
     .about {
@@ -612,7 +608,7 @@ html {
     @media only screen and (max-width: 56.25em) {
       .skills__card {
         margin-top: 0;
-        min-width: 44rem; } }
+        min-width: 42rem; } }
     @media only screen and (max-width: 37.5em) {
       .skills__card {
         height: 44rem;
