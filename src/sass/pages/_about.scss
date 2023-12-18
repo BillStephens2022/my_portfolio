@@ -1,19 +1,17 @@
 .about {
-  min-height: 103vh;
-  max-height: 108vh;
   width: 100vw;
   color: $color-white;
   overflow: hidden;
 
-  @include respond(tab-land) {
-    min-height: 95vh;
-    max-height: 100vh;
-  }
+  // @include respond(tab-land) {
+  //   min-height: 95vh;
+  //   max-height: 100vh;
+  // }
 
-  @include respond(tab-port) {
-    min-height: 95vh;
-    max-height: 500vh;
-  }
+  // @include respond(tab-port) {
+  //   min-height: 95vh;
+  //   max-height: 500vh;
+  // }
 
   @include respond(phone) {
     display: flex;
@@ -195,7 +193,7 @@
 }
 
 .skills {
-    margin-top: 1rem;
+    margin: 1rem 0 3rem 0;
     text-align: center;
 
     &__header {
@@ -214,8 +212,6 @@
       @include respond(phone) {
         margin-bottom: 2rem;
       }
-
-      
     }
 
     &__container {

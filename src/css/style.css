@@ -418,19 +418,9 @@ html {
         padding: 1rem; } }
 
 .about {
-  min-height: 103vh;
-  max-height: 108vh;
   width: 100vw;
   color: #fff;
   overflow: hidden; }
-  @media only screen and (max-width: 75em) {
-    .about {
-      min-height: 95vh;
-      max-height: 100vh; } }
-  @media only screen and (max-width: 56.25em) {
-    .about {
-      min-height: 95vh;
-      max-height: 500vh; } }
   @media only screen and (max-width: 37.5em) {
     .about {
       display: flex;
@@ -565,7 +555,7 @@ html {
           font-size: 1.35rem; } }
 
 .skills {
-  margin-top: 1rem;
+  margin: 1rem 0 3rem 0;
   text-align: center; }
   .skills__header {
     font-size: 2.5em;

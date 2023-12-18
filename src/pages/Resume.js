@@ -100,10 +100,11 @@ function Resume() {
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>Node.js</li>
-                <li>Express.js</li>
                 <li>React.js</li>
+                <li>React Native</li>
                 <li>Next.js</li>
                 <li>Angular.js</li>
+                <li>Express.js</li>
                 <li>SQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>

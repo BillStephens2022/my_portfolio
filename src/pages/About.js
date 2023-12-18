@@ -36,15 +36,14 @@ function About() {
             <ul className="skills__card--list">
               <li>JavaScript/TypeScript</li>
               <li>React.js/Angular.js</li>
+              <li>React Native</li>
               <li>Next.js</li>
               <li>Redux</li>
               <li>3rd Party APIs</li>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Sass/Scss</li>
-              <li>Multiple CSS Frameworks-</li>
-              <li>(Bootstrap, Materialize,</li>
-              <li>Semantic, Bulma, Tailwind)</li>
+              <li>Multiple CSS Frameworks</li>
               <li>Tensorflow.js</li>
               <li>Chart.js</li>
             </ul>
