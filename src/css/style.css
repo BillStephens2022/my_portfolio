@@ -421,6 +421,10 @@ html {
   width: 100vw;
   color: #fff;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      min-height: 95vh;
+      max-height: 500vh; } }
   @media only screen and (max-width: 37.5em) {
     .about {
       display: flex;
@@ -720,6 +724,47 @@ html {
     transform: translateY(0%); }
   100% {
     transform: translateY(-300%); } }
+
+.featured {
+  text-align: center;
+  background-image: linear-gradient(45deg, #fff, 75%, lightsteelblue);
+  min-height: 93vh; }
+  .featured__hero {
+    background-color: lightsteelblue;
+    margin-bottom: 3rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0); }
+    @media only screen and (max-width: 37.5em) {
+      .featured__hero {
+        height: 22vh; } }
+    .featured__hero-header {
+      padding: 1.5rem;
+      color: #fff;
+      font-family: "Lato", non-serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px midnightblue;
+      letter-spacing: 1rem; }
+      .featured__hero-header:hover {
+        transform: scale(1.1); }
+      @media only screen and (max-width: 37.5em) {
+        .featured__hero-header {
+          font-size: 3rem;
+          padding-bottom: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .featured__hero-headerspan {
+        display: block;
+        padding-top: .5rem; } }
+    .featured__hero-logo {
+      width: 10%;
+      transition: 1s; }
+      .featured__hero-logo:hover {
+        transform: rotate(360deg); }
+      @media only screen and (max-width: 37.5em) {
+        .featured__hero-logo {
+          width: 15%; } }
+
+.projects {
+  display: flex; }
 
 .contact {
   text-align: center;

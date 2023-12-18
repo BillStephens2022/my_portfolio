@@ -4,6 +4,7 @@ export const projects = [
       title: "BarKEEP",
       desc: "Site for cocktail enthusiasts built with MERN stack. Search API for cocktail recipes, add to favorites, post about cocktails, like and comment on posts, and more!",
       category: "Full Stack",
+      featured: true,
       images: [
         "barkeep1.png",
         "barkeep2.png",
@@ -18,6 +19,7 @@ export const projects = [
       title: "Drinking from the Garden Hose",
       desc: "Full Stack site for a real podcast. Allows admin users to manage content and engage with audience.  Site visitors can listen to the podcast, comment on individual episodes, vote in polls, and provide general feedback.",
       category: "Full Stack",
+      featured: true,
       images: [
         "dftgh1.png",
         "dftgh2.png",
@@ -34,6 +36,7 @@ export const projects = [
       title: "ETJ - Enter The Johnsons",
       desc: "Full Stack site for a non-profit organization that 'provides martial arts and mentoring to the kids who need it most.' Allows admin users to add fundraising campaigns including photo/video and engage with the community.  Site visitors can view photos, donate, provide feedback to the team",
       category: "Full Stack",
+      featured: true,
       images: [
         "etj.png",
       ],
@@ -45,6 +48,7 @@ export const projects = [
       title: "Expense Tracker",
       desc: "Personal Expense Tracker built with MERN stack",
       category: "Full Stack",
+      featured: true,
       images: [
         "expense1.png",
         "expense2.png",
