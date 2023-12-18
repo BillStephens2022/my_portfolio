@@ -602,7 +602,7 @@ html {
     @media only screen and (max-width: 56.25em) {
       .skills__card {
         margin-top: 0;
-        min-width: 44rem; } }
+        min-width: 42rem; } }
     @media only screen and (max-width: 37.5em) {
       .skills__card {
         height: 44rem;

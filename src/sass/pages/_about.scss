@@ -8,10 +8,10 @@
   //   max-height: 100vh;
   // }
 
-  // @include respond(tab-port) {
-  //   min-height: 95vh;
-  //   max-height: 500vh;
-  // }
+  @include respond(tab-port) {
+    min-height: 95vh;
+    max-height: 500vh;
+  }
 
   @include respond(phone) {
     display: flex;
@@ -255,7 +255,7 @@
 
       @include respond(tab-port) {
         margin-top: 0;
-        min-width: 44rem;   
+        min-width: 42rem;   
       }
 
       @include respond(phone) {
