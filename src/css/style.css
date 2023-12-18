@@ -223,6 +223,16 @@ html {
   text-decoration: none;
   cursor: pointer; }
 
+.featuredProject {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 1rem; }
+  .featuredProject__header {
+    color: steelblue; }
+  .featuredProject__image {
+    width: 100%; }
+
 .projects__card {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,14 @@
+.featuredProject {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+
+    &__header {
+        color: steelblue;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
