@@ -6,10 +6,29 @@
     margin: 1rem;
     padding: 1rem;
     min-width: 37rem;
-    
     background-color: $color-blue-light-3;
     color: $color-blue-light-3;
     align-items: center;
+    visibility: hidden;
+ 
+    /* Apply different animation delays to each box */
+    &:nth-child(1) {
+      animation: fadeIn 1.5s ease forwards 0.2s; /* Delay the first box by 0.2s */
+    }
+  
+    &:nth-child(2) {
+      animation: fadeIn 1.5s ease forwards 0.7s; /* Delay the second box by 0.7s */
+    }
+  
+    &:nth-child(3) {
+      animation: fadeIn 1.5s ease forwards 1.2s; /* Delay the third box by 1.2s */
+    }
+  
+    &:nth-child(4) {
+      animation: fadeIn 1.5s ease forwards 1.7s; /* Delay the fourth box by 1.7s */
+    }
+
+
     @include respond(tab-land) {
         min-width: 45vw;
     }
@@ -48,3 +67,17 @@
     }
 
 }
+
+
+@keyframes fadeIn {
+    0% {
+      transform: scale(0.1);
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      visibility: visible;
+      opacity: 1;
+    }
+  }

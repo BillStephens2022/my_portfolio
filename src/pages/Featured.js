@@ -18,7 +18,7 @@ function Featured() {
           alt="web dev logo"
         />
       </div>
-      <div className="projects">
+      <div className="featured_projects">
         {featuredProjects.map((featuredProject) => (
             <FeaturedProject featuredProject={featuredProject} />
         )

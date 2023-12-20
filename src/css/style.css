@@ -236,7 +236,21 @@ html {
   min-width: 37rem;
   background-color: lightsteelblue;
   color: lightsteelblue;
-  align-items: center; }
+  align-items: center;
+  visibility: hidden;
+  /* Apply different animation delays to each box */ }
+  .featuredProject:nth-child(1) {
+    animation: fadeIn 1.5s ease forwards 0.2s;
+    /* Delay the first box by 0.2s */ }
+  .featuredProject:nth-child(2) {
+    animation: fadeIn 1.5s ease forwards 0.7s;
+    /* Delay the second box by 0.7s */ }
+  .featuredProject:nth-child(3) {
+    animation: fadeIn 1.5s ease forwards 1.2s;
+    /* Delay the third box by 1.2s */ }
+  .featuredProject:nth-child(4) {
+    animation: fadeIn 1.5s ease forwards 1.7s;
+    /* Delay the fourth box by 1.7s */ }
   @media only screen and (max-width: 75em) {
     .featuredProject {
       min-width: 45vw; } }
@@ -263,6 +277,16 @@ html {
     flex-grow: 1; }
     .featuredProject__summary_list {
       list-style: none; }
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.1);
+    visibility: visible;
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1; } }
 
 .projects__card {
   display: flex;
@@ -804,7 +828,7 @@ html {
         .featured__hero-logo {
           width: 15%; } }
 
-.projects {
+.featured_projects {
   display: flex;
   padding: 2rem;
   flex-wrap: wrap;
