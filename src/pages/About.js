@@ -22,7 +22,7 @@ function About() {
         Hi, I'm Bill.  I'm a Full Stack Web Developer and former finance professional.  I recently completed a full stack web development bootcamp with 
         Rutgers University, and I stay sharp by coding every day. I'm continuously learning new programming languages and web development frameworks. </p>
         <p className="about__story">
-        Explore my <Link className="about__story-link" to="/portfolio">PORTFOLIO</Link> page and my <Link className="about__story-link" to="/resume">RESUME</Link> - 
+        Explore my <Link className="about__story-link" to="/featured">FEATURED PROJECTS</Link> , my full<Link className="about__story-link" to="/portfolio">PORTFOLIO</Link> and my <Link className="about__story-link" to="/resume">RESUME</Link> - 
         I am eager to collobarate and to build something, so <Link className="about__story-link" to="/contact">CONTACT ME</Link> if you are interested in teaming up!</p>
       <div className="skills">
         <h2 className="skills__header">Skills</h2>

@@ -1,10 +1,10 @@
 .featured {
   text-align: center;
-  background-image: linear-gradient(45deg, $color-white, 75%, $color-blue-light-3);
+  background-image: linear-gradient(45deg, steelblue, 75%, lightsteelblue);
   min-height: 93vh;
 
   &__hero {
-    background-color: $color-blue-light-3;
+    background-color: $color-blue-med;
     margin-bottom: 3rem;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 

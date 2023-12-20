@@ -1,83 +1,173 @@
 .featuredProject {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 calc(25% - 2rem);;
-    flex-wrap: wrap;
-    margin: 1rem;
-    padding: 1rem;
-    min-width: 37rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(25% - 2rem);
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  min-width: 37rem;
+  background-color: $color-blue-med;
+  color: $color-blue-light-3;
+  border: 5px solid $color-blue-med;
+  align-items: center;
+  visibility: hidden;
+
+  &:hover {
+    transform: scale(1.01);
     background-color: $color-blue-light-3;
-    color: $color-blue-light-3;
-    align-items: center;
-    visibility: hidden;
- 
-    /* Apply different animation delays to each box */
-    &:nth-child(1) {
-      animation: fadeIn 1.5s ease forwards 0.2s; /* Delay the first box by 0.2s */
-    }
-  
-    &:nth-child(2) {
-      animation: fadeIn 1.5s ease forwards 0.7s; /* Delay the second box by 0.7s */
-    }
-  
-    &:nth-child(3) {
-      animation: fadeIn 1.5s ease forwards 1.2s; /* Delay the third box by 1.2s */
-    }
-  
-    &:nth-child(4) {
-      animation: fadeIn 1.5s ease forwards 1.7s; /* Delay the fourth box by 1.7s */
-    }
-
-
-    @include respond(tab-land) {
-        min-width: 45vw;
-    }
-    @include respond(tab-port) {
-        min-width: 45vw;
-    }
-    @include respond(phone) {
-        min-width: 92vw;
-    }
-    @include respond(small-phone) {
-        min-width: 33rem;
-        max-width: 95vw;
-    }
+    border-radius: 1rem;
     
-      
-
-    &__header {
-        color: white;
-    }
-
-    &__image_div {
-        width: 100%;
-        &_image {
-            width: 100%;
-        }
-    }
-
-    &__summary {
-        margin: 20px;
-        padding: 20px;
-        background-color: white;
-        flex-grow: 1;
-        &_list {
-            list-style: none;
-        }
-    }
-
-}
+  }
 
 
-@keyframes fadeIn {
-    0% {
-      transform: scale(0.1);
-      visibility: visible;
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      visibility: visible;
-      opacity: 1;
+  /* Apply different animation delays to each box */
+  &:nth-child(1) {
+    animation: fadeIn 1.5s ease forwards 0.2s; /* Delay the first box by 0.2s */
+  }
+
+  &:nth-child(2) {
+    animation: fadeIn 1.5s ease forwards 0.7s; /* Delay the second box by 0.7s */
+  }
+
+  &:nth-child(3) {
+    animation: fadeIn 1.5s ease forwards 1.2s; /* Delay the third box by 1.2s */
+  }
+
+  &:nth-child(4) {
+    animation: fadeIn 1.5s ease forwards 1.7s; /* Delay the fourth box by 1.7s */
+  }
+
+  @include respond(tab-land) {
+    min-width: 45vw;
+  }
+  @include respond(tab-port) {
+    min-width: 45vw;
+  }
+  @include respond(phone) {
+    min-width: 92vw;
+  }
+  @include respond(small-phone) {
+    min-width: 33rem;
+    max-width: 95vw;
+  }
+
+ 
+  &__header {
+    font-size: 2.5rem;
+    width: 100%;
+    background-color: $color-blue-med;
+    color: $color-white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 900;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      font-size: 2.6rem;
     }
   }
+
+  &__image_div {
+    width: 100%;
+    &_image {
+      width: 100%;
+    }
+  }
+
+  &__summary {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: $color-white;
+    width: 100%;
+    flex-grow: 1;
+
+    &_header {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $color-blue-med;
+    }
+    &_text {
+      font-size: 1.5rem;
+      color: $color-blue-med;
+      font-weight: 500;
+      margin: 1rem;
+    }
+    &_list {
+      list-style: none;
+      font-size: 1.5rem;
+      color: rgb(252, 33, 33);
+      font-weight: 700;
+      & li {
+        color: $color-white;
+        padding: 0.25rem;
+        margin: 0.5rem;
+
+        border-radius: 10rem;
+        background-color: $color-blue-med;
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+
+    &-button {
+      text-decoration: none;
+      background-color: white;
+      padding: 0.5rem;
+      color: $color-blue-med;
+      font-size: 1.25rem;
+      
+      width: 8rem;
+      border-radius: 2rem;
+      cursor: pointer;
+    
+
+      &-outline {
+        text-decoration: none;
+        border: 2px solid white;
+        background-color: transparent;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        width: 8rem;
+        border-radius: 2rem;
+        color: $color-white;
+        cursor: pointer;
+       
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+// github and link icons
+.fas,
+.fab {
+  margin-left: 0.5rem;
+  margin-right: 0 !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.1);
+    visibility: visible;
+    opacity: 0;
+  }
+  99.99% {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+  }
+}
