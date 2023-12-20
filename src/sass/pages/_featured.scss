@@ -1,0 +1,63 @@
+.featured {
+  text-align: center;
+  background-image: linear-gradient(45deg, steelblue, 75%, lightsteelblue);
+  min-height: 93vh;
+
+  &__hero {
+    background-color: $color-blue-med;
+    margin-bottom: 3rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    @include respond(phone) {
+      height: 22vh;
+    }
+
+    &-header {
+      padding: 1.5rem;
+      color: $color-white;
+      font-family: "Lato", non-serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px midnightblue;
+      letter-spacing: 1rem;
+
+      &:hover {
+          transform: scale(1.1);
+      }
+
+      @include respond(phone) {
+        font-size: 3rem;
+        padding-bottom: 0;
+      }
+
+    }
+
+    &-headerspan {
+      @include respond(phone) {
+        display: block;
+        padding-top: .5rem;
+
+      }
+    }
+    &-logo {
+      width: 10%;
+      transition: 1s;
+
+      &:hover {
+        transform: rotate(360deg);
+
+      }
+
+      @include respond(phone) {
+        width: 15%;
+      }
+    }
+  }
+}
+
+.featured_projects {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

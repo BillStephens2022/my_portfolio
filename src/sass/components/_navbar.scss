@@ -103,6 +103,10 @@
         @include respond(tab-port) {
           font-size: 4rem;
         }
+
+        @include respond(small-phone) {
+          font-size: 3rem;
+        }
       }
 
       &:hover,

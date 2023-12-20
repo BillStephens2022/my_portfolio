@@ -20,7 +20,8 @@ function Navbar() {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item"><Link to="/" className="navigation__link" onClick={handleLinkClick}>About</Link></li>
-          <li className="navigation__item"><Link to="/portfolio" className="navigation__link" onClick={handleLinkClick}>Portfolio</Link></li>
+          <li className="navigation__item"><Link to="/featured" className="navigation__link" onClick={handleLinkClick}>Featured Projects</Link></li>
+          <li className="navigation__item"><Link to="/portfolio" className="navigation__link" onClick={handleLinkClick}>Full Portfolio</Link></li>
           <li className="navigation__item"><Link to="/resume" className="navigation__link" onClick={handleLinkClick}>Resume</Link></li>
           <li className="navigation__item"><Link to="/contact" className="navigation__link" onClick={handleLinkClick}>Contact</Link></li>
         </ul>

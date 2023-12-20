@@ -4,6 +4,7 @@ export const projects = [
       title: "BarKEEP",
       desc: "Site for cocktail enthusiasts built with MERN stack. Search API for cocktail recipes, add to favorites, post about cocktails, like and comment on posts, and more!",
       category: "Full Stack",
+      featured: true,
       images: [
         "barkeep1.png",
         "barkeep2.png",
@@ -12,12 +13,14 @@ export const projects = [
       ],
       deployedUrl: "https://barkeep-842cb6903459.herokuapp.com",
       gitHubRepoUrl: "https://github.com/BillStephens2022/BarKEEP",
+      technologies: ["ReactJS", "MongoDB", "Mongoose", "Apollo Server/GraphQL", "3rd Party API", "NodeJS", "ExpressJS", "JSON Web Token", "Cloudinary"]
     },
     {
       id: 2,
       title: "Drinking from the Garden Hose",
       desc: "Full Stack site for a real podcast. Allows admin users to manage content and engage with audience.  Site visitors can listen to the podcast, comment on individual episodes, vote in polls, and provide general feedback.",
       category: "Full Stack",
+      featured: true,
       images: [
         "dftgh1.png",
         "dftgh2.png",
@@ -28,23 +31,27 @@ export const projects = [
       ],
       deployedUrl: "https://gardenhose.vercel.app",
       gitHubRepoUrl: "https://github.com/BillStephens2022/dftgh",
+      technologies: ["NextJS", "ReactJS", "MongoDB", "Mongoose", "Next-Auth", "Cloudinary"],
     },
     {
       id: 3,
       title: "ETJ - Enter The Johnsons",
       desc: "Full Stack site for a non-profit organization that 'provides martial arts and mentoring to the kids who need it most.' Allows admin users to add fundraising campaigns including photo/video and engage with the community.  Site visitors can view photos, donate, provide feedback to the team",
       category: "Full Stack",
+      featured: true,
       images: [
         "etj.png",
       ],
       deployedUrl: "https://etj-nextjs.vercel.app",
       gitHubRepoUrl: "https://github.com/BillStephens2022/etj-nextjs",
+      technologies: ["NextJS", "ReactJS", "MongoDB", "Mongoose", "Next-Auth", "Cloudinary"],
     },
     {
       id: 4,
       title: "Expense Tracker",
       desc: "Personal Expense Tracker built with MERN stack",
       category: "Full Stack",
+      featured: true,
       images: [
         "expense1.png",
         "expense2.png",
@@ -53,6 +60,7 @@ export const projects = [
       ],
       deployedUrl: "https://expense-tracker-mern.herokuapp.com/",
       gitHubRepoUrl: "https://github.com/BillStephens2022/Expense-Tracker-MERN",
+      technologies: ["ReactJS", "MongoDB", "Mongoose", "Apollo Server/GraphQL", "NodeJS", "ExpressJS", "JSON Web Token", "ChartJS"]
     },
     {
       id: 5,
