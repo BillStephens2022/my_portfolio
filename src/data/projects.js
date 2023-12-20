@@ -13,6 +13,7 @@ export const projects = [
       ],
       deployedUrl: "https://barkeep-842cb6903459.herokuapp.com",
       gitHubRepoUrl: "https://github.com/BillStephens2022/BarKEEP",
+      technologies: ["ReactJS", "MongoDB", "Mongoose", "Apollo Server/GraphQL", "3rd Party API", "NodeJS", "ExpressJS", "JSON Web Token", "Cloudinary"]
     },
     {
       id: 2,
@@ -30,6 +31,7 @@ export const projects = [
       ],
       deployedUrl: "https://gardenhose.vercel.app",
       gitHubRepoUrl: "https://github.com/BillStephens2022/dftgh",
+      technologies: ["NextJS", "ReactJS", "MongoDB", "Mongoose", "Next-Auth", "Cloudinary"],
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ export const projects = [
       ],
       deployedUrl: "https://etj-nextjs.vercel.app",
       gitHubRepoUrl: "https://github.com/BillStephens2022/etj-nextjs",
+      technologies: ["NextJS", "ReactJS", "MongoDB", "Mongoose", "Next-Auth", "Cloudinary"],
     },
     {
       id: 4,
@@ -57,6 +60,7 @@ export const projects = [
       ],
       deployedUrl: "https://expense-tracker-mern.herokuapp.com/",
       gitHubRepoUrl: "https://github.com/BillStephens2022/Expense-Tracker-MERN",
+      technologies: ["ReactJS", "MongoDB", "Mongoose", "Apollo Server/GraphQL", "NodeJS", "ExpressJS", "JSON Web Token", "ChartJS"]
     },
     {
       id: 5,
