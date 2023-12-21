@@ -16,9 +16,7 @@
     transform: scale(1.01);
     background-color: $color-blue-light-3;
     border-radius: 1rem;
-    
   }
-
 
   /* Apply different animation delays to each box */
   &:nth-child(1) {
@@ -51,7 +49,6 @@
     max-width: 95vw;
   }
 
- 
   &__header {
     font-size: 2.5rem;
     width: 100%;
@@ -74,7 +71,36 @@
     &_image {
       width: 100%;
     }
+    &_buttons {
+      &_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+      }
+      &_button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem;
+        font-size: 2rem;
+      }
+      &_span {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0 0.5rem;
+        color: white;
+
+      }
+    }
   }
+
+  //featuredProject__image_div_buttons_div
 
   &__summary {
     margin-top: 1rem;
@@ -115,32 +141,31 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 1.25rem;
 
     &-button {
       text-decoration: none;
       background-color: white;
-      padding: 0.5rem;
+      padding: 0.75rem;
       color: $color-blue-med;
-      font-size: 1.25rem;
-      
-      width: 8rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      width: 10rem;
       border-radius: 2rem;
       cursor: pointer;
-    
 
       &-outline {
         text-decoration: none;
         border: 2px solid white;
         background-color: transparent;
-        padding: 0.5rem;
-        font-size: 1.25rem;
+        padding: 0.75rem;
+        font-size: 1.75rem;
         font-weight: 700;
-        width: 8rem;
+        width: 10rem;
         border-radius: 2rem;
         color: $color-white;
         cursor: pointer;
-       
+
         &:hover {
           color: $color-white;
         }
