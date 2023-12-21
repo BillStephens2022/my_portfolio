@@ -19,398 +19,466 @@
     max-height: 400vh;
   }
 
-    &__video {
-      position: fixed;
-      top: 0;
-      left: 0;
+  @include respond(small-phone) {
+    display: flex;
+    flex-direction: column;
+    max-height: 600vh;
+  }
+
+  &__video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    overflow: hidden;
+
+    &--content {
       height: 100%;
       width: 100%;
+      object-fit: cover;
       z-index: -1;
-      opacity: .4;
-      overflow: hidden;
-  
-      &--content {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
-      }
     }
-   
+  }
 
-    &__hero {
-      background-color: $color-blue-light-3;
-      display: flex;
-      padding: 3rem;
+  &__hero {
+    background-color: $color-blue-light-3;
+    display: flex;
+    padding: 3rem;
 
-      @include respond(tab-port) {
-        padding: 2rem;
-      }
-
-      @include respond(phone) {
-        display: block;
-        text-align: center;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-        padding-bottom: 5rem;
-      }
+    @include respond(tab-port) {
+      padding: 2rem;
     }
 
-    &__headers {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding-left: 3rem;
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+      padding-bottom: 5rem;
+    }
+  }
 
-      @include respond(phone) {
-        padding-left: 0;
-        align-items: center;
-      }
+  &__headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+
+    @include respond(phone) {
+      padding-left: 0;
+      align-items: center;
+    }
+  }
+
+  &__photo {
+    max-width: 10rem;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    transition: 0.3s all;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__title {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: $color-white;
+    transition: 0.2s ease;
+    &:hover {
+      transform: skewY(-5deg) scale(1.1);
     }
 
-    &__photo {      
-      max-width: 10rem;
-      border-radius: 5px;
-      align-self: center;
-      justify-self: center;
-      transition: .3s all;
-
-      &:hover {
-        transform: scale(1.1);
-      }
+    @include respond(tab-port) {
+      font-size: 3.5rem;
     }
 
-    &__title {
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+    @include respond(phone) {
+      font-size: 3rem;
+      padding-top: 1.5rem;
       letter-spacing: 1.2rem;
-      text-transform: uppercase;
-      font-size: 4rem;
-      color: $color-white;
-      transition: 0.2s ease;
-      &:hover {
-        transform: skewY(-5deg) scale(1.1);
-      }
+    }
+  }
 
-      @include respond(tab-port) {
-        font-size: 3.5rem;
+  &__subtitle {
+    font-size: 2.5rem;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.62rem;
+    color: $color-grey-dark-1;
+
+    @include respond(tab-port) {
+      font-size: 2.25rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+      letter-spacing: 0.57rem;
+      margin-left: -5px;
+    }
+  }
+
+  &__story {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    color: $color-grey-dark-2;
+    width: 65%;
+    margin: 1rem auto;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @include respond(tab-land) {
+      margin: 2rem auto;
+      font-size: 2rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 2rem auto;
+      font-size: 2rem;
+      width: 85%;
+    }
+
+    @include respond(phone) {
+      margin: 1rem auto;
+      font-size: 1.75rem;
+      width: 95%;
+    }
+
+    &-link {
+      text-decoration: none;
+      font-size: 1.45rem;
+      padding: 0.1rem 1rem 0.2rem 1rem;
+      border-radius: 15px;
+      background-color: $color-blue-light-3;
+      color: $color-white;
+      box-shadow: 2px 2px 5px black;
+      transition: 0.2s ease;
+      text-wrap: nowrap;
+
+      &:nth-child(2) {
+        margin-right: 5px;
       }
+      &:hover {
+        cursor: pointer;
+        background-color: $color-white;
+        color: $color-blue-light-3;
+        transform: scale(1.05);
+      }
+      @include respond(tab-port) {
+        font-size: 1.9rem;
+      }
+      @include respond(phone) {
+        font-size: 1.35rem;
+      }
+    }
+  }
+}
+
+.skills {
+  margin: 2rem 0 0 0;
+  text-align: center;
+
+  &__header {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: $color-blue-med;
+    text-shadow: 1px 1px $color-yellow;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+
+  }
+
+  &__container {
+    display: grid;
+    grid-template-rows: minmax(30rem, 1fr);
+    grid-template-columns:
+      [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(
+        20rem,
+        30rem
+      )
+      [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
+    grid-gap: 5rem;
+    justify-content: center;
+
+    @include respond(tab-land) {
+      display: flex;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+      display: block;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    margin-top: 2rem;
+    background-color: $color-blue-light-3;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
+    transition: all 0.3s ease;
+
+    @include respond(tab-land) {
+      margin-top: 1rem;
+      min-width: 33rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 0;
+      min-width: 42rem;
+    }
+
+    @include respond(phone) {
+      height: 44rem;
+      min-width: 20rem;
+      max-width: 85%;
+      margin: auto;
+      margin-bottom: 5rem;
+    }
+
+    &--header {
+      font-size: 2rem;
+      padding: 2rem;
+      background-color: white;
+      color: $color-blue-dark;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      //border-radius: 1rem 1rem 0 0;
 
       @include respond(phone) {
-        font-size: 3rem;
-        padding-top: 1.5rem;
-        letter-spacing: 1.2rem;
-        
+        height: 7rem;
+        border: 1px whitesmoke solid;
       }
     }
 
-    &__subtitle {
-      font-size: 2.5rem;
-      font-family: 'Lato', sans-serif;
-      letter-spacing: 0.62rem;
-      color: $color-grey-dark-1;
+    &--list {
+      font-size: 1.4rem;
+      list-style: none;
+      padding: 1rem;
+      color: $color-white;
+      &:hover {
+        color: $color-white;
+      }
+
+      @include respond(tab-land) {
+        font-size: 1.8rem;
+      }
 
       @include respond(tab-port) {
         font-size: 2.25rem;
       }
 
       @include respond(phone) {
-        font-size: 2rem;
-        letter-spacing: .57rem;
-        margin-left: -5px;
-        
-      }
-    }
-
-    &__story {
-      font-size: 1.5rem;
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      line-height: 2;
-      color: $color-grey-dark-2;
-      width: 65%;
-      margin: 1rem auto;
-      letter-spacing: .2rem;
-      padding: 1rem;
-      border-radius: 1rem;
-      text-align: center;
-      transition: 0.2s ease;
-     
-
-      &:hover {
-        transform: scale(1.05);
-      }
-
-      @include respond(tab-land) {
-        margin: 2rem auto;
-        font-size: 2rem;
-      }
-
-      @include respond(tab-port) {
-        margin: 2rem auto;
-        font-size: 2rem;
-        width: 85%;
-      }
-
-      @include respond(phone) {
-        margin: 1rem auto;
         font-size: 1.75rem;
-        width: 95%;
-      }
-
-      &-link {
-        text-decoration: none;
-        font-size: 1.45rem;
-        padding: 0.1rem 1rem .2rem 1rem;
-        border-radius: 15px;
-        background-color: $color-blue-light-3;
-        color: $color-white;
-        box-shadow: 2px 2px 5px black;
-        transition: 0.2s ease;
-        text-wrap: nowrap;
-
-        &:nth-child(2) {
-          margin-right: 5px;
-        }
-        &:hover {
-          cursor: pointer;
-          background-color: $color-white;
-          color: $color-blue-light-3;
-          transform: scale(1.05);
-          
-        }
-        @include respond(tab-port) {
-          font-size: 1.9rem;
-
-        }
-        @include respond(phone) {
-          font-size: 1.35rem;
-        }
-  
       }
     }
 
+    &:hover {
+      background-color: $color-blue-med;
+      transform: translateY(-3px);
+      color: $color-white;
+    }
+  }
 
+  @include respond(phone) {
+    margin-bottom: 0;
+  }
 }
 
-.skills {
-    margin: 1rem 0 3rem 0;
-    text-align: center;
+.card-1 {
+  animation: slideRight 1s ease-in;
+  position: relative;
+}
 
-    &__header {
-      font-size: 2.5em;
-      font-weight: 900;
-      color: $color-blue-med;
-      text-shadow: 1px 1px $color-yellow;
-      letter-spacing: 1rem;
-      text-transform: uppercase;
-      margin-bottom: 0;
+.card-2 {
+  animation: slideUp 1s ease-in;
+  position: relative;
+}
 
-      @include respond(tab-land) {
-        margin-bottom: 2rem;
-      }
+.card-3 {
+  animation: slideLeft 1s ease-in;
+  position: relative;
 
-      @include respond(phone) {
-        margin-bottom: 2rem;
-      }
-    }
-
-    &__container {
-      display: grid;
-      grid-template-rows: minmax(30rem, 1fr) minmax(30rem, 1fr);
-      grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
-      grid-gap: 5rem;
-      justify-content: center;
-     
-
-      @include respond(tab-land) {
-        display: flex;
-        margin-bottom: 3rem;
-      }
-
-      @include respond(tab-port) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 3rem;
-      }
-
-      @include respond(phone) {
-        display: block;
-        flex-wrap: wrap;
-        
-      }
-    }
-
-
-    &__card {
-      margin-top: 2rem;
-      background-color: $color-blue-light-3;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 20% 100%, 0 85%, 0 50%);
-      transition: all .3s ease;
-   
-
-      @include respond(tab-land) {
-        margin-top: 1rem;
-        min-width: 33rem;
-      }
-
-      @include respond(tab-port) {
-        margin-top: 0;
-        min-width: 42rem;   
-      }
-
-      @include respond(phone) {
-        height: 44rem;
-        min-width: 20rem;
-        max-width: 85%;
-        margin: auto;
-        margin-bottom: 5rem;
-      }
-      
-      
-
-      &--header {
-        font-size: 2rem;
-        padding: 2rem;
-        background-color: white;
-        color: $color-blue-dark;
-        letter-spacing: 0.3rem;
-        text-transform: uppercase;
-        //border-radius: 1rem 1rem 0 0;
-
-        @include respond(phone) {
-          height: 7rem;
-          border: 1px whitesmoke solid;
-        }
-      }
-
-      &--list {
-        font-size: 1.4rem;
-        list-style: none;
-        padding: 1rem;
-        color: $color-white;
-        &:hover {
-          color: $color-white;
-        }
-
-        @include respond(tab-land) {
-          font-size: 1.8rem;
-        }
-
-        @include respond(tab-port) {
-          font-size: 2.25rem;
-        }
-
-        @include respond(phone) {
-          font-size: 1.75rem;
-        }
-      }
-
-      &:hover {
-        background-color: $color-blue-med;
-        transform: translateY(-3px);
-        color: $color-white;
-      }
-
-    }
+  @include respond(tab-port) {
+    align-self: center;
   }
+}
 
-  .card-1 {
-    animation: slideRight 1s ease-in;
-    position: relative;
-  }
+#react {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 
-  .card-2 {
-    animation: slideUp 1s ease-in;
-    position: relative;
-  }
+#css3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
 
-  .card-3 {
-    animation: slideLeft 1s ease-in;
-    position: relative;
+#node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 
-    @include respond(tab-port) {
-      align-self: center;
-    }
-  }
+#mongo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
 
-  #react {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15%; 
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
+#python {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 
-  #css3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 15%; 
-    margin-top: 1rem;
-    margin-right: 1rem;
-  } 
-
-  #node {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15%; 
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
-
-  #mongo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 15%; 
-    margin-top: 1rem;
-    margin-right: 1rem;
-  } 
-
-  #python {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 15%; 
-   margin-top: 1rem;
-   margin-left: 1rem;
-  }
-
-  @keyframes slideRight{
-    0% {
+@keyframes slideRight {
+  0% {
     transform: translateX(-300%);
-    }
-    100% {
-    transform: translateX(0%);
-    }
   }
-  
-  @keyframes slideLeft{
-    0% {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
     transform: translateX(300%);
-    }
-    100% {
+  }
+  100% {
     transform: translateX(0%);
-    }
   }
+}
 
-  @keyframes slideUp {
-    0% {
+@keyframes slideUp {
+  0% {
     transform: translateY(300%);
-    }
-    100% {
-    transform: translateY(0%);
-    }
   }
-
-  @keyframes slideDown {
-    0% {
+  100% {
     transform: translateY(0%);
-    }
-    100% {
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
     transform: translateY(-300%);
+  }
+}
+
+.githubActivity {
+  color: steelblue;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 4rem 0;
+  &__header {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: $color-blue-med;
+    text-shadow: 1px 1px $color-yellow;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
     }
   }
+  &__table {
+    margin-top: 1rem;
+    margin: 2rem auto;
 
+    @include respond(phone) {
+      margin: 0 2rem;
+    }
+  }
+  @include respond(phone) {
+    margin-top: 1rem;
+  }
+}
+
+th {
+  padding: 0.5rem;
+  border: 1px solid steelblue;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+tr:nth-child(even) {
+  background-color: rgba(111, 153, 187, 0.2);
+}
+
+td {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid steelblue;
+}
+
+.repo {
+  text-align: left;
+}
+
+h3,
+h4 {
+  color: $color-grey-dark-1;
+  font-weight: 500;
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+}
+
+h4 {
+  font-style: italic;
+  @include respond(phone) {
+    padding: 1rem 2rem;
+  }
+}
