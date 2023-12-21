@@ -4,7 +4,7 @@ import {
   BiSolidChevronLeftCircle,
 } from "react-icons/bi";
 
-function FeaturedProject({ featuredProject }) {
+function FeaturedProject({ key, featuredProject }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -26,7 +26,7 @@ function FeaturedProject({ featuredProject }) {
   };
 
   return (
-    <div className="featuredProject">
+    <div key={key} className="featuredProject">
       <h2 className="featuredProject__header">{featuredProject.title}</h2>
       <div className="featuredProject__image_div">
         <img

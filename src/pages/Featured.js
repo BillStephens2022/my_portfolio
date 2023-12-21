@@ -20,7 +20,7 @@ function Featured() {
       </div>
       <div className="featured_projects">
         {featuredProjects.map((featuredProject) => (
-            <FeaturedProject featuredProject={featuredProject} />
+            <FeaturedProject key={featuredProject.title} featuredProject={featuredProject} />
         )
 
         )}
