@@ -40,7 +40,12 @@ export const projects = [
       category: "Full Stack",
       featured: true,
       images: [
-        "etj.png",
+        "etj1.png",
+        "etj2.png",
+        "etj3.png",
+        "etj4.png",
+        "etj5.png",
+        "etj6.png"
       ],
       deployedUrl: "https://etj-nextjs.vercel.app",
       gitHubRepoUrl: "https://github.com/BillStephens2022/etj-nextjs",
@@ -49,7 +54,7 @@ export const projects = [
     {
       id: 4,
       title: "Expense Tracker",
-      desc: "Personal Expense Tracker built with MERN stack",
+      desc: "Personal Expense Tracker built with MERN stack. Add your expenses and summarize by essential, non-esential.  Calculate future value of savings if you cut your non-essentials.  Chart expenses by category.",
       category: "Full Stack",
       featured: true,
       images: [
