@@ -577,7 +577,8 @@ html {
 .about {
   width: 100vw;
   color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 96vh; }
   @media only screen and (max-width: 56.25em) {
     .about {
       min-height: 95vh;
@@ -742,7 +743,8 @@ html {
     grid-template-rows: minmax(30rem, 1fr);
     grid-template-columns: [card-1-start] minmax(20rem, 30rem) [card-1-end card-2-start] minmax(20rem, 30rem) [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
     grid-gap: 5rem;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 75em) {
       .skills__container {
         display: flex;
@@ -889,65 +891,6 @@ html {
     transform: translateY(0%); }
   100% {
     transform: translateY(-300%); } }
-
-.githubActivity {
-  color: steelblue;
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 4rem 0; }
-  .githubActivity__header {
-    font-size: 2.5em;
-    font-weight: 900;
-    color: #0077be;
-    text-shadow: 1px 1px #ffbf00;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem; }
-    @media only screen and (max-width: 37.5em) {
-      .githubActivity__header {
-        margin-bottom: 2rem; } }
-  .githubActivity__table {
-    margin-top: 1rem;
-    margin: 2rem auto; }
-    @media only screen and (max-width: 37.5em) {
-      .githubActivity__table {
-        margin: 0 2rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .githubActivity {
-      margin-top: 1rem; } }
-
-th {
-  padding: 0.5rem;
-  border: 1px solid steelblue; }
-
-tr:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.2); }
-
-tr:nth-child(even) {
-  background-color: rgba(111, 153, 187, 0.2); }
-
-td {
-  text-align: center;
-  padding: 0.5rem;
-  border: 1px solid steelblue; }
-
-.repo {
-  text-align: left; }
-
-h3,
-h4 {
-  color: #54483A;
-  font-weight: 500; }
-  @media only screen and (max-width: 37.5em) {
-    h3,
-    h4 {
-      padding: 0 2rem; } }
-
-h4 {
-  font-style: italic; }
-  @media only screen and (max-width: 37.5em) {
-    h4 {
-      padding: 1rem 2rem; } }
 
 .featured {
   text-align: center;

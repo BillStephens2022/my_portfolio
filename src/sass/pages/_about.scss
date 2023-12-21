@@ -2,6 +2,7 @@
   width: 100vw;
   color: $color-white;
   overflow: hidden;
+  min-height: 96vh;
 
   // @include respond(tab-land) {
   //   min-height: 95vh;
@@ -223,6 +224,7 @@
       [card-2-end card-3-start] minmax(20rem, 30rem) [card-3-end];
     grid-gap: 5rem;
     justify-content: center;
+    margin-bottom: 2rem;
 
     @include respond(tab-land) {
       display: flex;
@@ -414,71 +416,71 @@
   }
 }
 
-.githubActivity {
-  color: steelblue;
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 4rem 0;
-  &__header {
-    font-size: 2.5em;
-    font-weight: 900;
-    color: $color-blue-med;
-    text-shadow: 1px 1px $color-yellow;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+// .githubActivity {
+//   color: steelblue;
+//   text-align: center;
+//   font-size: 1.2rem;
+//   margin: 4rem 0;
+//   &__header {
+//     font-size: 2.5em;
+//     font-weight: 900;
+//     color: $color-blue-med;
+//     text-shadow: 1px 1px $color-yellow;
+//     letter-spacing: 1rem;
+//     text-transform: uppercase;
+//     margin-bottom: 2rem;
 
-    @include respond(phone) {
-      margin-bottom: 2rem;
-    }
-  }
-  &__table {
-    margin-top: 1rem;
-    margin: 2rem auto;
+//     @include respond(phone) {
+//       margin-bottom: 2rem;
+//     }
+//   }
+//   &__table {
+//     margin-top: 1rem;
+//     margin: 2rem auto;
 
-    @include respond(phone) {
-      margin: 0 2rem;
-    }
-  }
-  @include respond(phone) {
-    margin-top: 1rem;
-  }
-}
+//     @include respond(phone) {
+//       margin: 0 2rem;
+//     }
+//   }
+//   @include respond(phone) {
+//     margin-top: 1rem;
+//   }
+// }
 
-th {
-  padding: 0.5rem;
-  border: 1px solid steelblue;
-}
+// th {
+//   padding: 0.5rem;
+//   border: 1px solid steelblue;
+// }
 
-tr:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-tr:nth-child(even) {
-  background-color: rgba(111, 153, 187, 0.2);
-}
+// tr:nth-child(odd) {
+//   background-color: rgba(255, 255, 255, 0.2);
+// }
+// tr:nth-child(even) {
+//   background-color: rgba(111, 153, 187, 0.2);
+// }
 
-td {
-  text-align: center;
-  padding: 0.5rem;
-  border: 1px solid steelblue;
-}
+// td {
+//   text-align: center;
+//   padding: 0.5rem;
+//   border: 1px solid steelblue;
+// }
 
-.repo {
-  text-align: left;
-}
+// .repo {
+//   text-align: left;
+// }
 
-h3,
-h4 {
-  color: $color-grey-dark-1;
-  font-weight: 500;
-  @include respond(phone) {
-    padding: 0 2rem;
-  }
-}
+// h3,
+// h4 {
+//   color: $color-grey-dark-1;
+//   font-weight: 500;
+//   @include respond(phone) {
+//     padding: 0 2rem;
+//   }
+// }
 
-h4 {
-  font-style: italic;
-  @include respond(phone) {
-    padding: 1rem 2rem;
-  }
-}
+// h4 {
+//   font-style: italic;
+//   @include respond(phone) {
+//     padding: 1rem 2rem;
+//   }
+// }

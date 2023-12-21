@@ -1,76 +1,76 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function About() {
-  const [commitData, setCommitData] = useState({});
-  const [totalCommits, setTotalCommits] = useState(0);
-  const [repoCount, setRepoCount] = useState(0);
-  const [uniqueRepos, setUniqueRepos] = useState([]);
+  // const [commitData, setCommitData] = useState({});
+  // const [totalCommits, setTotalCommits] = useState(0);
+  // const [repoCount, setRepoCount] = useState(0);
+  // const [uniqueRepos, setUniqueRepos] = useState([]);
 
-  const username = process.env.REACT_APP_GITHUB_USERNAME;
-  const token = process.env.REACT_APP_GITHUB_TOKEN;
+  // const username = process.env.REACT_APP_GITHUB_USERNAME;
+  // const token = process.env.REACT_APP_GITHUB_TOKEN;
 
-  useEffect(() => {
-    fetch(`https://api.github.com/users/${username}/events?per_page=100`, {
-      headers: {
-        Authorization: `token ${token}`,
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok.");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        const pushEvents = data.filter((event) => event.type === "PushEvent");
+  // useEffect(() => {
+  //   fetch(`https://api.github.com/users/${username}/events?per_page=100`, {
+  //     headers: {
+  //       Authorization: `token ${token}`,
+  //     },
+  //   })
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error("Network response was not ok.");
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       const pushEvents = data.filter((event) => event.type === "PushEvent");
 
-        const commitsPerDay = {};
-        const uniqueRepoSet = new Set();
+  //       const commitsPerDay = {};
+  //       const uniqueRepoSet = new Set();
 
-        pushEvents.forEach((event) => {
-          const date = new Date(event.created_at).toLocaleDateString();
+  //       pushEvents.forEach((event) => {
+  //         const date = new Date(event.created_at).toLocaleDateString();
 
-          // Initialize commits and repos for the day if they don't exist
-          if (!commitsPerDay[date]) {
-            commitsPerDay[date] = {
-              commits: 0,
-              repos: new Set(),
-            };
-          }
+  //         // Initialize commits and repos for the day if they don't exist
+  //         if (!commitsPerDay[date]) {
+  //           commitsPerDay[date] = {
+  //             commits: 0,
+  //             repos: new Set(),
+  //           };
+  //         }
 
-          // Increment commits for the day
-          commitsPerDay[date].commits += event.payload.size;
+  //         // Increment commits for the day
+  //         commitsPerDay[date].commits += event.payload.size;
 
-          const repoFullName = event.repo.name;
-          const repoNameWithoutUser = repoFullName.substring(
-            repoFullName.indexOf("/") + 1
-          ); // Extracts repo name without user prefix
+  //         const repoFullName = event.repo.name;
+  //         const repoNameWithoutUser = repoFullName.substring(
+  //           repoFullName.indexOf("/") + 1
+  //         ); // Extracts repo name without user prefix
 
-          // Add repo name to the set of repos for the day
-          commitsPerDay[date].repos.add(repoNameWithoutUser);
-          uniqueRepoSet.add(repoNameWithoutUser);
-        });
+  //         // Add repo name to the set of repos for the day
+  //         commitsPerDay[date].repos.add(repoNameWithoutUser);
+  //         uniqueRepoSet.add(repoNameWithoutUser);
+  //       });
 
-        // Calculate total commits
-        const total = Object.values(commitsPerDay).reduce(
-          (acc, curr) => acc + curr.commits,
-          0
-        );
-        setTotalCommits(total);
+  //       // Calculate total commits
+  //       const total = Object.values(commitsPerDay).reduce(
+  //         (acc, curr) => acc + curr.commits,
+  //         0
+  //       );
+  //       setTotalCommits(total);
 
-        // Calculate number of unique repos
-        setRepoCount(uniqueRepoSet.size);
+  //       // Calculate number of unique repos
+  //       setRepoCount(uniqueRepoSet.size);
 
-        setCommitData(commitsPerDay);
+  //       setCommitData(commitsPerDay);
 
-        setUniqueRepos(Array.from(uniqueRepoSet));
+  //       setUniqueRepos(Array.from(uniqueRepoSet));
 
-      })
-      .catch((error) => {
-        console.error("There was a problem with the fetch operation:", error);
-      });
-  }, []);
+  //     })
+  //     .catch((error) => {
+  //       console.error("There was a problem with the fetch operation:", error);
+  //     });
+  // }, []);
 
   return (
     <div className="about">
@@ -218,7 +218,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="githubActivity">
+      {/* <div className="githubActivity">
         <h2 className="githubActivity__header">
           Recent GitHub Activity <i className="fab fa-github"></i>
         </h2>
@@ -256,7 +256,7 @@ function About() {
             </tr>
           </tfoot>
         </table>
-      </div>
+      </div> */}
     </div>
   );
 }
