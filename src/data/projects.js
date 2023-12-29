@@ -162,6 +162,21 @@ export const projects = [
     },
     {
       id: 12,
+      title: "Blog - Django",
+      desc: "A personal blog site built with Django and PostgreSQL",
+      category: "Full Stack",
+      images: [
+        "blogdjango1.png",
+        "blogdjango2.png",
+        "blogdjango3.png",
+        "blogdjango4.png",
+        "blogdjango5.png",
+      ],
+      deployedUrl: "http://django-blog-env-1.eba-7pfn6c3t.us-east-2.elasticbeanstalk.com/",
+      gitHubRepoUrl: "https://github.com/BillStephens2022/Blog-Django",
+    },
+    {
+      id: 13,
       title: "Vacation Planner",
       desc: "Group collaboration using APIs which provides Airbnb lodging, Ticketmaster events, and local breweries .",
       category: "Front End",
@@ -175,7 +190,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/jsedlak146/group8-vacationplanner",
     },
     {
-      id: 13,
+      id: 14,
       title: "Weather Dashboard",
       desc: "Get current weather & 5 day forecast for cities of your choice",
       category: "Front End",
@@ -186,7 +201,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Weather-Dashboard",
     },
     {
-      id: 14,
+      id: 15,
       title: "Quiz Game",
       desc: "Sample Quiz Game with 5 coding questions",
       category: "Front End",
@@ -198,7 +213,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Code-Quiz",
     },
     {
-      id: 15,
+      id: 16,
       title: "Word Guess",
       desc: "Word Guess game with scoreboard",
       category: "Front End",
@@ -209,7 +224,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Word-Guess-Game",
     },
     {
-      id: 16,
+      id: 17,
       title: "Rock Paper Scissors",
       desc: "Rock Paper Scissors game",
       category: "Front End",
@@ -220,7 +235,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Rock-Paper-Scissors",
     },
     {
-      id: 17,
+      id: 18,
       title: "Work Day Scheduler",
       desc: "Daily Scheduler where you can save appointments, events, etc.",
       category: "Front End",
@@ -231,7 +246,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Work-Day-Scheduler",
     },
     {
-      id: 18,
+      id: 19,
       title: "Password Generator",
       desc: "Generate a Password depending on user requirements",
       category: "Front End",
@@ -242,7 +257,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Password-Generator-2",
     },
     {
-      id: 19,
+      id: 20,
       title: "Book Search Engine - MERN stack",
       desc: "Refactored App from RESTful API to MERN Stack. User can signup/login and save books under their profile using Google Books API.",
       category: "Full Stack",
@@ -253,7 +268,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Book-Search-Engine-MERN",
     },
     {
-      id: 20,
+      id: 21,
       title: "Trillo",
       desc: "Travel site built using advanced CSS/SCSS with animations",
       category: "Front End",
@@ -264,7 +279,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Trillo",
     },
     {
-      id: 21,
+      id: 22,
       title: "Natours",
       desc: "Nature Tour booking site built using advanced CSS/SCSS with animations",
       category: "Front End",
@@ -275,7 +290,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Natour",
     },
     {
-      id: 22,
+      id: 23,
       title: "Nexter",
       desc: "Real Estate site built using advanced CSS/SCSS",
       category: "Front End",
@@ -289,7 +304,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Nexter",
     },
     {
-      id: 23,
+      id: 24,
       title: "Emojipedia",
       desc: "Emojipedia is a REACT app which displays cards with the emoji along with the description/definition.",
       category: "Front End",
@@ -300,7 +315,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Emojipedia",
     },
     {
-      id: 24,
+      id: 25,
       title: "Resume",
       desc: "Sample resume using Bootstrap",
       category: "Front End",
@@ -311,7 +326,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/BillResume",
     },
     {
-      id: 25,
+      id: 26,
       title: "README Generator",
       desc: "Generates a README.md file after responding to questions in the command line",
       category: "Back End",
@@ -322,7 +337,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/README-generator",
     },
     {
-      id: 26,
+      id: 27,
       title: "Team Profile Generator",
       desc: "Generates Team Profile page after entering team details in the command line",
       category: "Back End",
@@ -333,7 +348,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Team-Profile-Generator",
     },
     {
-      id: 27,
+      id: 28,
       title: "Note Taker",
       desc: "App where you can create, save, and delete notes utilizing Node.js",
       category: "Full Stack",
@@ -344,7 +359,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Note-Taker",
     },
     {
-      id: 28,
+      id: 29,
       title: "Employee Tracker",
       desc: "Employee database app utilizing Node.js, npm Inquirer package and mySQL",
       category: "Back End",
@@ -355,7 +370,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Employee-Tracker-SQL",
     },
     {
-      id: 29,
+      id: 30,
       title: "E-Commerce Back End",
       desc: "Sample E-commerce back end using Node, Express, MySQL, Sequelize",
       category: "Back End",
@@ -366,7 +381,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/E-Commerce-Back-End",
     },
     {
-      id: 30,
+      id: 31,
       title: "Social Network API",
       desc: "Back end for a social network where users can sign up, add friends, and post thoughts and reactions.",
       category: "Back End",
@@ -377,7 +392,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Social-Network-API-NoSQL",
     },
     {
-      id: 31,
+      id: 32,
       title: "Trivia Quiz",
       desc: "Trivia Quiz app built with Python, Tkinter, and Open Trivia DB API.",
       category: "Python",
@@ -388,7 +403,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Trivia-Quiz-API-Python",
     },
     {
-      id: 32,
+      id: 33,
       title: "Flash Cards",
       desc: "Flash Cards app built with Python / Tkinter.",
       category: "Python",
@@ -400,7 +415,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Flash-Cards-Python",
     },
     {
-      id: 33,
+      id: 34,
       title: "Password Manager",
       desc: "Password Manager app built with Python / Tkinter. Generate or create your own passwords, save them, and search for existing ones.",
       category: "Python",
@@ -411,7 +426,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Password-Manager-Python",
     },
     {
-      id: 34,
+      id: 35,
       title: "Pomodoro Time Manager",
       desc: "Time Management app built with Python / Tkinter. Work more efficiently using the Pomodoro Method.",
       category: "Python",
@@ -422,7 +437,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Pomodoro-App-Python",
     },
     {
-      id: 35,
+      id: 36,
       title: "US States Quiz",
       desc: "US States Quiz built with Python / Tkinter.  Name as many of the US States as you can until the map is filled in.",
       category: "Python",
@@ -433,7 +448,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/US-States-Quiz",
     },
     {
-      id: 36,
+      id: 37,
       title: "Pong",
       desc: "Classic Pong Game built with Python / Tkinter.",
       category: "Python",
@@ -444,7 +459,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Pong-Game-Python",
     },
     {
-      id: 37,
+      id: 38,
       title: "Snake Game",
       desc: "Classic Snake Game built with Python / Tkinter.",
       category: "Python",
@@ -455,7 +470,7 @@ export const projects = [
       gitHubRepoUrl: "https://github.com/BillStephens2022/Snake-Game-Python",
     },
     {
-      id: 38,
+      id: 39,
       title: "Turtle Crossing",
       desc: "Turtle Crossing Game (similar to Frogger) built with Python / Tkinter.",
       category: "Python",
@@ -465,20 +480,20 @@ export const projects = [
       deployedUrl: "N/A",
       gitHubRepoUrl: "https://github.com/BillStephens2022/Turtle-Crossing-Python",
     },
-    // {
-    //   id: 39,
-    //   title: "Meals-App",
-    //   desc: "A recipe App built with React-Native",
-    //   category: "Front End",
-    //   type: "mobile",
-    //   images: [
-    //     "meals1.png",
-    //     "meals2.png",
-    //     "meals3.png",
-    //     "meals4.png"
-    //   ],
-    //   deployedUrl: "N/A",
-    //   gitHubRepoUrl: "https://github.com/BillStephens2022/Turtle-Crossing-Python",
-    // },
+    {
+      id: 40,
+      title: "Meals-App",
+      desc: "A recipe App built with React-Native",
+      category: "Front End",
+      type: "mobile",
+      images: [
+        "meals1.png",
+        "meals2.png",
+        "meals3.png",
+        "meals4.png"
+      ],
+      deployedUrl: "N/A",
+      gitHubRepoUrl: "https://github.com/BillStephens2022/Turtle-Crossing-Python",
+    },
   ];
   

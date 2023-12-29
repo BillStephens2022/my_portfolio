@@ -202,7 +202,7 @@ function About() {
               />
             </h4>
             <ul className="skills__card--list">
-              <li>Flask</li>
+              <li>Django / Flask</li>
               <li>Jinja</li>
               <li>Pandas</li>
               <li>Numpy</li>
