@@ -53,6 +53,36 @@
         }
       }
     }
+  
+  &__dropdown {
+    &--label {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: $color-blue-med;
+      margin-right: 1rem;
+    }
+    &--select {
+      padding: 0.5rem;
+      color: $color-blue-med;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $color-blue-light-3;
+      &:focus {
+        outline: $color-blue-med 2px solid;
+
+      }
+    }
+
+
+    &--select option {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $color-blue-med;
+    }
+
+  }
 
   &__buttons {
 

@@ -1128,6 +1128,25 @@ html {
       @media only screen and (max-width: 37.5em) {
         .portfolio__hero-logo {
           width: 15%; } }
+  .portfolio__dropdown--label {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #0077be;
+    margin-right: 1rem; }
+  .portfolio__dropdown--select {
+    padding: 0.5rem;
+    color: #0077be;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: lightsteelblue; }
+    .portfolio__dropdown--select:focus {
+      outline: #0077be 2px solid; }
+  .portfolio__dropdown--select option {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0077be; }
   .portfolio__buttons--btn {
     width: 10rem;
     margin: 1rem;

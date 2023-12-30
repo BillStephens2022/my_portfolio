@@ -11,9 +11,9 @@ function Portfolio() {
   const [showModal, setShowModal] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
 
-  const handleButtonClick = (value) => {
-    setContent(value)
-  }
+  const handleDropdownChange = (event) => {
+    setContent(event.target.value);
+  };
 
   const handleImageClick = (imageUrl) => {
     setCurrentImage(imageUrl);
@@ -31,12 +31,22 @@ function Portfolio() {
         <h1 className="portfolio__hero-header">Project <span className="portfolio__hero-headerspan">Portfolio</span></h1>
         <img className="portfolio__hero-logo" src={`${process.env.PUBLIC_URL}/images/webdev.png`} alt="web dev logo" />
       </div>
-      <div className="portfolio__buttons">
-        <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('All')}>All</button>
-        <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Full Stack')}>Full Stack</button>
-        <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Front End')}>Front End</button>
-        <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Back End')}>Back End</button>
-        <button className="portfolio__buttons--btn" onClick={() => handleButtonClick('Python')}>Python</button>
+      <div className="portfolio__dropdown">
+      <label htmlFor="categoryDropdown" className="portfolio__dropdown--label">
+          Filter by Category:
+        </label>
+        <select
+          className="portfolio__dropdown--select"
+          value={content}
+          onChange={handleDropdownChange}
+        >
+          <option value="All">All</option>
+          <option value="Full Stack">Full Stack</option>
+          <option value="Front End">Front End</option>
+          <option value="Back End">Back End</option>
+          <option value="Python">Python</option>
+          {/* Add more options as needed */}
+        </select>
       </div>
       <div className="projects">
         {projects
