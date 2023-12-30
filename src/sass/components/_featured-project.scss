@@ -6,16 +6,17 @@
   margin: 1rem;
   padding: 1rem;
   min-width: 37rem;
-  background-color: $color-blue-med;
+  background-color: $color-blue-light-3;
   color: $color-blue-light-3;
-  border: 5px solid $color-blue-med;
   align-items: center;
   visibility: hidden;
-
+  transition: transorm 0.3s ease-in;
+ 
   &:hover {
     transform: scale(1.01);
-    background-color: $color-blue-light-3;
-    border-radius: 1rem;
+    visibility: visible;
+    // border-radius: 1rem;
+    // border: 8px solid $color-white;
   }
 
   /* Apply different animation delays to each box */
@@ -52,7 +53,7 @@
   &__header {
     font-size: 2.5rem;
     width: 100%;
-    background-color: $color-blue-med;
+    background-color: $color-blue-light-3;
     color: $color-white;
     text-shadow: 1px 1px 1px black;
     font-weight: 900;
@@ -112,11 +113,11 @@
     &_header {
       font-size: 2rem;
       font-weight: 900;
-      color: $color-blue-med;
+      color: $color-blue-light-3;
     }
     &_text {
       font-size: 1.5rem;
-      color: $color-blue-med;
+      color: $color-blue-light-3;
       font-weight: 500;
       margin: 1rem;
     }
@@ -131,7 +132,7 @@
         margin: 0.5rem;
 
         border-radius: 10rem;
-        background-color: $color-blue-med;
+        background-color: $color-blue-light-3;
       }
     }
   }
@@ -147,12 +148,18 @@
       text-decoration: none;
       background-color: white;
       padding: 0.75rem;
-      color: $color-blue-med;
+      color: $color-blue-light-3;
       font-size: 1.75rem;
       font-weight: 700;
       width: 10rem;
       border-radius: 2rem;
       cursor: pointer;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-blue-light-3;
+        border: 2px solid $color-white;
+      }
 
       &-outline {
         text-decoration: none;
@@ -167,7 +174,8 @@
         cursor: pointer;
 
         &:hover {
-          color: $color-white;
+          background-color: $color-white;
+          color: $color-blue-light-3;
         }
       }
     }

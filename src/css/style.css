@@ -234,16 +234,15 @@ html {
   margin: 1rem;
   padding: 1rem;
   min-width: 37rem;
-  background-color: #0077be;
+  background-color: lightsteelblue;
   color: lightsteelblue;
-  border: 5px solid #0077be;
   align-items: center;
   visibility: hidden;
+  transition: transorm 0.3s ease-in;
   /* Apply different animation delays to each box */ }
   .featuredProject:hover {
     transform: scale(1.01);
-    background-color: lightsteelblue;
-    border-radius: 1rem; }
+    visibility: visible; }
   .featuredProject:nth-child(1) {
     animation: fadeIn 1.5s ease forwards 0.2s;
     /* Delay the first box by 0.2s */ }
@@ -272,7 +271,7 @@ html {
   .featuredProject__header {
     font-size: 2.5rem;
     width: 100%;
-    background-color: #0077be;
+    background-color: lightsteelblue;
     color: #fff;
     text-shadow: 1px 1px 1px black;
     font-weight: 900;
@@ -316,10 +315,10 @@ html {
     .featuredProject__summary_header {
       font-size: 2rem;
       font-weight: 900;
-      color: #0077be; }
+      color: lightsteelblue; }
     .featuredProject__summary_text {
       font-size: 1.5rem;
-      color: #0077be;
+      color: lightsteelblue;
       font-weight: 500;
       margin: 1rem; }
     .featuredProject__summary_list {
@@ -332,7 +331,7 @@ html {
         padding: 0.25rem;
         margin: 0.5rem;
         border-radius: 10rem;
-        background-color: #0077be; }
+        background-color: lightsteelblue; }
   .featuredProject__footer {
     width: 100%;
     display: flex;
@@ -343,12 +342,16 @@ html {
       text-decoration: none;
       background-color: white;
       padding: 0.75rem;
-      color: #0077be;
+      color: lightsteelblue;
       font-size: 1.75rem;
       font-weight: 700;
       width: 10rem;
       border-radius: 2rem;
       cursor: pointer; }
+      .featuredProject__footer-button:hover {
+        color: #fff;
+        background-color: lightsteelblue;
+        border: 2px solid #fff; }
       .featuredProject__footer-button-outline {
         text-decoration: none;
         border: 2px solid white;
@@ -361,7 +364,8 @@ html {
         color: #fff;
         cursor: pointer; }
         .featuredProject__footer-button-outline:hover {
-          color: #fff; }
+          background-color: #fff;
+          color: lightsteelblue; }
 
 .fas,
 .fab {
@@ -894,10 +898,10 @@ html {
 
 .featured {
   text-align: center;
-  background-image: linear-gradient(45deg, steelblue, 75%, lightsteelblue);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 93vh; }
   .featured__hero {
-    background-color: #0077be;
+    background-color: lightsteelblue;
     margin-bottom: 3rem;
     clip-path: polygon(50% 100%, 0 0, 100% 0); }
     @media only screen and (max-width: 37.5em) {
