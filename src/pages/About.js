@@ -152,13 +152,12 @@ function About() {
             <ul className="skills__card--list">
               <li>JavaScript/TypeScript</li>
               <li>React.js/Angular.js</li>
+              <li>Django/Flask</li>
               <li>React Native</li>
               <li>Next.js</li>
               <li>Redux</li>
               <li>3rd Party APIs</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Sass/Scss</li>
+              <li>HTML / CSS</li>
               <li>Multiple CSS Frameworks</li>
               <li>Tensorflow.js</li>
               <li>Chart.js</li>
@@ -202,7 +201,7 @@ function About() {
               />
             </h4>
             <ul className="skills__card--list">
-              <li>Flask</li>
+              <li>Django/Flask</li>
               <li>Jinja</li>
               <li>Pandas</li>
               <li>Numpy</li>
@@ -214,6 +213,28 @@ function About() {
               <li>Beautiful Soup</li>
               <li>3rd Party APIs</li>
               <li>Turtle</li>
+            </ul>
+          </div>
+          <div className="skills__card card-4">
+            <h4 className="skills__card--header">
+              Java
+              <img
+                id="java"
+                src={`${process.env.PUBLIC_URL}/images/java.png`}
+                alt="java logo"
+              />
+            </h4>
+            <ul className="skills__card--list">
+              <li>Object Oriented Programming</li>
+              <li>Inheritance</li>
+              <li>Polymorphism</li>
+              <li>Abstraction</li>
+              <li>Generics</li>
+              <li>Data Structures</li>
+              <li>Lambda Expressions</li>
+              <li>Collections</li>
+              <li>Streams</li>
+              <li>Concurrency</li>
             </ul>
           </div>
         </div>

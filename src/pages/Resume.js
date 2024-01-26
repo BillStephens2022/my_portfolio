@@ -98,6 +98,8 @@ function Resume() {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
                 <li>TypeScript</li>
                 <li>Node.js</li>
                 <li>React.js</li>
@@ -110,7 +112,6 @@ function Resume() {
                 <li>Mongoose</li>
                 <li>graphQL</li>
                 <li>Apollo Server</li>
-                <li>Python</li>
               </ul>
             </div>
           </div>
