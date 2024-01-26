@@ -152,9 +152,9 @@ function About() {
             <ul className="skills__card--list">
               <li>JavaScript/TypeScript</li>
               <li>React.js/Angular.js</li>
+              <li>Next.js</li>
               <li>Django/Flask</li>
               <li>React Native</li>
-              <li>Next.js</li>
               <li>Redux</li>
               <li>3rd Party APIs</li>
               <li>HTML / CSS</li>
@@ -201,7 +201,7 @@ function About() {
               />
             </h4>
             <ul className="skills__card--list">
-              <li>Django/Flask</li>
+              <li>Django / Flask</li>
               <li>Jinja</li>
               <li>Pandas</li>
               <li>Numpy</li>

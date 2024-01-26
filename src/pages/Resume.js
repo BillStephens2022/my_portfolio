@@ -107,11 +107,12 @@ function Resume() {
                 <li>Next.js</li>
                 <li>Angular.js</li>
                 <li>Express.js</li>
+                <li>Django/Flask</li>
                 <li>SQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>graphQL</li>
-                <li>Apollo Server</li>
+                <li>Apollo Server</li>              
               </ul>
             </div>
           </div>
