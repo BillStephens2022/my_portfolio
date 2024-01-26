@@ -99,6 +99,7 @@ function Resume() {
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
+                <li>Java</li>
                 <li>TypeScript</li>
                 <li>Node.js</li>
                 <li>React.js</li>
