@@ -3,15 +3,17 @@
 function Resume() {
   const getResume = () => {
     console.log("button clicked!");
-    fetch(`${process.env.PUBLIC_URL}/images/BillStephens-Resume.pdf`).then((res) => {
-      res.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "BillStephens-Resume.pdf";
-        alink.click();
-      });
-    });
+    fetch(`${process.env.PUBLIC_URL}/images/BillStephens-Resume.pdf`).then(
+      (res) => {
+        res.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download = "BillStephens-Resume.pdf";
+          alink.click();
+        });
+      }
+    );
   };
 
   return (
@@ -94,25 +96,33 @@ function Resume() {
             <div className="technical-skills">
               <p className="skills-subheading">TECHNICAL SKILLS</p>
               <hr />
+
+              <h4>Languages</h4>
               <ul className="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java</li>
                 <li>TypeScript</li>
-                <li>Node.js</li>
+                <li>Java</li>
+                <li>Python</li>
+                <br />
+              </ul>
+
+              <h4>Dev Tools / Frameworks</h4>
+              <ul className="skills-list">
                 <li>React.js</li>
                 <li>React Native</li>
                 <li>Next.js</li>
                 <li>Angular.js</li>
+                <li>Node.js</li>
                 <li>Express.js</li>
+                <li>Spring Boot</li>
                 <li>Django/Flask</li>
                 <li>SQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>graphQL</li>
-                <li>Apollo Server</li>              
+                <li>Apollo Server</li>
               </ul>
             </div>
           </div>
@@ -133,9 +143,7 @@ function Resume() {
                 <h3>
                   Drinking from the Garden Hose
                   <span className="links link-left">
-                    <a href="https://gardenhose.vercel.app/">
-                      Deployed App
-                    </a>
+                    <a href="https://gardenhose.vercel.app/">Deployed App</a>
                   </span>
                   <span className="links">
                     {" "}
@@ -146,13 +154,17 @@ function Resume() {
                   </span>
                 </h3>
                 <h5>
-                  Full Stack Next.js application for a Podcast.  Admin users can control content and push new episodes 
-                  from their RSS feed to the Episodes page along with a photo.  Site visitors can comment on specific episodes, vote in polls, and provide general feedback.
+                  Full Stack Next.js application for a Podcast. Admin users can
+                  control content and push new episodes from their RSS feed to
+                  the Episodes page along with a photo. Site visitors can
+                  comment on specific episodes, vote in polls, and provide
+                  general feedback.
                 </h5>
                 <ul className="project-list">
                   <li>
-                    Designed and implemented the entire project, including front end (Next.js/React.js), 
-                    back end (MongoDB, Mongoose), next-auth for user authentication, and integration of 
+                    Designed and implemented the entire project, including front
+                    end (Next.js/React.js), back end (MongoDB, Mongoose),
+                    next-auth for user authentication, and integration of
                     Cloudinary for image storage.
                   </li>
                 </ul>
@@ -174,16 +186,17 @@ function Resume() {
                   </span>
                 </h3>
                 <h5>
-                  Full Stack MERN app for cocktail enthusiasts.  Search for cocktail 
-                  recipes via a 3rd party API, save your favorite cocktails to your 
-                  profile page, post cocktail photos, post tips/techniques, like & 
-                  comment on others’ posts.
+                  Full Stack MERN app for cocktail enthusiasts. Search for
+                  cocktail recipes via a 3rd party API, save your favorite
+                  cocktails to your profile page, post cocktail photos, post
+                  tips/techniques, like & comment on others’ posts.
                 </h5>
                 <ul className="project-list">
                   <li>
-                    Designed and implemented the entire project, including front end (React.js), 
-                    back end (MongoDB, Mongoose, Apollo Server/GraphQL), and integration of 
-                    Cloudinary for image storage.
+                    Designed and implemented the entire project, including front
+                    end (React.js), back end (MongoDB, Mongoose, Apollo
+                    Server/GraphQL), and integration of Cloudinary for image
+                    storage.
                   </li>
                 </ul>
               </div>

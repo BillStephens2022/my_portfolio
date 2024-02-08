@@ -112,7 +112,7 @@ function About() {
         continuously learning new programming languages and web development
         frameworks.{" "}
       </p>
-      
+
       <p className="about__story">
         Explore my{" "}
         <Link className="about__story-link" to="/featured">
@@ -150,17 +150,20 @@ function About() {
               />
             </h4>
             <ul className="skills__card--list">
-              <li>JavaScript/TypeScript</li>
-              <li>React.js/Angular.js</li>
-              <li>Next.js</li>
-              <li>Django/Flask</li>
-              <li>React Native</li>
-              <li>Redux</li>
-              <li>3rd Party APIs</li>
               <li>HTML / CSS</li>
               <li>Multiple CSS Frameworks</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React.js</li>
+              <li>React Native</li>
+              <li>Next.js</li>
+              <li>Angular.js</li>
+              <li>Thymeleaf</li>
+              <li>Redux</li>
+              <li>3rd Party APIs</li>
               <li>Tensorflow.js</li>
               <li>Chart.js</li>
+              <li>JavaFX</li>
             </ul>
           </div>
 
@@ -181,13 +184,17 @@ function About() {
             <ul className="skills__card--list">
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>Spring Boot</li>
+              <li>Django/Flask</li>
               <li>MongoDB</li>
-              <li>SQL</li>
+              <li>MySQL / SQLite</li>
               <li>Sequelize</li>
               <li>GraphQL</li>
               <li>Apollo Server</li>
               <li>Passport.js</li>
               <li>JSON Web Token</li>
+              <li>JPA / Hibernate</li>
+              <li>Spring Security</li>
             </ul>
           </div>
 
@@ -225,16 +232,18 @@ function About() {
               />
             </h4>
             <ul className="skills__card--list">
+              <li>Spring Boot</li>
+              <li>JavaFX</li>
+              <li>JDBC</li>
+              <li>JPA / Hibernate</li>
+              <li>Spring Security</li>
               <li>Object Oriented Programming</li>
-              <li>Inheritance</li>
-              <li>Polymorphism</li>
-              <li>Abstraction</li>
-              <li>Generics</li>
               <li>Data Structures</li>
               <li>Lambda Expressions</li>
               <li>Collections</li>
               <li>Streams</li>
               <li>Concurrency</li>
+              
             </ul>
           </div>
         </div>
