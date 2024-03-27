@@ -104,6 +104,7 @@ function Resume() {
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>Java</li>
+                <li>C#</li>
                 <li>Python</li>
                 <br />
               </ul>
@@ -123,6 +124,8 @@ function Resume() {
                 <li>Mongoose</li>
                 <li>graphQL</li>
                 <li>Apollo Server</li>
+                <li>JavaFX</li>
+                <li>WPF</li>
               </ul>
             </div>
           </div>
