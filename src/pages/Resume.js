@@ -98,6 +98,8 @@ function Resume() {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>Java</li>
+                <li>C#</li>
                 <li>Python</li>
                 <li>TypeScript</li>
                 <li>Node.js</li>
@@ -106,12 +108,13 @@ function Resume() {
                 <li>Next.js</li>
                 <li>Angular.js</li>
                 <li>Express.js</li>
+                <li>Spring Boot</li>     
                 <li>Django/Flask</li>
                 <li>SQL</li>
                 <li>MongoDB</li>
                 <li>Mongoose</li>
                 <li>graphQL</li>
-                <li>Apollo Server</li>              
+                <li>Apollo Server</li>
               </ul>
             </div>
           </div>
