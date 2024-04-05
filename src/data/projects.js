@@ -36,7 +36,7 @@ export const projects = [
   {
     id: 3,
     title: "Corporate Loans",
-    desc: "Built with Next.js / React.js and MongoDB.  A Corporate Loan eductional tool with pages covering various loan related topics.  Features an Accounting Page and a Fronting Page where examples can be entered and the accounting & risk impacts can be viewed.",
+    desc: "Built with Next.js / React.js, TypeScript, and MongoDB.  A Corporate Loan eductional tool with pages covering various loan related topics.  Features an Accounting Page and a Fronting Page where examples can be entered and the accounting & risk impacts can be viewed.",
     category: "Full Stack",
     featured: true,
     images: [
@@ -52,7 +52,7 @@ export const projects = [
     ],
     deployedUrl: "https://corporate-loans.vercel.app",
     gitHubRepoUrl: "https://github.com/BillStephens2022/loans-calc",
-    technologies: ["NextJS", "ReactJS", "MongoDB", "Mongoose"],
+    technologies: ["NextJS", "ReactJS", "MongoDB", "Mongoose", "TypeScript"],
   },
   {
     id: 4,
