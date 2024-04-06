@@ -246,17 +246,20 @@ html {
     background-color: lightsteelblue;
     border-radius: 1rem; }
   .featuredProject:nth-child(1) {
-    animation: fadeIn 1.5s ease forwards 0.2s;
-    /* Delay the first box by 0.2s */ }
+    animation: fadeIn 1.5s ease forwards 0.3s;
+    /* Delay the first box by 0.3s */ }
   .featuredProject:nth-child(2) {
-    animation: fadeIn 1.5s ease forwards 0.7s;
-    /* Delay the second box by 0.7s */ }
+    animation: fadeIn 1.5s ease forwards 0.6s;
+    /* Delay the second box by 0.6s */ }
   .featuredProject:nth-child(3) {
-    animation: fadeIn 1.5s ease forwards 1.2s;
-    /* Delay the third box by 1.2s */ }
+    animation: fadeIn 1.5s ease forwards 0.9s;
+    /* Delay the third box by 0.9s */ }
   .featuredProject:nth-child(4) {
-    animation: fadeIn 1.5s ease forwards 1.7s;
-    /* Delay the fourth box by 1.7s */ }
+    animation: fadeIn 1.5s ease forwards 1.2s;
+    /* Delay the fourth box by 1.2s */ }
+  .featuredProject:nth-child(5) {
+    animation: fadeIn 1.5s ease forwards 1.5s;
+    /* Delay the fifth box by 1.5s */ }
   @media only screen and (max-width: 75em) {
     .featuredProject {
       min-width: 45vw; } }
