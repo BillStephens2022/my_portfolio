@@ -33,7 +33,7 @@ function Resume() {
           <div className="col-sm-4 col-md-3 col-lg-2 photo">
             <img
               className="align-items-center bill-pic"
-              src={`${process.env.PUBLIC_URL}/images/bill.jpeg`}
+              src={`${process.env.PUBLIC_URL}/images/billS.jpg`}
               alt="Bill pic"
             />
           </div>
@@ -117,6 +117,7 @@ function Resume() {
                 <li>Angular.js</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
+                <li>Nest.js</li>
                 <li>Spring Boot</li>
                 <li>Django/Flask</li>
                 <li>SQL</li>
@@ -126,6 +127,8 @@ function Resume() {
                 <li>Apollo Server</li>
                 <li>JavaFX</li>
                 <li>WPF</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
               </ul>
             </div>
           </div>
@@ -142,7 +145,7 @@ function Resume() {
                 )
               </h2>
               <hr />
-              <div className="project-1">
+              <div className="project">
                 <h3>
                   Drinking from the Garden Hose
                   <span className="links link-left">
@@ -172,7 +175,7 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project-2">
+              <div className="project">
                 <h3>
                   BarKEEP
                   <span className="links link-left">
@@ -203,7 +206,7 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project-3">
+              <div className="project">
                 <h3>
                   Expense Tracker
                   <span className="links link-left">
@@ -229,45 +232,35 @@ function Resume() {
                     end (React, Chart.js) and back end (MongoDB, Apollo
                     Server/GraphQL) and the compound interest calculator.
                   </li>
-                  <li>
-                    Technologies used: HTML, CSS, JavaScript, Node.js, Express,
-                    MongoDB, Chart.js, Apollo Server/GraphQL, and React.js.
-                  </li>
                 </ul>
               </div>
-              {/* <div className="project-3">
+              <div className="project">
                 <h3>
-                  Community Chat
+                  Corporate Loans
                   <span className="links link-left">
-                    <a href="https://community-chat.herokuapp.com">
+                    <a href="https://corporate-loans.vercel.app/">
                       Deployed App
                     </a>
                   </span>
                   <span className="links">
                     {" "}
                     |{" "}
-                    <a href="https://github.com/BillStephens2022/Community-Chat">
+                    <a href="https://github.com/BillStephens2022/loans-calc">
                       Github Repo
                     </a>
                   </span>
                 </h3>
                 <h5>
-                  Full Stack Social Media app which allows users to set up a
-                  profile, create posts, attach photos/videos, and comment on
-                  other users’ posts.
+                  Full Stack corporate loan application which educates users on various corporate loan topics.
+                  Allows users to enter sample loan transactions to view accounting entries and financial statement impact.
                 </h5>
                 <ul className="project-list">
                   <li>
-                    Team collaboration - My contributions were across both front
-                    end (HTML, CSS, Handlebars) and back end (mySQL, Sequelize,
-                    Node.js, Express, Passport.js).
-                  </li>
-                  <li>
-                    Technologies used: Technologies used: HTML, CSS, JavaScript,
-                    Node.js, Express, mySQL, Sequelize, Cloudinary, Socket.io.
+                    Designed and implemented the entire project, including front
+                    end (Next.js/React.js) and back end (MongoDB, Mongoose).
                   </li>
                 </ul>
-              </div> */}
+              </div>
               <div className="main-sections section-headers work-experience">
                 <h2 className="section-headers">WORK EXPERIENCE</h2>
                 <hr />

@@ -1345,6 +1345,9 @@ p {
 .link-left {
   margin-left: 15px; }
 
+.project {
+  margin-top: 2rem; }
+
 .project-list {
   font-weight: 100;
   color: #36486b;

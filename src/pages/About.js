@@ -184,6 +184,7 @@ function About() {
             <ul className="skills__card--list">
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>Nest.js</li>
               <li>Spring Boot</li>
               <li>Django/Flask</li>
               <li>MongoDB</li>
