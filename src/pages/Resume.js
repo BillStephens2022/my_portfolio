@@ -42,14 +42,11 @@ function Resume() {
             <h3 className="header-occupation">Full Stack Web Developer</h3>
             <hr className="header-hr" />
             <h3 className="header-summary">
-              Full Stack Web Developer with an extensive background in
-              Accounting and Finance in the Investment Banking industry. Known
-              for ability to distill complex problems into easy to understand
-              terms. Effective at combining creativity, resourcefulness and
-              problem solving to provide innovative solutions to business
-              challenges. Experience collaborating with cross-functional teams
-              and driving both technical and procedural change in large
-              organizations.
+              Full Stack Software Engineer with a strong foundation in Accounting and Finance, currently transitioning into the tech 
+              industry. Skilled in building and maintaining web applications with a focus on clean code and scalability. Hands-on 
+              experience with front-end and back-end development through both professional and personal projects. Adaptable and eager 
+              to contribute to collaborative team environments, leveraging strong problem-solving skills and a passion for continuous 
+              learning.
             </h3>
           </div>
         </div>
@@ -106,6 +103,8 @@ function Resume() {
                 <li>Java</li>
                 <li>C#</li>
                 <li>Python</li>
+                <li>DAML</li>
+                <li>Haskell</li>
                 <br />
               </ul>
 
@@ -145,6 +144,33 @@ function Resume() {
                 )
               </h2>
               <hr />
+              <div className="project">
+                <h3>
+                  Corporate Loans
+                  <span className="links link-left">
+                    <a href="https://corporate-loans.vercel.app/">
+                      Deployed App
+                    </a>
+                  </span>
+                  <span className="links">
+                    {" "}
+                    |{" "}
+                    <a href="https://github.com/BillStephens2022/loans-calc">
+                      Github Repo
+                    </a>
+                  </span>
+                </h3>
+                <h5>
+                  Full Stack corporate loan application which educates users on various corporate loan topics.
+                  Allows users to enter sample loan transactions to view accounting entries and financial statement impact.
+                </h5>
+                <ul className="project-list">
+                  <li>
+                    Designed and implemented the entire project, including front
+                    end (Next.js/React.js) and back end (MongoDB, Mongoose).
+                  </li>
+                </ul>
+              </div>
               <div className="project">
                 <h3>
                   Drinking from the Garden Hose
@@ -206,63 +232,61 @@ function Resume() {
                   </li>
                 </ul>
               </div>
-              <div className="project">
-                <h3>
-                  Expense Tracker
-                  <span className="links link-left">
-                    <a href="https://expense-tracker-mern.herokuapp.com">
-                      Deployed App
-                    </a>
-                  </span>
-                  <span className="links">
-                    {" "}
-                    |{" "}
-                    <a href="https://github.com/BillStephens2022/Expense-Tracker-MERN">
-                      Github Repo
-                    </a>
-                  </span>
-                </h3>
-                <h5>
-                  Full Stack MERN app which allows users to track personal
-                  expenses by category (Housing, Food, Entertainment, etc.).
-                </h5>
-                <ul className="project-list">
-                  <li>
-                    Team collaboration - My contributions were across both front
-                    end (React, Chart.js) and back end (MongoDB, Apollo
-                    Server/GraphQL) and the compound interest calculator.
-                  </li>
-                </ul>
-              </div>
-              <div className="project">
-                <h3>
-                  Corporate Loans
-                  <span className="links link-left">
-                    <a href="https://corporate-loans.vercel.app/">
-                      Deployed App
-                    </a>
-                  </span>
-                  <span className="links">
-                    {" "}
-                    |{" "}
-                    <a href="https://github.com/BillStephens2022/loans-calc">
-                      Github Repo
-                    </a>
-                  </span>
-                </h3>
-                <h5>
-                  Full Stack corporate loan application which educates users on various corporate loan topics.
-                  Allows users to enter sample loan transactions to view accounting entries and financial statement impact.
-                </h5>
-                <ul className="project-list">
-                  <li>
-                    Designed and implemented the entire project, including front
-                    end (Next.js/React.js) and back end (MongoDB, Mongoose).
-                  </li>
-                </ul>
-              </div>
               <div className="main-sections section-headers work-experience">
-                <h2 className="section-headers">WORK EXPERIENCE</h2>
+              <h2 className="section-headers">SOFTWARE ENGINEERING EXPERIENCE</h2>
+                <hr />
+                <div className="MorganStanley">
+                  <div className="job-header">
+                    <img
+                      className="LendOSLogo"
+                      src={`${process.env.PUBLIC_URL}/images/LendOSLogo.png`}
+                      alt="LendOS Logo"
+                    />
+                    <span className="job-location">Remote</span>
+                    <span className="job-dates">June 2024 - Present</span>
+                  </div>
+                  <p className="role">
+                    Software Engineer
+                  </p>
+                  <h6 className="job-summary">
+                    Contributed to developing a full-stack web application for smart lending contracts using React, 
+                    NestJS, and DAML, focusing on both front-end and back-end features, testing, and cloud deployment.
+                  </h6>
+                  <p className="accomplishments">Key Accomplishments:</p>
+                  <ul className="work-bullets">
+                    <li>
+                      Contributed to the development of a full stack web application using React, NestJS, and DAML for 
+                      smart lending contracts.
+                    </li>
+                    <li>
+                      Worked on both front-end and back-end features, using TypeScript, HTML, CSS, and DAML, actively pushing 
+                      code to the main branch via GitHub.
+                    </li>
+                    <li>
+                      Developed and executed unit and integration tests, including DAML tests and Playwright tests, ensuring 
+                      high-quality, reliable code.
+                    </li>
+                    <li>
+                      Created comprehensive documentation for all DAML choices in the GitHub project Wiki to improve codebase 
+                      clarity and facilitate team collaboration.
+                    </li>
+                    <li>
+                      Used Docker and Kubernetes for containerization and orchestration of the application, deploying services 
+                      to AWS infrastructure.
+                    </li>
+                    <li>
+                      Collaborated with cross-functional teams through GitHub Projects for project management and Agile workflow 
+                      implementation.
+                    </li>
+                    <li>
+                      Familiar with coding in a GitHub Codespace environment, optimizing development processes and maintaining 
+                      consistent coding standards.
+                    </li>
+                  </ul>
+                </div>
+                
+                <h2 className="section-headers">FINANCE/LEADERSHIP EXPERIENCE
+                </h2>
                 <hr />
                 <div className="MorganStanley">
                   <div className="job-header">
