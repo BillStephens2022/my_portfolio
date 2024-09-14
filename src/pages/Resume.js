@@ -114,6 +114,8 @@ function Resume() {
                 <li>React Native</li>
                 <li>Next.js</li>
                 <li>Angular.js</li>
+                <li>React Context API</li>
+                <li>Redux</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
                 <li>Nest.js</li>
@@ -249,33 +251,33 @@ function Resume() {
                     Software Engineer
                   </p>
                   <h6 className="job-summary">
-                    Contributed to developing a full-stack web application for smart lending contracts using React, 
+                    Contribute to developing a full-stack web application for smart lending contracts using React, 
                     NestJS, and DAML, focusing on both front-end and back-end features, testing, and cloud deployment.
                   </h6>
                   <p className="accomplishments">Key Accomplishments:</p>
                   <ul className="work-bullets">
                     <li>
-                      Contributed to the development of a full stack web application using React, NestJS, and DAML for 
+                      Contribute to the development of a full stack web application using React, NestJS, and DAML for 
                       smart lending contracts.
                     </li>
                     <li>
-                      Worked on both front-end and back-end features, using TypeScript, HTML, CSS, and DAML, actively pushing 
+                      Work on both front-end and back-end features, using TypeScript, HTML, CSS, and DAML, actively pushing 
                       code to the main branch via GitHub.
                     </li>
                     <li>
-                      Developed and executed unit and integration tests, including DAML tests and Playwright tests, ensuring 
+                      Develop and execute unit and integration tests, including DAML tests and Playwright tests, ensuring 
                       high-quality, reliable code.
                     </li>
                     <li>
-                      Created comprehensive documentation for all DAML choices in the GitHub project Wiki to improve codebase 
+                      Create comprehensive documentation for all DAML choices in the GitHub project Wiki to improve codebase 
                       clarity and facilitate team collaboration.
                     </li>
                     <li>
-                      Used Docker and Kubernetes for containerization and orchestration of the application, deploying services 
+                      Use Docker and Kubernetes for containerization and orchestration of the application, deploying services 
                       to AWS infrastructure.
                     </li>
                     <li>
-                      Collaborated with cross-functional teams through GitHub Projects for project management and Agile workflow 
+                      Collaborate with cross-functional teams through GitHub Projects for project management and Agile workflow 
                       implementation.
                     </li>
                     <li>
