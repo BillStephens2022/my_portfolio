@@ -107,10 +107,10 @@ function About() {
       </div>
       <p className="about__story">
         Hi, I'm Bill. I'm a Full Stack Web Developer and former finance
-        professional. I recently completed a full stack web development bootcamp
-        with Rutgers University, and I stay sharp by coding every day. I'm
-        continuously learning new programming languages and web development
-        frameworks.{" "}
+        professional.  I made the transition into tech after completing 
+        a full stack web development bootcamp at Rutgers University and 
+        now work as a Software Engineer. I'm continuously learning new 
+        technologies and building personalprojects to stay sharp.{" "}
       </p>
 
       <p className="about__story">
